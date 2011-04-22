@@ -5,8 +5,6 @@ require 'uri'
 require 'digest/md5'
 require 'cgi'
 
-
-
 module Socialcastr
   class API
     attr_accessor :debug
@@ -47,12 +45,12 @@ module Socialcastr
     
     def add_message(message)
       xml = api_post("messages", message)
-      return xml
+      return Socialcastr::Message.parse(xml)
     end
     
     def add_comment(message_id, comment)
       xml = api_post("messages/#{message_id}/comments", comment)
-      return xml
+      return Socialcastr::Comment.parse(xml)
     end
     
     def like_comment(message_id,comment_id)
