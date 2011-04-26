@@ -1,11 +1,13 @@
 $LOAD_PATH.unshift(File.expand_path(File.dirname(__FILE__))) unless $LOAD_PATH.include?(File.expand_path(File.dirname(__FILE__)))
 
 require 'socialcastr/base'
+require 'socialcastr/collection'
 require 'socialcastr/api'
 require 'socialcastr/attachment'
 require 'socialcastr/attachment_list'
 require 'socialcastr/avatar_list'
 require 'socialcastr/user'
+require 'socialcastr/user_list'
 require 'socialcastr/like'
 require 'socialcastr/like_list'
 require 'socialcastr/comment'
@@ -32,10 +34,20 @@ require 'socialcastr/message_list'
 require 'singleton'
 
 module Socialcastr
+
+  class MissingConfiguration < StandardError; end;
+
   class Configuration
     include Singleton
     ATTRIBUTES = [:domain, :username, :password, :config_file]
     attr_accessor *ATTRIBUTES
+
+    def ready?
+      [@domain, @username, @password].each do |attribute|
+        return false if attribute.blank?
+      end
+      return true
+    end
   end 
 
   def self.configuration
@@ -53,6 +65,7 @@ module Socialcastr
 
   def self.api
     config = Configuration.instance
+    raise MissingConfiguration unless config.username
     API.new(config.username, config.password, config.domain)
   end
   

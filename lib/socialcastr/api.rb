@@ -65,15 +65,6 @@ module Socialcastr
     
     def https_request(method, path, args)
       https = setup_https
-      response = ""
-      
-      # HACK
-      # if path == "messages/search"
-      #   path = "messages"
-      # end
-      # data = File.read(File.join('/tmp','fixtures','xml', "#{path}.#{@format}"))
-      # return data
-      # # /HACK
 
       case method
         when 'get'
@@ -88,18 +79,18 @@ module Socialcastr
         when 'delete'
         request_class = Net::HTTP::Delete
       end
+      response = nil
       https.start do |session|
-        query_string = "/api/#{path}.#{@format}"
-        query_string += "?" + (query.collect { |k,v| "#{k}=#{CGI::escape(v.to_s)}" }.join('&')) unless query.nil?
+        query_string = build_query_string(path, query)
         req = request_class.new(query_string)
         req.basic_auth @username, @password
         if form_data
           req.set_form_data(args, ';')
         end
-        response = session.request(req).body
+        response = session.request(req)
       end
 
-      response  
+      response.nil? ? "" : response.body
     end
     
     def api_get(path, args={})
@@ -121,6 +112,15 @@ module Socialcastr
       https.verify_mode = OpenSSL::SSL::VERIFY_NONE
       https.use_ssl = true
       return https
+    end
+
+    def build_query_string(path, query=nil)
+      unless query.nil?
+        params = query.collect do |k,v| 
+          "#{k}=#{CGI::escape(v.to_s)}" 
+        end
+      end
+      "/api/#{path}.#{@format}" + (params.any? ? "?" + params.join('&') : "")
     end
   end
 end

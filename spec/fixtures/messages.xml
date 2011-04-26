@@ -1,0 +1,3338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages type="array">
+  <message>
+    <player-params nil="true"></player-params>
+    <media-files type="array"/>
+    <message-type>status_message</message-type>
+    <thumbnail-url nil="true"></thumbnail-url>
+    <tags type="array"/>
+    <created-at>2011-04-26T02:17:14-07:00</created-at>
+    <action></action>
+    <editable type="boolean">true</editable>
+    <rating nil="true"></rating>
+    <subscribed type="boolean">false</subscribed>
+    <likable type="boolean">false</likable>
+    <player-url nil="true"></player-url>
+    <source>
+      <formal-name>Socialcast API</formal-name>
+      <name>API</name>
+      <id>api</id>
+      <url>https://demo.socialcast.com/api</url>
+    </source>
+    <flag nil="true"></flag>
+    <deletable type="boolean">true</deletable>
+    <last-interacted-at type="integer">1303809434</last-interacted-at>
+    <attachments type="array"/>
+    <comments-count type="integer">0</comments-count>
+    <user>
+      <type>User</type>
+      <username>EmilyJames</username>
+      <terminated type="boolean">false</terminated>
+      <name>Emily James</name>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square140.jpg</square140>
+      </avatars>
+      <id type="integer">25</id>
+      <url>https://demo.socialcast.com/users/emilyjames</url>
+    </user>
+    <contains-url-only nil="true"></contains-url-only>
+    <icon>https://d1t8ns81mllsy2.cloudfront.net/images/icons/messages/status_message.png</icon>
+    <target-user nil="true"></target-user>
+    <likes type="array"/>
+    <permalink-url>https://demo.socialcast.com/messages/425-trying-out-the-api</permalink-url>
+    <verb nil="true"></verb>
+    <in-reply-to nil="true"></in-reply-to>
+    <watchable type="boolean">false</watchable>
+    <ratable type="boolean">false</ratable>
+    <recipients type="array"/>
+    <group>
+    </group>
+    <external-resources type="array"/>
+    <updated-at>2011-04-26T02:17:14-07:00</updated-at>
+    <title>trying out the api</title>
+    <extensions type="array"/>
+    <groups type="array"/>
+    <ratings-average nil="true"></ratings-average>
+    <category-id nil="true"></category-id>
+    <external-url nil="true"></external-url>
+    <body>hello</body>
+    <hidden type="boolean">false</hidden>
+    <embed nil="true"></embed>
+    <watch nil="true"></watch>
+    <ratings-count nil="true"></ratings-count>
+    <comments type="array"/>
+    <id type="integer">425</id>
+    <likes-count type="integer">0</likes-count>
+    <url>https://demo.socialcast.com/api/messages/425-trying-out-the-api</url>
+  </message>
+  <message>
+    <player-params nil="true"></player-params>
+    <media-files type="array"/>
+    <message-type>link</message-type>
+    <thumbnail-url nil="true"></thumbnail-url>
+    <tags type="array">
+      <tag>
+        <name>sales</name>
+      </tag>
+      <tag>
+        <name>meetings</name>
+      </tag>
+    </tags>
+    <created-at>2011-04-25T14:27:38-07:00</created-at>
+    <action>shared a link</action>
+    <editable type="boolean">false</editable>
+    <rating nil="true"></rating>
+    <subscribed type="boolean">false</subscribed>
+    <likable type="boolean">true</likable>
+    <player-url nil="true"></player-url>
+    <source>
+      <formal-name>Web App</formal-name>
+      <name>web</name>
+      <id>web</id>
+    </source>
+    <flag nil="true"></flag>
+    <deletable type="boolean">false</deletable>
+    <last-interacted-at type="integer">1303768876</last-interacted-at>
+    <attachments type="array"/>
+    <comments-count type="integer">1</comments-count>
+    <user>
+      <type>User</type>
+      <username>JenniferLawson</username>
+      <terminated type="boolean">false</terminated>
+      <name>Jennifer Lawson</name>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square140.jpg</square140>
+      </avatars>
+      <id type="integer">26</id>
+      <url>https://demo.socialcast.com/users/jenniferlawson</url>
+    </user>
+    <contains-url-only type="boolean">false</contains-url-only>
+    <icon>https://d1t8ns81mllsy2.cloudfront.net/images/icons/messages/link.png</icon>
+    <target-user nil="true"></target-user>
+    <likes type="array"/>
+    <permalink-url>https://demo.socialcast.com/messages/406-web-conferencing--gotomeeting</permalink-url>
+    <verb nil="true"></verb>
+    <in-reply-to nil="true"></in-reply-to>
+    <watchable type="boolean">false</watchable>
+    <ratable type="boolean">false</ratable>
+    <recipients type="array">
+      <recipient>
+        <type>Group</type>
+        <username>InsideSalesDemonstrations</username>
+        <name>Inside Sales Demonstrations</name>
+        <id type="integer">7</id>
+        <avatars>
+          <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/154/Sales_Up_Graph_square16.jpg</square16>
+          <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/154/Sales_Up_Graph_square70.jpg</square70>
+          <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/154/Sales_Up_Graph_square30.jpg</square30>
+          <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/154/Sales_Up_Graph_square45.jpg</square45>
+          <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/154/Sales_Up_Graph_square140.jpg</square140>
+        </avatars>
+        <private type="boolean">false</private>
+        <url>https://demo.socialcast.com/groups/insidesalesdemonstrations</url>
+      </recipient>
+    </recipients>
+    <group>
+      <type>Group</type>
+      <username>InsideSalesDemonstrations</username>
+      <groupname>InsideSalesDemonstrations</groupname>
+      <name>Inside Sales Demonstrations</name>
+      <private type="boolean">false</private>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/154/Sales_Up_Graph_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/154/Sales_Up_Graph_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/154/Sales_Up_Graph_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/154/Sales_Up_Graph_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/154/Sales_Up_Graph_square140.jpg</square140>
+      </avatars>
+      <id type="integer">7</id>
+      <url>https://demo.socialcast.com/groups/insidesalesdemonstrations</url>
+    </group>
+    <external-resources type="array">
+      <external-resource>
+        <media-files type="array"/>
+        <resource-properties>
+          <html.title>Web Conferencing | GoToMeeting</html.title>
+          <meta.description>Reliable, easy, effective web conferencing and online meetings. Work with anyone, anywhere.</meta.description>
+        </resource-properties>
+        <type nil="true"></type>
+        <tags type="array"/>
+        <canonical-hashtag></canonical-hashtag>
+        <source>
+          <name>www.gotomeeting.com</name>
+          <url>http://www.gotomeeting.com</url>
+        </source>
+        <title>Web Conferencing | GoToMeeting</title>
+        <description>Reliable, easy, effective web conferencing and online meetings. Work with anyone, anywhere.</description>
+        <id type="integer">1</id>
+        <url>http://www.gotomeeting.com/fec/</url>
+      </external-resource>
+    </external-resources>
+    <updated-at>2011-04-25T15:01:21-07:00</updated-at>
+    <title>Web Conferencing | GoToMeeting</title>
+    <extensions type="array"/>
+    <groups type="array">
+      <group>
+        <type>Group</type>
+        <username>InsideSalesDemonstrations</username>
+        <groupname>InsideSalesDemonstrations</groupname>
+        <name>Inside Sales Demonstrations</name>
+        <private type="boolean">false</private>
+        <avatars>
+          <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/154/Sales_Up_Graph_square16.jpg</square16>
+          <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/154/Sales_Up_Graph_square70.jpg</square70>
+          <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/154/Sales_Up_Graph_square30.jpg</square30>
+          <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/154/Sales_Up_Graph_square45.jpg</square45>
+          <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/154/Sales_Up_Graph_square140.jpg</square140>
+        </avatars>
+        <id type="integer">7</id>
+        <url>https://demo.socialcast.com/groups/insidesalesdemonstrations</url>
+      </group>
+    </groups>
+    <ratings-average nil="true"></ratings-average>
+    <category-id nil="true"></category-id>
+    <external-url>http://www.gotomeeting.com/fec/</external-url>
+    <body>Here is the link for our Go-To-Meeting account. #sales #meetings</body>
+    <hidden type="boolean">false</hidden>
+    <embed nil="true"></embed>
+    <watch nil="true"></watch>
+    <ratings-count nil="true"></ratings-count>
+    <comments type="array">
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:12:17-07:00</created-at>
+        <editable type="boolean">true</editable>
+        <likable type="boolean">false</likable>
+        <deletable type="boolean">true</deletable>
+        <attachments type="array"/>
+        <text>Thanks Jennifer. Glad it's in our company stream. Won't lose it anymore.</text>
+        <user>
+          <type>User</type>
+          <username>EmilyJames</username>
+          <terminated type="boolean">false</terminated>
+          <name>Emily James</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">25</id>
+          <url>https://demo.socialcast.com/users/emilyjames</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/406-web-conferencing--gotomeeting#comment-63</permalink-url>
+        <id type="integer">63</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/406/comments/63</url>
+      </comment>
+    </comments>
+    <id type="integer">406</id>
+    <likes-count type="integer">0</likes-count>
+    <url>https://demo.socialcast.com/api/messages/406-web-conferencing--gotomeeting</url>
+  </message>
+  <message>
+    <player-params nil="true"></player-params>
+    <media-files type="array">
+      <media-file>
+        <external-resource-id nil="true"></external-resource-id>
+        <content-type>application/x-shockwave-flash</content-type>
+        <thumbnails>
+          <stream-square>https://socialcast-demo.s3.amazonaws.com/link_thumbnails/402/default.jpg</stream-square>
+          <square45>https://socialcast-demo.s3.amazonaws.com/link_thumbnails/402/default.jpg</square45>
+          <scaled480>https://socialcast-demo.s3.amazonaws.com/link_thumbnails/402/default.jpg</scaled480>
+          <stream>https://socialcast-demo.s3.amazonaws.com/link_thumbnails/402/default.jpg</stream>
+        </thumbnails>
+        <page-url nil="true"></page-url>
+        <title nil="true"></title>
+        <description nil="true"></description>
+        <attachment-id nil="true"></attachment-id>
+        <url>http://www.youtube.com/v/hbXLOeICLOI&amp;autoplay=1</url>
+      </media-file>
+    </media-files>
+    <message-type>link</message-type>
+    <thumbnail-url>https://socialcast-demo.s3.amazonaws.com/link_thumbnails/402/default.jpg</thumbnail-url>
+    <tags type="array"/>
+    <created-at>2011-04-25T14:28:42-07:00</created-at>
+    <action>shared a link</action>
+    <editable type="boolean">false</editable>
+    <rating nil="true"></rating>
+    <subscribed type="boolean">false</subscribed>
+    <likable type="boolean">true</likable>
+    <player-url>http://www.youtube.com/v/hbXLOeICLOI&amp;autoplay=1</player-url>
+    <source>
+      <formal-name>Web App</formal-name>
+      <name>web</name>
+      <id>web</id>
+    </source>
+    <flag nil="true"></flag>
+    <deletable type="boolean">false</deletable>
+    <last-interacted-at type="integer">1303047574</last-interacted-at>
+    <attachments type="array"/>
+    <comments-count type="integer">3</comments-count>
+    <user>
+      <type>User</type>
+      <username>JenniferLawson</username>
+      <terminated type="boolean">false</terminated>
+      <name>Jennifer Lawson</name>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square140.jpg</square140>
+      </avatars>
+      <id type="integer">26</id>
+      <url>https://demo.socialcast.com/users/jenniferlawson</url>
+    </user>
+    <contains-url-only type="boolean">true</contains-url-only>
+    <icon>https://d1t8ns81mllsy2.cloudfront.net/images/icons/messages/link.png</icon>
+    <target-user nil="true"></target-user>
+    <likes type="array">
+      <like>
+        <created-at>2011-04-25T14:03:42-07:00</created-at>
+        <user>
+          <name>Paul Gandy</name>
+          <id type="integer">23</id>
+          <url>https://demo.socialcast.com/users/paulgandy</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">33</id>
+      </like>
+      <like>
+        <created-at>2011-04-25T14:27:46-07:00</created-at>
+        <user>
+          <name>Mike Whittington</name>
+          <id type="integer">27</id>
+          <url>https://demo.socialcast.com/users/mikewhittington</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">36</id>
+      </like>
+      <like>
+        <created-at>2011-04-25T14:10:41-07:00</created-at>
+        <user>
+          <name>Linda Allen</name>
+          <id type="integer">24</id>
+          <url>https://demo.socialcast.com/users/lindaallen</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">43</id>
+      </like>
+      <like>
+        <created-at>2011-04-25T14:33:57-07:00</created-at>
+        <user>
+          <name>Emily James</name>
+          <id type="integer">25</id>
+          <url>https://demo.socialcast.com/users/emilyjames</url>
+        </user>
+        <unlikable type="boolean">true</unlikable>
+        <id type="integer">47</id>
+      </like>
+      <like>
+        <created-at>2011-04-25T14:51:11-07:00</created-at>
+        <user>
+          <name>Lee Mosely</name>
+          <id type="integer">20</id>
+          <url>https://demo.socialcast.com/users/leemosely</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">57</id>
+      </like>
+      <like>
+        <created-at>2011-04-25T14:16:30-07:00</created-at>
+        <user>
+          <name>Bob Davis</name>
+          <id type="integer">21</id>
+          <url>https://demo.socialcast.com/users/bobdavis</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">58</id>
+      </like>
+    </likes>
+    <permalink-url>https://demo.socialcast.com/messages/402-httpwwwyoutubecomwatchvhbxloeicloi</permalink-url>
+    <verb nil="true"></verb>
+    <in-reply-to nil="true"></in-reply-to>
+    <watchable type="boolean">false</watchable>
+    <ratable type="boolean">false</ratable>
+    <recipients type="array">
+      <recipient>
+        <type>User</type>
+        <username>LindaAllen</username>
+        <terminated type="boolean">false</terminated>
+        <name>Linda Allen</name>
+        <avatars>
+          <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square16.jpg</square16>
+          <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square70.jpg</square70>
+          <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square30.jpg</square30>
+          <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square45.jpg</square45>
+          <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square140.jpg</square140>
+        </avatars>
+        <id type="integer">24</id>
+        <url>https://demo.socialcast.com/users/lindaallen</url>
+      </recipient>
+    </recipients>
+    <group>
+    </group>
+    <external-resources type="array"/>
+    <updated-at>2011-04-25T15:01:20-07:00</updated-at>
+    <title>http://www.youtube.com/watch?v=hbXLOeICLOI</title>
+    <extensions type="array"/>
+    <groups type="array"/>
+    <ratings-average nil="true"></ratings-average>
+    <category-id nil="true"></category-id>
+    <external-url>http://www.youtube.com/watch?v=hbXLOeICLOI</external-url>
+    <body>Great video podcast on &quot;Measuring Your Marketing Success&quot; /cc @LindaAllen</body>
+    <hidden type="boolean">false</hidden>
+    <embed nil="true"></embed>
+    <watch nil="true"></watch>
+    <ratings-count nil="true"></ratings-count>
+    <comments type="array">
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:18:08-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array"/>
+        <text>Have we ever thought about doing a podcast? A buddy of mine at another company does them, he says that they have had a lot of success with them. Just a thought.</text>
+        <user>
+          <type>User</type>
+          <username>BobDavis</username>
+          <terminated type="boolean">false</terminated>
+          <name>Bob Davis</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">21</id>
+          <url>https://demo.socialcast.com/users/bobdavis</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/402-httpwwwyoutubecomwatchvhbxloeicloi#comment-57</permalink-url>
+        <id type="integer">57</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/402/comments/57</url>
+      </comment>
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:31:01-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array"/>
+        <text>Great idea Bob. This has been something we have been tossing around in the Marketing department in our last few meetings.</text>
+        <user>
+          <type>User</type>
+          <username>LindaAllen</username>
+          <terminated type="boolean">false</terminated>
+          <name>Linda Allen</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">24</id>
+          <url>https://demo.socialcast.com/users/lindaallen</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/402-httpwwwyoutubecomwatchvhbxloeicloi#comment-58</permalink-url>
+        <id type="integer">58</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/402/comments/58</url>
+      </comment>
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:02:31-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array"/>
+        <text>Sounds great. I know the software engineering team would be interested in doing some for our development community.</text>
+        <user>
+          <type>User</type>
+          <username>BobDavis</username>
+          <terminated type="boolean">false</terminated>
+          <name>Bob Davis</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">21</id>
+          <url>https://demo.socialcast.com/users/bobdavis</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/402-httpwwwyoutubecomwatchvhbxloeicloi#comment-59</permalink-url>
+        <id type="integer">59</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/402/comments/59</url>
+      </comment>
+    </comments>
+    <id type="integer">402</id>
+    <likes-count type="integer">6</likes-count>
+    <url>https://demo.socialcast.com/api/messages/402-httpwwwyoutubecomwatchvhbxloeicloi</url>
+  </message>
+  <message>
+    <player-params nil="true"></player-params>
+    <media-files type="array">
+      <media-file>
+        <external-resource-id nil="true"></external-resource-id>
+        <content-type>image/jpeg</content-type>
+        <thumbnails>
+          <stream-square>https://socialcast-demo.s3.amazonaws.com/tenants/5/attachments/111/back_of_the_napkin_stream_square.jpg?AWSAccessKeyId=1WEP0BG96AHQFNB6AXG2&amp;Expires=1305596095&amp;Signature=LSqgVekjaMauvIo0rSNd5Dev59A%3D</stream-square>
+          <square45>https://socialcast-demo.s3.amazonaws.com/tenants/5/attachments/111/back_of_the_napkin_square45.jpg?AWSAccessKeyId=1WEP0BG96AHQFNB6AXG2&amp;Expires=1305596095&amp;Signature=IVSQam1bVZmPDXlNXmU0H3oLwAE%3D</square45>
+          <scaled480>https://socialcast-demo.s3.amazonaws.com/tenants/5/attachments/111/back_of_the_napkin_scaled480.jpg?AWSAccessKeyId=1WEP0BG96AHQFNB6AXG2&amp;Expires=1305596095&amp;Signature=Bz2uLKOxSFLMrt%2BhWm0CAB71jgU%3D</scaled480>
+          <stream>https://socialcast-demo.s3.amazonaws.com/tenants/5/attachments/111/back_of_the_napkin_stream.jpg?AWSAccessKeyId=1WEP0BG96AHQFNB6AXG2&amp;Expires=1305596095&amp;Signature=zLKwCRFcwJHECI1o7UYk%2BvNfH4Y%3D</stream>
+        </thumbnails>
+        <page-url nil="true"></page-url>
+        <title>back_of_the_napkin.jpg</title>
+        <description nil="true"></description>
+        <attachment-id type="integer">111</attachment-id>
+        <url>https://socialcast-demo.s3.amazonaws.com/tenants/5/attachments/111/back_of_the_napkin.jpg?AWSAccessKeyId=1WEP0BG96AHQFNB6AXG2&amp;Expires=1305596095&amp;Signature=LhinZh4apDgNJI28W81mef3k0Wk%3D</url>
+      </media-file>
+    </media-files>
+    <message-type>status_message</message-type>
+    <thumbnail-url>https://socialcast-demo.s3.amazonaws.com/tenants/5/attachments/111/back_of_the_napkin_stream.jpg?AWSAccessKeyId=1WEP0BG96AHQFNB6AXG2&amp;Expires=1305596095&amp;Signature=zLKwCRFcwJHECI1o7UYk%2BvNfH4Y%3D</thumbnail-url>
+    <tags type="array">
+      <tag>
+        <name>fyi</name>
+      </tag>
+      <tag>
+        <name>reference</name>
+      </tag>
+      <tag>
+        <name>code</name>
+      </tag>
+    </tags>
+    <created-at>2011-04-25T14:26:13-07:00</created-at>
+    <action></action>
+    <editable type="boolean">false</editable>
+    <rating nil="true"></rating>
+    <subscribed type="boolean">false</subscribed>
+    <likable type="boolean">true</likable>
+    <player-url nil="true"></player-url>
+    <source>
+      <formal-name>Web App</formal-name>
+      <name>web</name>
+      <id>web</id>
+    </source>
+    <flag nil="true"></flag>
+    <deletable type="boolean">false</deletable>
+    <last-interacted-at type="integer">1303046126</last-interacted-at>
+    <attachments type="array">
+      <attachment>
+        <public-filename>https://socialcast-demo.s3.amazonaws.com/tenants/5/attachments/102/BD-software-design-ideas.pdf?AWSAccessKeyId=1WEP0BG96AHQFNB6AXG2&amp;Expires=1305596095&amp;Signature=5J7Dhn%2Fv3VOcYxoyb6l9ZWFucP8%3D</public-filename>
+        <content-type>application/pdf</content-type>
+        <file-extension>pdf</file-extension>
+        <filename>BD-software-design-ideas.pdf</filename>
+        <id type="integer">102</id>
+        <url>https://demo.socialcast.com/attachments/102</url>
+      </attachment>
+      <attachment>
+        <public-filename>https://socialcast-demo.s3.amazonaws.com/tenants/5/attachments/111/back_of_the_napkin.jpg?AWSAccessKeyId=1WEP0BG96AHQFNB6AXG2&amp;Expires=1305596095&amp;Signature=LhinZh4apDgNJI28W81mef3k0Wk%3D</public-filename>
+        <content-type>image/jpeg</content-type>
+        <file-extension>jpg</file-extension>
+        <filename>back_of_the_napkin.jpg</filename>
+        <id type="integer">111</id>
+        <url>https://demo.socialcast.com/attachments/111</url>
+      </attachment>
+    </attachments>
+    <comments-count type="integer">5</comments-count>
+    <user>
+      <type>User</type>
+      <username>BobDavis</username>
+      <terminated type="boolean">false</terminated>
+      <name>Bob Davis</name>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square140.jpg</square140>
+      </avatars>
+      <id type="integer">21</id>
+      <url>https://demo.socialcast.com/users/bobdavis</url>
+    </user>
+    <contains-url-only type="boolean">true</contains-url-only>
+    <icon>https://d1t8ns81mllsy2.cloudfront.net/images/icons/messages/status_message.png</icon>
+    <target-user nil="true"></target-user>
+    <likes type="array">
+      <like>
+        <created-at>2011-04-25T14:49:02-07:00</created-at>
+        <user>
+          <name>Paul Gandy</name>
+          <id type="integer">23</id>
+          <url>https://demo.socialcast.com/users/paulgandy</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">26</id>
+      </like>
+      <like>
+        <created-at>2011-04-25T14:19:34-07:00</created-at>
+        <user>
+          <name>Mike Whittington</name>
+          <id type="integer">27</id>
+          <url>https://demo.socialcast.com/users/mikewhittington</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">27</id>
+      </like>
+      <like>
+        <created-at>2011-04-25T14:05:37-07:00</created-at>
+        <user>
+          <name>Emily James</name>
+          <id type="integer">25</id>
+          <url>https://demo.socialcast.com/users/emilyjames</url>
+        </user>
+        <unlikable type="boolean">true</unlikable>
+        <id type="integer">48</id>
+      </like>
+      <like>
+        <created-at>2011-04-25T15:01:05-07:00</created-at>
+        <user>
+          <name>Jennifer Lawson</name>
+          <id type="integer">26</id>
+          <url>https://demo.socialcast.com/users/jenniferlawson</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">52</id>
+      </like>
+    </likes>
+    <permalink-url>https://demo.socialcast.com/messages/407</permalink-url>
+    <verb nil="true"></verb>
+    <in-reply-to nil="true"></in-reply-to>
+    <watchable type="boolean">false</watchable>
+    <ratable type="boolean">false</ratable>
+    <recipients type="array">
+      <recipient>
+        <type>User</type>
+        <username>PaulGandy</username>
+        <terminated type="boolean">false</terminated>
+        <name>Paul Gandy</name>
+        <avatars>
+          <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square16.jpg</square16>
+          <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square70.jpg</square70>
+          <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square30.jpg</square30>
+          <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square45.jpg</square45>
+          <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square140.jpg</square140>
+        </avatars>
+        <id type="integer">23</id>
+        <url>https://demo.socialcast.com/users/paulgandy</url>
+      </recipient>
+      <recipient>
+        <type>User</type>
+        <username>BobDavis</username>
+        <terminated type="boolean">false</terminated>
+        <name>Bob Davis</name>
+        <avatars>
+          <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square16.jpg</square16>
+          <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square70.jpg</square70>
+          <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square30.jpg</square30>
+          <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square45.jpg</square45>
+          <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square140.jpg</square140>
+        </avatars>
+        <id type="integer">21</id>
+        <url>https://demo.socialcast.com/users/bobdavis</url>
+      </recipient>
+      <recipient>
+        <type>User</type>
+        <username>MikeWhittington</username>
+        <terminated type="boolean">false</terminated>
+        <name>Mike Whittington</name>
+        <avatars>
+          <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square16.jpg</square16>
+          <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square70.jpg</square70>
+          <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square30.jpg</square30>
+          <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square45.jpg</square45>
+          <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square140.jpg</square140>
+        </avatars>
+        <id type="integer">27</id>
+        <url>https://demo.socialcast.com/users/mikewhittington</url>
+      </recipient>
+      <recipient>
+        <type>Group</type>
+        <username>Widget11ProductTeam</username>
+        <name>Widget 11 Product Team</name>
+        <id type="integer">8</id>
+        <avatars>
+          <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square16.jpg</square16>
+          <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square70.jpg</square70>
+          <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square30.jpg</square30>
+          <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square45.jpg</square45>
+          <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square140.jpg</square140>
+        </avatars>
+        <private type="boolean">false</private>
+        <url>https://demo.socialcast.com/groups/widget11productteam</url>
+      </recipient>
+    </recipients>
+    <group>
+      <type>Group</type>
+      <username>Widget11ProductTeam</username>
+      <groupname>Widget11ProductTeam</groupname>
+      <name>Widget 11 Product Team</name>
+      <private type="boolean">false</private>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square140.jpg</square140>
+      </avatars>
+      <id type="integer">8</id>
+      <url>https://demo.socialcast.com/groups/widget11productteam</url>
+    </group>
+    <external-resources type="array"/>
+    <updated-at>2011-04-25T15:01:21-07:00</updated-at>
+    <title></title>
+    <extensions type="array"/>
+    <groups type="array">
+      <group>
+        <type>Group</type>
+        <username>Widget11ProductTeam</username>
+        <groupname>Widget11ProductTeam</groupname>
+        <name>Widget 11 Product Team</name>
+        <private type="boolean">false</private>
+        <avatars>
+          <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square16.jpg</square16>
+          <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square70.jpg</square70>
+          <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square30.jpg</square30>
+          <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square45.jpg</square45>
+          <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square140.jpg</square140>
+        </avatars>
+        <id type="integer">8</id>
+        <url>https://demo.socialcast.com/groups/widget11productteam</url>
+      </group>
+    </groups>
+    <ratings-average nil="true"></ratings-average>
+    <category-id nil="true"></category-id>
+    <external-url></external-url>
+    <body>Had a great lunch with @PaulGandy about initial concepts for the widget 11 software design. See attached. Comments welcome.</body>
+    <hidden type="boolean">false</hidden>
+    <embed nil="true"></embed>
+    <watch nil="true"></watch>
+    <ratings-count nil="true"></ratings-count>
+    <comments type="array">
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:52:30-07:00</created-at>
+        <editable type="boolean">true</editable>
+        <likable type="boolean">false</likable>
+        <deletable type="boolean">true</deletable>
+        <attachments type="array"/>
+        <text>I like the idea. Have we thought about using the reverse pattern a algorithms that worked well in Widget 9?</text>
+        <user>
+          <type>User</type>
+          <username>EmilyJames</username>
+          <terminated type="boolean">false</terminated>
+          <name>Emily James</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">25</id>
+          <url>https://demo.socialcast.com/users/emilyjames</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/407#comment-64</permalink-url>
+        <id type="integer">64</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/407/comments/64</url>
+      </comment>
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:38:52-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array"/>
+        <text>Nice thinking Emily. Using that code base never entered my mind. That is going to save a lot of development time. Thanks for the help.</text>
+        <user>
+          <type>User</type>
+          <username>BobDavis</username>
+          <terminated type="boolean">false</terminated>
+          <name>Bob Davis</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">21</id>
+          <url>https://demo.socialcast.com/users/bobdavis</url>
+        </user>
+        <likes type="array">
+          <like>
+            <created-at>2011-04-25T14:53:32-07:00</created-at>
+            <user>
+              <name>Mike Whittington</name>
+              <id type="integer">27</id>
+              <url>https://demo.socialcast.com/users/mikewhittington</url>
+            </user>
+            <unlikable type="boolean">false</unlikable>
+            <id type="integer">28</id>
+          </like>
+        </likes>
+        <permalink-url>https://demo.socialcast.com/messages/407#comment-65</permalink-url>
+        <id type="integer">65</id>
+        <likes-count type="integer">1</likes-count>
+        <url>https://demo.socialcast.com/api/messages/407/comments/65</url>
+      </comment>
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:40:20-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array"/>
+        <text>Another good point to Emily's idea of using the reverse a algorithm is that it could help with the server resource issue that we were concerned about. One of the main objectives of that code base was reducing server load to free up resources for other processes. Great suggestion, Emily!</text>
+        <user>
+          <type>User</type>
+          <username>PaulGandy</username>
+          <terminated type="boolean">false</terminated>
+          <name>Paul Gandy</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">23</id>
+          <url>https://demo.socialcast.com/users/paulgandy</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/407#comment-66</permalink-url>
+        <id type="integer">66</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/407/comments/66</url>
+      </comment>
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:33:35-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array"/>
+        <text>Good point Paul. @MikeWhittington, could you send me the reference docs for the reverse a algorithm. I want to get started reviewing the code to see if it will work in this application.</text>
+        <user>
+          <type>User</type>
+          <username>BobDavis</username>
+          <terminated type="boolean">false</terminated>
+          <name>Bob Davis</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">21</id>
+          <url>https://demo.socialcast.com/users/bobdavis</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/407#comment-67</permalink-url>
+        <id type="integer">67</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/407/comments/67</url>
+      </comment>
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:52:42-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array">
+          <attachment>
+            <public-filename>https://socialcast-demo.s3.amazonaws.com/tenants/5/attachments/108/reverse-a-algorithm-refernece-V7.pdf?AWSAccessKeyId=1WEP0BG96AHQFNB6AXG2&amp;Expires=1305596095&amp;Signature=LwAhv6AGGGQjSBxWrY70i6Jdras%3D</public-filename>
+            <content-type>application/pdf</content-type>
+            <file-extension>pdf</file-extension>
+            <filename>reverse-a-algorithm-refernece-V7.pdf</filename>
+            <id type="integer">108</id>
+            <url>https://demo.socialcast.com/attachments/108</url>
+          </attachment>
+        </attachments>
+        <text>Here you go Bob. This is version 7. Version 8 never left beta. #FYI #reference #code</text>
+        <user>
+          <type>User</type>
+          <username>MikeWhittington</username>
+          <terminated type="boolean">false</terminated>
+          <name>Mike Whittington</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">27</id>
+          <url>https://demo.socialcast.com/users/mikewhittington</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/407#comment-68</permalink-url>
+        <id type="integer">68</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/407/comments/68</url>
+      </comment>
+    </comments>
+    <id type="integer">407</id>
+    <likes-count type="integer">4</likes-count>
+    <url>https://demo.socialcast.com/api/messages/407</url>
+  </message>
+  <message>
+    <player-params nil="true"></player-params>
+    <media-files type="array"/>
+    <message-type>question</message-type>
+    <thumbnail-url nil="true"></thumbnail-url>
+    <tags type="array">
+      <tag>
+        <name>alignment</name>
+      </tag>
+    </tags>
+    <created-at>2011-04-25T14:10:17-07:00</created-at>
+    <action>asked a question</action>
+    <editable type="boolean">true</editable>
+    <rating nil="true"></rating>
+    <subscribed type="boolean">false</subscribed>
+    <likable type="boolean">false</likable>
+    <player-url nil="true"></player-url>
+    <source>
+      <formal-name>Web App</formal-name>
+      <name>web</name>
+      <id>web</id>
+    </source>
+    <flag nil="true"></flag>
+    <deletable type="boolean">true</deletable>
+    <last-interacted-at type="integer">1303045576</last-interacted-at>
+    <attachments type="array"/>
+    <comments-count type="integer">2</comments-count>
+    <user>
+      <type>User</type>
+      <username>EmilyJames</username>
+      <terminated type="boolean">false</terminated>
+      <name>Emily James</name>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square140.jpg</square140>
+      </avatars>
+      <id type="integer">25</id>
+      <url>https://demo.socialcast.com/users/emilyjames</url>
+    </user>
+    <contains-url-only type="boolean">true</contains-url-only>
+    <icon>https://d1t8ns81mllsy2.cloudfront.net/images/icons/messages/question.png</icon>
+    <target-user nil="true"></target-user>
+    <likes type="array">
+      <like>
+        <created-at>2011-04-25T14:57:52-07:00</created-at>
+        <user>
+          <name>Bob Davis</name>
+          <id type="integer">21</id>
+          <url>https://demo.socialcast.com/users/bobdavis</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">50</id>
+      </like>
+      <like>
+        <created-at>2011-04-25T14:56:59-07:00</created-at>
+        <user>
+          <name>Lee Mosely</name>
+          <id type="integer">20</id>
+          <url>https://demo.socialcast.com/users/leemosely</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">56</id>
+      </like>
+    </likes>
+    <permalink-url>https://demo.socialcast.com/messages/424</permalink-url>
+    <verb nil="true"></verb>
+    <in-reply-to nil="true"></in-reply-to>
+    <watchable type="boolean">false</watchable>
+    <ratable type="boolean">false</ratable>
+    <recipients type="array">
+      <recipient>
+        <type>Group</type>
+        <username>Widget11ProductTeam</username>
+        <name>Widget 11 Product Team</name>
+        <id type="integer">8</id>
+        <avatars>
+          <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square16.jpg</square16>
+          <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square70.jpg</square70>
+          <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square30.jpg</square30>
+          <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square45.jpg</square45>
+          <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square140.jpg</square140>
+        </avatars>
+        <private type="boolean">false</private>
+        <url>https://demo.socialcast.com/groups/widget11productteam</url>
+      </recipient>
+    </recipients>
+    <group>
+      <type>Group</type>
+      <username>Widget11ProductTeam</username>
+      <groupname>Widget11ProductTeam</groupname>
+      <name>Widget 11 Product Team</name>
+      <private type="boolean">false</private>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square140.jpg</square140>
+      </avatars>
+      <id type="integer">8</id>
+      <url>https://demo.socialcast.com/groups/widget11productteam</url>
+    </group>
+    <external-resources type="array"/>
+    <updated-at>2011-04-25T15:01:21-07:00</updated-at>
+    <title></title>
+    <extensions type="array"/>
+    <groups type="array">
+      <group>
+        <type>Group</type>
+        <username>Widget11ProductTeam</username>
+        <groupname>Widget11ProductTeam</groupname>
+        <name>Widget 11 Product Team</name>
+        <private type="boolean">false</private>
+        <avatars>
+          <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square16.jpg</square16>
+          <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square70.jpg</square70>
+          <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square30.jpg</square30>
+          <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square45.jpg</square45>
+          <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/168/258822587_a80ec49477_square140_square140.jpg</square140>
+        </avatars>
+        <id type="integer">8</id>
+        <url>https://demo.socialcast.com/groups/widget11productteam</url>
+      </group>
+    </groups>
+    <ratings-average nil="true"></ratings-average>
+    <category-id nil="true"></category-id>
+    <external-url></external-url>
+    <body>How will administration work for Widget 11? Will a self-service tool or alert be used?</body>
+    <hidden type="boolean">false</hidden>
+    <embed nil="true"></embed>
+    <watch nil="true"></watch>
+    <ratings-count nil="true"></ratings-count>
+    <comments type="array">
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:39:21-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array">
+          <attachment>
+            <public-filename>https://socialcast-demo.s3.amazonaws.com/tenants/5/attachments/110/Widget_11_Administration_Panel.pdf?AWSAccessKeyId=1WEP0BG96AHQFNB6AXG2&amp;Expires=1305596095&amp;Signature=Uybva4VURYWvmu9Px%2BXsAOtqH10%3D</public-filename>
+            <content-type>application/pdf</content-type>
+            <file-extension>pdf</file-extension>
+            <filename>Widget_11_Administration_Panel.pdf</filename>
+            <id type="integer">110</id>
+            <url>https://demo.socialcast.com/attachments/110</url>
+          </attachment>
+        </attachments>
+        <text>Administration of Widget 11 will be very similar to Widget 10. It will include all the same features, so training will be minimal upon launch. We have incorporated a self-service module into the administrative panel, which will allow a customer to find the information they are looking for faster. This is an outstanding new feature of Widget 11 and something we are hoping will change the way our customers use the product. I have attached a small one-sheet on the new self-service panel, as well as a short description of any minor changes in the administration panel.</text>
+        <user>
+          <type>User</type>
+          <username>BobDavis</username>
+          <terminated type="boolean">false</terminated>
+          <name>Bob Davis</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">21</id>
+          <url>https://demo.socialcast.com/users/bobdavis</url>
+        </user>
+        <likes type="array">
+          <like>
+            <created-at>2011-04-25T14:34:18-07:00</created-at>
+            <user>
+              <name>Emily James</name>
+              <id type="integer">25</id>
+              <url>https://demo.socialcast.com/users/emilyjames</url>
+            </user>
+            <unlikable type="boolean">true</unlikable>
+            <id type="integer">51</id>
+          </like>
+        </likes>
+        <permalink-url>https://demo.socialcast.com/messages/424#comment-84</permalink-url>
+        <id type="integer">84</id>
+        <likes-count type="integer">1</likes-count>
+        <url>https://demo.socialcast.com/api/messages/424/comments/84</url>
+      </comment>
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:54:12-07:00</created-at>
+        <editable type="boolean">true</editable>
+        <likable type="boolean">false</likable>
+        <deletable type="boolean">true</deletable>
+        <attachments type="array"/>
+        <text>Great thanks for sending that document over, really clarified things for me. I am fully aligned now on the new admin panel. #alignment</text>
+        <user>
+          <type>User</type>
+          <username>EmilyJames</username>
+          <terminated type="boolean">false</terminated>
+          <name>Emily James</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">25</id>
+          <url>https://demo.socialcast.com/users/emilyjames</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/424#comment-85</permalink-url>
+        <id type="integer">85</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/424/comments/85</url>
+      </comment>
+    </comments>
+    <id type="integer">424</id>
+    <likes-count type="integer">2</likes-count>
+    <url>https://demo.socialcast.com/api/messages/424</url>
+  </message>
+  <message>
+    <player-params nil="true"></player-params>
+    <media-files type="array"/>
+    <message-type>question</message-type>
+    <thumbnail-url nil="true"></thumbnail-url>
+    <tags type="array">
+      <tag>
+        <name>help</name>
+      </tag>
+      <tag>
+        <name>sales</name>
+      </tag>
+      <tag>
+        <name>salesdeck</name>
+      </tag>
+      <tag>
+        <name>version4</name>
+      </tag>
+    </tags>
+    <created-at>2011-04-25T14:02:02-07:00</created-at>
+    <action>asked a question</action>
+    <editable type="boolean">true</editable>
+    <rating nil="true"></rating>
+    <subscribed type="boolean">false</subscribed>
+    <likable type="boolean">false</likable>
+    <player-url nil="true"></player-url>
+    <source>
+      <formal-name>Web App</formal-name>
+      <name>web</name>
+      <id>web</id>
+    </source>
+    <flag nil="true"></flag>
+    <deletable type="boolean">true</deletable>
+    <last-interacted-at type="integer">1302988005</last-interacted-at>
+    <attachments type="array"/>
+    <comments-count type="integer">2</comments-count>
+    <user>
+      <type>User</type>
+      <username>EmilyJames</username>
+      <terminated type="boolean">false</terminated>
+      <name>Emily James</name>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square140.jpg</square140>
+      </avatars>
+      <id type="integer">25</id>
+      <url>https://demo.socialcast.com/users/emilyjames</url>
+    </user>
+    <contains-url-only type="boolean">true</contains-url-only>
+    <icon>https://d1t8ns81mllsy2.cloudfront.net/images/icons/messages/question.png</icon>
+    <target-user nil="true"></target-user>
+    <likes type="array">
+      <like>
+        <created-at>2011-04-25T14:27:23-07:00</created-at>
+        <user>
+          <name>Mike Whittington</name>
+          <id type="integer">27</id>
+          <url>https://demo.socialcast.com/users/mikewhittington</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">30</id>
+      </like>
+      <like>
+        <created-at>2011-04-25T14:55:02-07:00</created-at>
+        <user>
+          <name>Linda Allen</name>
+          <id type="integer">24</id>
+          <url>https://demo.socialcast.com/users/lindaallen</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">45</id>
+      </like>
+      <like>
+        <created-at>2011-04-25T14:22:08-07:00</created-at>
+        <user>
+          <name>Jennifer Lawson</name>
+          <id type="integer">26</id>
+          <url>https://demo.socialcast.com/users/jenniferlawson</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">54</id>
+      </like>
+    </likes>
+    <permalink-url>https://demo.socialcast.com/messages/394</permalink-url>
+    <verb nil="true"></verb>
+    <in-reply-to nil="true"></in-reply-to>
+    <watchable type="boolean">false</watchable>
+    <ratable type="boolean">false</ratable>
+    <recipients type="array">
+      <recipient>
+        <type>User</type>
+        <username>LindaAllen</username>
+        <terminated type="boolean">false</terminated>
+        <name>Linda Allen</name>
+        <avatars>
+          <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square16.jpg</square16>
+          <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square70.jpg</square70>
+          <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square30.jpg</square30>
+          <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square45.jpg</square45>
+          <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square140.jpg</square140>
+        </avatars>
+        <id type="integer">24</id>
+        <url>https://demo.socialcast.com/users/lindaallen</url>
+      </recipient>
+      <recipient>
+        <type>User</type>
+        <username>EmilyJames</username>
+        <terminated type="boolean">false</terminated>
+        <name>Emily James</name>
+        <avatars>
+          <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square16.jpg</square16>
+          <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square70.jpg</square70>
+          <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square30.jpg</square30>
+          <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square45.jpg</square45>
+          <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square140.jpg</square140>
+        </avatars>
+        <id type="integer">25</id>
+        <url>https://demo.socialcast.com/users/emilyjames</url>
+      </recipient>
+    </recipients>
+    <group>
+    </group>
+    <external-resources type="array"/>
+    <updated-at>2011-04-25T15:01:20-07:00</updated-at>
+    <title></title>
+    <extensions type="array"/>
+    <groups type="array"/>
+    <ratings-average nil="true"></ratings-average>
+    <category-id nil="true"></category-id>
+    <external-url></external-url>
+    <body>Anyone have the latest sales deck? Meeting with a potential customer this afternoon. #help #sales</body>
+    <hidden type="boolean">false</hidden>
+    <embed nil="true"></embed>
+    <watch nil="true"></watch>
+    <ratings-count nil="true"></ratings-count>
+    <comments type="array">
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:13:59-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array"/>
+        <text>@LindaAllen can you send the latest sales deck to Emily when you get a chance. Thanks</text>
+        <user>
+          <type>User</type>
+          <username>JenniferLawson</username>
+          <terminated type="boolean">false</terminated>
+          <name>Jennifer Lawson</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">26</id>
+          <url>https://demo.socialcast.com/users/jenniferlawson</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/394#comment-44</permalink-url>
+        <id type="integer">44</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/394/comments/44</url>
+      </comment>
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:04:57-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array">
+          <attachment>
+            <public-filename>https://socialcast-demo.s3.amazonaws.com/tenants/5/attachments/100/acme_corp_sales_deck_v4_LA.pdf?AWSAccessKeyId=1WEP0BG96AHQFNB6AXG2&amp;Expires=1305596095&amp;Signature=gFvsExLckHhwgXIna9QO59hoxwc%3D</public-filename>
+            <content-type>application/pdf</content-type>
+            <file-extension>pdf</file-extension>
+            <filename>acme_corp_sales_deck_v4_LA.pdf</filename>
+            <id type="integer">100</id>
+            <url>https://demo.socialcast.com/attachments/100</url>
+          </attachment>
+        </attachments>
+        <text>@EmilyJames see attached. This is revision 4. Please be sure to discard previous version. #salesdeck #sales #version4</text>
+        <user>
+          <type>User</type>
+          <username>LindaAllen</username>
+          <terminated type="boolean">false</terminated>
+          <name>Linda Allen</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">24</id>
+          <url>https://demo.socialcast.com/users/lindaallen</url>
+        </user>
+        <likes type="array">
+          <like>
+            <created-at>2011-04-25T14:45:50-07:00</created-at>
+            <user>
+              <name>Jennifer Lawson</name>
+              <id type="integer">26</id>
+              <url>https://demo.socialcast.com/users/jenniferlawson</url>
+            </user>
+            <unlikable type="boolean">false</unlikable>
+            <id type="integer">55</id>
+          </like>
+        </likes>
+        <permalink-url>https://demo.socialcast.com/messages/394#comment-47</permalink-url>
+        <id type="integer">47</id>
+        <likes-count type="integer">1</likes-count>
+        <url>https://demo.socialcast.com/api/messages/394/comments/47</url>
+      </comment>
+    </comments>
+    <id type="integer">394</id>
+    <likes-count type="integer">3</likes-count>
+    <url>https://demo.socialcast.com/api/messages/394</url>
+  </message>
+  <message>
+    <player-params nil="true"></player-params>
+    <media-files type="array"/>
+    <message-type>status_message</message-type>
+    <thumbnail-url nil="true"></thumbnail-url>
+    <tags type="array"/>
+    <created-at>2011-04-25T14:51:55-07:00</created-at>
+    <action></action>
+    <editable type="boolean">false</editable>
+    <rating nil="true"></rating>
+    <subscribed type="boolean">false</subscribed>
+    <likable type="boolean">true</likable>
+    <player-url nil="true"></player-url>
+    <source>
+      <formal-name>Web App</formal-name>
+      <name>web</name>
+      <id>web</id>
+    </source>
+    <flag nil="true"></flag>
+    <deletable type="boolean">false</deletable>
+    <last-interacted-at type="integer">1302987998</last-interacted-at>
+    <attachments type="array"/>
+    <comments-count type="integer">2</comments-count>
+    <user>
+      <type>User</type>
+      <username>BrianBurke</username>
+      <terminated type="boolean">false</terminated>
+      <name>Brian Burke</name>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/99/iStock_000002100805XSmall_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/99/iStock_000002100805XSmall_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/99/iStock_000002100805XSmall_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/99/iStock_000002100805XSmall_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/99/iStock_000002100805XSmall_square140.jpg</square140>
+      </avatars>
+      <id type="integer">33</id>
+      <url>https://demo.socialcast.com/users/brianburke</url>
+    </user>
+    <contains-url-only type="boolean">true</contains-url-only>
+    <icon>https://d1t8ns81mllsy2.cloudfront.net/images/icons/messages/status_message.png</icon>
+    <target-user nil="true"></target-user>
+    <likes type="array">
+      <like>
+        <created-at>2011-04-25T14:49:56-07:00</created-at>
+        <user>
+          <name>Bob Davis</name>
+          <id type="integer">21</id>
+          <url>https://demo.socialcast.com/users/bobdavis</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">22</id>
+      </like>
+      <like>
+        <created-at>2011-04-25T14:22:37-07:00</created-at>
+        <user>
+          <name>Stacey Lynch</name>
+          <id type="integer">30</id>
+          <url>https://demo.socialcast.com/users/staceylynch</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">23</id>
+      </like>
+      <like>
+        <created-at>2011-04-25T14:10:17-07:00</created-at>
+        <user>
+          <name>Lee Mosely</name>
+          <id type="integer">20</id>
+          <url>https://demo.socialcast.com/users/leemosely</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">24</id>
+      </like>
+      <like>
+        <created-at>2011-04-25T14:55:19-07:00</created-at>
+        <user>
+          <name>Paul Gandy</name>
+          <id type="integer">23</id>
+          <url>https://demo.socialcast.com/users/paulgandy</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">25</id>
+      </like>
+      <like>
+        <created-at>2011-04-25T14:41:25-07:00</created-at>
+        <user>
+          <name>Mike Whittington</name>
+          <id type="integer">27</id>
+          <url>https://demo.socialcast.com/users/mikewhittington</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">29</id>
+      </like>
+      <like>
+        <created-at>2011-04-25T14:56:36-07:00</created-at>
+        <user>
+          <name>Linda Allen</name>
+          <id type="integer">24</id>
+          <url>https://demo.socialcast.com/users/lindaallen</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">46</id>
+      </like>
+      <like>
+        <created-at>2011-04-25T14:45:21-07:00</created-at>
+        <user>
+          <name>Jennifer Lawson</name>
+          <id type="integer">26</id>
+          <url>https://demo.socialcast.com/users/jenniferlawson</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">53</id>
+      </like>
+    </likes>
+    <permalink-url>https://demo.socialcast.com/messages/404</permalink-url>
+    <verb nil="true"></verb>
+    <in-reply-to nil="true"></in-reply-to>
+    <watchable type="boolean">false</watchable>
+    <ratable type="boolean">false</ratable>
+    <recipients type="array">
+      <recipient>
+        <type>User</type>
+        <username>BobDavis</username>
+        <terminated type="boolean">false</terminated>
+        <name>Bob Davis</name>
+        <avatars>
+          <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square16.jpg</square16>
+          <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square70.jpg</square70>
+          <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square30.jpg</square30>
+          <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square45.jpg</square45>
+          <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square140.jpg</square140>
+        </avatars>
+        <id type="integer">21</id>
+        <url>https://demo.socialcast.com/users/bobdavis</url>
+      </recipient>
+    </recipients>
+    <group>
+    </group>
+    <external-resources type="array"/>
+    <updated-at>2011-04-25T15:01:20-07:00</updated-at>
+    <title></title>
+    <extensions type="array"/>
+    <groups type="array"/>
+    <ratings-average nil="true"></ratings-average>
+    <category-id nil="true"></category-id>
+    <external-url></external-url>
+    <body>I just had a great meeting with a client regarding our new Acme Widget 11. They said they loved the new design and really like the improvements in the software interface. It cut the configuration time in half, saving them time and money. @BobDavis great job revising the software. Our customers and the market are really validating the hard work you and your team put into this product.</body>
+    <hidden type="boolean">false</hidden>
+    <embed nil="true"></embed>
+    <watch nil="true"></watch>
+    <ratings-count nil="true"></ratings-count>
+    <comments type="array">
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:27:39-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array"/>
+        <text>Thanks Brian. The team did a great job. Glad to hear that all the hard work and late hours paid off.</text>
+        <user>
+          <type>User</type>
+          <username>BobDavis</username>
+          <terminated type="boolean">false</terminated>
+          <name>Bob Davis</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">21</id>
+          <url>https://demo.socialcast.com/users/bobdavis</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/404#comment-60</permalink-url>
+        <id type="integer">60</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/404/comments/60</url>
+      </comment>
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:44:26-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array"/>
+        <text>Did they mention anything about the new case design? We were interested in hearing feedback from customers on it.</text>
+        <user>
+          <type>User</type>
+          <username>PaulGandy</username>
+          <terminated type="boolean">false</terminated>
+          <name>Paul Gandy</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">23</id>
+          <url>https://demo.socialcast.com/users/paulgandy</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/404#comment-62</permalink-url>
+        <id type="integer">62</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/404/comments/62</url>
+      </comment>
+    </comments>
+    <id type="integer">404</id>
+    <likes-count type="integer">7</likes-count>
+    <url>https://demo.socialcast.com/api/messages/404</url>
+  </message>
+  <message>
+    <player-params nil="true"></player-params>
+    <media-files type="array"/>
+    <message-type>question</message-type>
+    <thumbnail-url nil="true"></thumbnail-url>
+    <tags type="array"/>
+    <created-at>2011-04-25T14:57:46-07:00</created-at>
+    <action>asked a question</action>
+    <editable type="boolean">true</editable>
+    <rating nil="true"></rating>
+    <subscribed type="boolean">false</subscribed>
+    <likable type="boolean">false</likable>
+    <player-url nil="true"></player-url>
+    <source>
+      <formal-name>Web App</formal-name>
+      <name>web</name>
+      <id>web</id>
+    </source>
+    <flag nil="true"></flag>
+    <deletable type="boolean">true</deletable>
+    <last-interacted-at type="integer">1302969076</last-interacted-at>
+    <attachments type="array"/>
+    <comments-count type="integer">1</comments-count>
+    <user>
+      <type>User</type>
+      <username>EmilyJames</username>
+      <terminated type="boolean">false</terminated>
+      <name>Emily James</name>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square140.jpg</square140>
+      </avatars>
+      <id type="integer">25</id>
+      <url>https://demo.socialcast.com/users/emilyjames</url>
+    </user>
+    <contains-url-only type="boolean">true</contains-url-only>
+    <icon>https://d1t8ns81mllsy2.cloudfront.net/images/icons/messages/question.png</icon>
+    <target-user nil="true"></target-user>
+    <likes type="array">
+      <like>
+        <created-at>2011-04-25T14:38:38-07:00</created-at>
+        <user>
+          <name>Paul Gandy</name>
+          <id type="integer">23</id>
+          <url>https://demo.socialcast.com/users/paulgandy</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">34</id>
+      </like>
+      <like>
+        <created-at>2011-04-25T14:59:21-07:00</created-at>
+        <user>
+          <name>Linda Allen</name>
+          <id type="integer">24</id>
+          <url>https://demo.socialcast.com/users/lindaallen</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">44</id>
+      </like>
+    </likes>
+    <permalink-url>https://demo.socialcast.com/messages/401</permalink-url>
+    <verb nil="true"></verb>
+    <in-reply-to nil="true"></in-reply-to>
+    <watchable type="boolean">false</watchable>
+    <ratable type="boolean">false</ratable>
+    <recipients type="array">
+      <recipient>
+        <type>User</type>
+        <username>LindaAllen</username>
+        <terminated type="boolean">false</terminated>
+        <name>Linda Allen</name>
+        <avatars>
+          <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square16.jpg</square16>
+          <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square70.jpg</square70>
+          <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square30.jpg</square30>
+          <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square45.jpg</square45>
+          <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square140.jpg</square140>
+        </avatars>
+        <id type="integer">24</id>
+        <url>https://demo.socialcast.com/users/lindaallen</url>
+      </recipient>
+    </recipients>
+    <group>
+    </group>
+    <external-resources type="array"/>
+    <updated-at>2011-04-25T15:01:20-07:00</updated-at>
+    <title></title>
+    <extensions type="array"/>
+    <groups type="array"/>
+    <ratings-average nil="true"></ratings-average>
+    <category-id nil="true"></category-id>
+    <external-url></external-url>
+    <body>@LindaAllen do you have the minutes from this weeks marketing meeting?</body>
+    <hidden type="boolean">false</hidden>
+    <embed nil="true"></embed>
+    <watch nil="true"></watch>
+    <ratings-count nil="true"></ratings-count>
+    <comments type="array">
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:24:56-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array">
+          <attachment>
+            <public-filename>https://socialcast-demo.s3.amazonaws.com/tenants/5/attachments/101/Marketing_Minutes.pdf?AWSAccessKeyId=1WEP0BG96AHQFNB6AXG2&amp;Expires=1305596095&amp;Signature=57XQNdtVsz2C9kyP3X1P55msaZg%3D</public-filename>
+            <content-type>application/pdf</content-type>
+            <file-extension>pdf</file-extension>
+            <filename>Marketing_Minutes.pdf</filename>
+            <id type="integer">101</id>
+            <url>https://demo.socialcast.com/attachments/101</url>
+          </attachment>
+        </attachments>
+        <text>See attached minutes.</text>
+        <user>
+          <type>User</type>
+          <username>LindaAllen</username>
+          <terminated type="boolean">false</terminated>
+          <name>Linda Allen</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">24</id>
+          <url>https://demo.socialcast.com/users/lindaallen</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/401#comment-54</permalink-url>
+        <id type="integer">54</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/401/comments/54</url>
+      </comment>
+    </comments>
+    <id type="integer">401</id>
+    <likes-count type="integer">2</likes-count>
+    <url>https://demo.socialcast.com/api/messages/401</url>
+  </message>
+  <message>
+    <player-params nil="true"></player-params>
+    <media-files type="array"/>
+    <message-type>question</message-type>
+    <thumbnail-url nil="true"></thumbnail-url>
+    <tags type="array">
+      <tag>
+        <name>internet</name>
+      </tag>
+    </tags>
+    <created-at>2011-04-25T14:35:22-07:00</created-at>
+    <action>asked a question</action>
+    <editable type="boolean">false</editable>
+    <rating nil="true"></rating>
+    <subscribed type="boolean">false</subscribed>
+    <likable type="boolean">true</likable>
+    <player-url nil="true"></player-url>
+    <source>
+      <formal-name>Web App</formal-name>
+      <name>web</name>
+      <id>web</id>
+    </source>
+    <flag nil="true"></flag>
+    <deletable type="boolean">false</deletable>
+    <last-interacted-at type="integer">1302969069</last-interacted-at>
+    <attachments type="array"/>
+    <comments-count type="integer">5</comments-count>
+    <user>
+      <type>User</type>
+      <username>StaceyLynch</username>
+      <terminated type="boolean">false</terminated>
+      <name>Stacey Lynch</name>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/78/iStock_000005807416XSmall_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/78/iStock_000005807416XSmall_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/78/iStock_000005807416XSmall_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/78/iStock_000005807416XSmall_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/78/iStock_000005807416XSmall_square140.jpg</square140>
+      </avatars>
+      <id type="integer">30</id>
+      <url>https://demo.socialcast.com/users/staceylynch</url>
+    </user>
+    <contains-url-only type="boolean">true</contains-url-only>
+    <icon>https://d1t8ns81mllsy2.cloudfront.net/images/icons/messages/question.png</icon>
+    <target-user nil="true"></target-user>
+    <likes type="array">
+      <like>
+        <created-at>2011-04-25T14:37:19-07:00</created-at>
+        <user>
+          <name>Mike Whittington</name>
+          <id type="integer">27</id>
+          <url>https://demo.socialcast.com/users/mikewhittington</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">37</id>
+      </like>
+      <like>
+        <created-at>2011-04-25T14:11:57-07:00</created-at>
+        <user>
+          <name>Linda Allen</name>
+          <id type="integer">24</id>
+          <url>https://demo.socialcast.com/users/lindaallen</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">42</id>
+      </like>
+    </likes>
+    <permalink-url>https://demo.socialcast.com/messages/399</permalink-url>
+    <verb nil="true"></verb>
+    <in-reply-to nil="true"></in-reply-to>
+    <watchable type="boolean">false</watchable>
+    <ratable type="boolean">false</ratable>
+    <recipients type="array">
+      <recipient>
+        <type>User</type>
+        <username>MikeWhittington</username>
+        <terminated type="boolean">false</terminated>
+        <name>Mike Whittington</name>
+        <avatars>
+          <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square16.jpg</square16>
+          <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square70.jpg</square70>
+          <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square30.jpg</square30>
+          <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square45.jpg</square45>
+          <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square140.jpg</square140>
+        </avatars>
+        <id type="integer">27</id>
+        <url>https://demo.socialcast.com/users/mikewhittington</url>
+      </recipient>
+    </recipients>
+    <group>
+    </group>
+    <external-resources type="array"/>
+    <updated-at>2011-04-25T15:01:20-07:00</updated-at>
+    <title></title>
+    <extensions type="array"/>
+    <groups type="array"/>
+    <ratings-average nil="true"></ratings-average>
+    <category-id nil="true"></category-id>
+    <external-url></external-url>
+    <body>@MikeWhittington The back office internet is still not working correctly. When doing product demos with customers, the pages lag and often freeze. Are we still waiting on a fix or did it go in? If it did, I don't think it is working. #internet</body>
+    <hidden type="boolean">false</hidden>
+    <embed nil="true"></embed>
+    <watch nil="true"></watch>
+    <ratings-count nil="true"></ratings-count>
+    <comments type="array">
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:04:21-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array"/>
+        <text>I was using this back office earlier today and experienced similar results.</text>
+        <user>
+          <type>User</type>
+          <username>BobDavis</username>
+          <terminated type="boolean">false</terminated>
+          <name>Bob Davis</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">21</id>
+          <url>https://demo.socialcast.com/users/bobdavis</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/399#comment-50</permalink-url>
+        <id type="integer">50</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/399/comments/50</url>
+      </comment>
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:21:11-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array"/>
+        <text>A fix was implemented this afternoon. Shouldn't have any issues moving forward.</text>
+        <user>
+          <type>User</type>
+          <username>MikeWhittington</username>
+          <terminated type="boolean">false</terminated>
+          <name>Mike Whittington</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">27</id>
+          <url>https://demo.socialcast.com/users/mikewhittington</url>
+        </user>
+        <likes type="array">
+          <like>
+            <created-at>2011-04-25T14:08:36-07:00</created-at>
+            <user>
+              <name>Emily James</name>
+              <id type="integer">25</id>
+              <url>https://demo.socialcast.com/users/emilyjames</url>
+            </user>
+            <unlikable type="boolean">true</unlikable>
+            <id type="integer">21</id>
+          </like>
+        </likes>
+        <permalink-url>https://demo.socialcast.com/messages/399#comment-51</permalink-url>
+        <id type="integer">51</id>
+        <likes-count type="integer">1</likes-count>
+        <url>https://demo.socialcast.com/api/messages/399/comments/51</url>
+      </comment>
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:17:11-07:00</created-at>
+        <editable type="boolean">true</editable>
+        <likable type="boolean">false</likable>
+        <deletable type="boolean">true</deletable>
+        <attachments type="array"/>
+        <text>Hooray for @MikeWhittington</text>
+        <user>
+          <type>User</type>
+          <username>EmilyJames</username>
+          <terminated type="boolean">false</terminated>
+          <name>Emily James</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">25</id>
+          <url>https://demo.socialcast.com/users/emilyjames</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/399#comment-52</permalink-url>
+        <id type="integer">52</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/399/comments/52</url>
+      </comment>
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:18:39-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array"/>
+        <text>Thanks Mike!!</text>
+        <user>
+          <type>User</type>
+          <username>StaceyLynch</username>
+          <terminated type="boolean">false</terminated>
+          <name>Stacey Lynch</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/78/iStock_000005807416XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/78/iStock_000005807416XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/78/iStock_000005807416XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/78/iStock_000005807416XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/78/iStock_000005807416XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">30</id>
+          <url>https://demo.socialcast.com/users/staceylynch</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/399#comment-53</permalink-url>
+        <id type="integer">53</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/399/comments/53</url>
+      </comment>
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:10:41-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array"/>
+        <text>Mike you made my week. The internet issue has been driving me nuts.</text>
+        <user>
+          <username>LeeMosely</username>
+          <terminated type="boolean">false</terminated>
+          <name>Lee Mosely</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/15/iStock_000003831616XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/15/iStock_000003831616XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/15/iStock_000003831616XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/15/iStock_000003831616XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/15/iStock_000003831616XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">20</id>
+          <url>https://demo.socialcast.com/users/leemosely</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/399#comment-61</permalink-url>
+        <id type="integer">61</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/399/comments/61</url>
+      </comment>
+    </comments>
+    <id type="integer">399</id>
+    <likes-count type="integer">2</likes-count>
+    <url>https://demo.socialcast.com/api/messages/399</url>
+  </message>
+  <message>
+    <player-params nil="true"></player-params>
+    <media-files type="array"/>
+    <message-type>poll</message-type>
+    <thumbnail-url nil="true"></thumbnail-url>
+    <tags type="array"/>
+    <created-at>2011-04-25T14:37:36-07:00</created-at>
+    <action>created a poll</action>
+    <editable type="boolean">false</editable>
+    <rating nil="true"></rating>
+    <subscribed type="boolean">false</subscribed>
+    <likable type="boolean">true</likable>
+    <player-url nil="true"></player-url>
+    <source>
+      <formal-name>Web App</formal-name>
+      <name>web</name>
+      <id>web</id>
+    </source>
+    <flag nil="true"></flag>
+    <deletable type="boolean">false</deletable>
+    <last-interacted-at type="integer">1302736004</last-interacted-at>
+    <attachments type="array"/>
+    <comments-count type="integer">0</comments-count>
+    <user>
+      <type>User</type>
+      <username>LindaAllen</username>
+      <terminated type="boolean">false</terminated>
+      <name>Linda Allen</name>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square140.jpg</square140>
+      </avatars>
+      <id type="integer">24</id>
+      <url>https://demo.socialcast.com/users/lindaallen</url>
+    </user>
+    <contains-url-only type="boolean">true</contains-url-only>
+    <icon>https://d1t8ns81mllsy2.cloudfront.net/images/icons/messages/poll.png</icon>
+    <target-user nil="true"></target-user>
+    <likes type="array">
+      <like>
+        <created-at>2011-04-25T14:05:42-07:00</created-at>
+        <user>
+          <name>Emily James</name>
+          <id type="integer">25</id>
+          <url>https://demo.socialcast.com/users/emilyjames</url>
+        </user>
+        <unlikable type="boolean">true</unlikable>
+        <id type="integer">41</id>
+      </like>
+    </likes>
+    <permalink-url>https://demo.socialcast.com/messages/403</permalink-url>
+    <verb nil="true"></verb>
+    <in-reply-to nil="true"></in-reply-to>
+    <watchable type="boolean">false</watchable>
+    <ratable type="boolean">false</ratable>
+    <recipients type="array"/>
+    <group>
+    </group>
+    <external-resources type="array"/>
+    <updated-at>2011-04-25T15:01:20-07:00</updated-at>
+    <title></title>
+    <extensions type="array"/>
+    <groups type="array"/>
+    <ratings-average nil="true"></ratings-average>
+    <category-id nil="true"></category-id>
+    <external-url></external-url>
+    <body>We are finalizing the new Widget 10 product page on the website. Wanted to get some help on the tweet button.</body>
+    <hidden type="boolean">false</hidden>
+    <embed>/polls/1</embed>
+    <watch nil="true"></watch>
+    <ratings-count nil="true"></ratings-count>
+    <comments type="array"/>
+    <id type="integer">403</id>
+    <likes-count type="integer">1</likes-count>
+    <url>https://demo.socialcast.com/api/messages/403</url>
+  </message>
+  <message>
+    <player-params nil="true"></player-params>
+    <media-files type="array"/>
+    <message-type>question</message-type>
+    <thumbnail-url nil="true"></thumbnail-url>
+    <tags type="array">
+      <tag>
+        <name>teambuilding</name>
+      </tag>
+    </tags>
+    <created-at>2011-04-25T14:41:32-07:00</created-at>
+    <action>asked a question</action>
+    <editable type="boolean">false</editable>
+    <rating nil="true"></rating>
+    <subscribed type="boolean">false</subscribed>
+    <likable type="boolean">true</likable>
+    <player-url nil="true"></player-url>
+    <source>
+      <formal-name>Web App</formal-name>
+      <name>web</name>
+      <id>web</id>
+    </source>
+    <flag nil="true"></flag>
+    <deletable type="boolean">false</deletable>
+    <last-interacted-at type="integer">1302734151</last-interacted-at>
+    <attachments type="array"/>
+    <comments-count type="integer">2</comments-count>
+    <user>
+      <type>User</type>
+      <username>PaulGandy</username>
+      <terminated type="boolean">false</terminated>
+      <name>Paul Gandy</name>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square140.jpg</square140>
+      </avatars>
+      <id type="integer">23</id>
+      <url>https://demo.socialcast.com/users/paulgandy</url>
+    </user>
+    <contains-url-only nil="true"></contains-url-only>
+    <icon>https://d1t8ns81mllsy2.cloudfront.net/images/icons/messages/question.png</icon>
+    <target-user nil="true"></target-user>
+    <likes type="array">
+      <like>
+        <created-at>2011-04-25T14:54:13-07:00</created-at>
+        <user>
+          <name>Emily James</name>
+          <id type="integer">25</id>
+          <url>https://demo.socialcast.com/users/emilyjames</url>
+        </user>
+        <unlikable type="boolean">true</unlikable>
+        <id type="integer">18</id>
+      </like>
+      <like>
+        <created-at>2011-04-25T14:06:00-07:00</created-at>
+        <user>
+          <name>Mike Whittington</name>
+          <id type="integer">27</id>
+          <url>https://demo.socialcast.com/users/mikewhittington</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">40</id>
+      </like>
+    </likes>
+    <permalink-url>https://demo.socialcast.com/messages/384-does-saturday-practice-work-for-everyone-be-at-the</permalink-url>
+    <verb nil="true"></verb>
+    <in-reply-to nil="true"></in-reply-to>
+    <watchable type="boolean">false</watchable>
+    <ratable type="boolean">false</ratable>
+    <recipients type="array">
+      <recipient>
+        <type>User</type>
+        <username>PaulGandy</username>
+        <terminated type="boolean">false</terminated>
+        <name>Paul Gandy</name>
+        <avatars>
+          <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square16.jpg</square16>
+          <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square70.jpg</square70>
+          <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square30.jpg</square30>
+          <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square45.jpg</square45>
+          <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square140.jpg</square140>
+        </avatars>
+        <id type="integer">23</id>
+        <url>https://demo.socialcast.com/users/paulgandy</url>
+      </recipient>
+      <recipient>
+        <type>Group</type>
+        <username>AcmeCorpSoftballTeam</username>
+        <name>Acme Corp Softball Team</name>
+        <id type="integer">2</id>
+        <avatars>
+          <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/118/softball_image_square16.jpg</square16>
+          <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/118/softball_image_square70.jpg</square70>
+          <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/118/softball_image_square30.jpg</square30>
+          <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/118/softball_image_square45.jpg</square45>
+          <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/118/softball_image_square140.jpg</square140>
+        </avatars>
+        <private type="boolean">false</private>
+        <url>https://demo.socialcast.com/groups/acmecorpsoftballteam</url>
+      </recipient>
+    </recipients>
+    <group>
+      <type>Group</type>
+      <username>AcmeCorpSoftballTeam</username>
+      <groupname>AcmeCorpSoftballTeam</groupname>
+      <name>Acme Corp Softball Team</name>
+      <private type="boolean">false</private>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/118/softball_image_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/118/softball_image_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/118/softball_image_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/118/softball_image_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/118/softball_image_square140.jpg</square140>
+      </avatars>
+      <id type="integer">2</id>
+      <url>https://demo.socialcast.com/groups/acmecorpsoftballteam</url>
+    </group>
+    <external-resources type="array"/>
+    <updated-at>2011-04-25T15:01:20-07:00</updated-at>
+    <title>Does Saturday practice work for everyone?  Be at the field at 9am!</title>
+    <extensions type="array"/>
+    <groups type="array">
+      <group>
+        <type>Group</type>
+        <username>AcmeCorpSoftballTeam</username>
+        <groupname>AcmeCorpSoftballTeam</groupname>
+        <name>Acme Corp Softball Team</name>
+        <private type="boolean">false</private>
+        <avatars>
+          <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/118/softball_image_square16.jpg</square16>
+          <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/118/softball_image_square70.jpg</square70>
+          <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/118/softball_image_square30.jpg</square30>
+          <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/118/softball_image_square45.jpg</square45>
+          <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/118/softball_image_square140.jpg</square140>
+        </avatars>
+        <id type="integer">2</id>
+        <url>https://demo.socialcast.com/groups/acmecorpsoftballteam</url>
+      </group>
+    </groups>
+    <ratings-average nil="true"></ratings-average>
+    <category-id nil="true"></category-id>
+    <external-url nil="true"></external-url>
+    <body></body>
+    <hidden type="boolean">false</hidden>
+    <embed nil="true"></embed>
+    <watch nil="true"></watch>
+    <ratings-count nil="true"></ratings-count>
+    <comments type="array">
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:11:49-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array"/>
+        <text>Works for me.  See everyone there.</text>
+        <user>
+          <type>User</type>
+          <username>BobDavis</username>
+          <terminated type="boolean">false</terminated>
+          <name>Bob Davis</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">21</id>
+          <url>https://demo.socialcast.com/users/bobdavis</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/384-does-saturday-practice-work-for-everyone-be-at-the#comment-41</permalink-url>
+        <id type="integer">41</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/384/comments/41</url>
+      </comment>
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:08:08-07:00</created-at>
+        <editable type="boolean">true</editable>
+        <likable type="boolean">false</likable>
+        <deletable type="boolean">true</deletable>
+        <attachments type="array"/>
+        <text>@PaulGandy Thanks for coordinating this team building event!</text>
+        <user>
+          <type>User</type>
+          <username>EmilyJames</username>
+          <terminated type="boolean">false</terminated>
+          <name>Emily James</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">25</id>
+          <url>https://demo.socialcast.com/users/emilyjames</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/384-does-saturday-practice-work-for-everyone-be-at-the#comment-42</permalink-url>
+        <id type="integer">42</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/384/comments/42</url>
+      </comment>
+    </comments>
+    <id type="integer">384</id>
+    <likes-count type="integer">2</likes-count>
+    <url>https://demo.socialcast.com/api/messages/384-does-saturday-practice-work-for-everyone-be-at-the</url>
+  </message>
+  <message>
+    <player-params nil="true"></player-params>
+    <media-files type="array"/>
+    <message-type>question</message-type>
+    <thumbnail-url nil="true"></thumbnail-url>
+    <tags type="array">
+      <tag>
+        <name>marketing</name>
+      </tag>
+      <tag>
+        <name>promotion</name>
+      </tag>
+    </tags>
+    <created-at>2011-04-25T14:21:13-07:00</created-at>
+    <action>asked a question</action>
+    <editable type="boolean">false</editable>
+    <rating nil="true"></rating>
+    <subscribed type="boolean">false</subscribed>
+    <likable type="boolean">true</likable>
+    <player-url nil="true"></player-url>
+    <source>
+      <formal-name>Web App</formal-name>
+      <name>web</name>
+      <id>web</id>
+    </source>
+    <flag nil="true"></flag>
+    <deletable type="boolean">false</deletable>
+    <last-interacted-at type="integer">1302734142</last-interacted-at>
+    <attachments type="array"/>
+    <comments-count type="integer">2</comments-count>
+    <user>
+      <type>User</type>
+      <username>LindaAllen</username>
+      <terminated type="boolean">false</terminated>
+      <name>Linda Allen</name>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square140.jpg</square140>
+      </avatars>
+      <id type="integer">24</id>
+      <url>https://demo.socialcast.com/users/lindaallen</url>
+    </user>
+    <contains-url-only type="boolean">true</contains-url-only>
+    <icon>https://d1t8ns81mllsy2.cloudfront.net/images/icons/messages/question.png</icon>
+    <target-user nil="true"></target-user>
+    <likes type="array">
+      <like>
+        <created-at>2011-04-25T14:08:42-07:00</created-at>
+        <user>
+          <name>Mike Whittington</name>
+          <id type="integer">27</id>
+          <url>https://demo.socialcast.com/users/mikewhittington</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">39</id>
+      </like>
+    </likes>
+    <permalink-url>https://demo.socialcast.com/messages/400</permalink-url>
+    <verb nil="true"></verb>
+    <in-reply-to nil="true"></in-reply-to>
+    <watchable type="boolean">false</watchable>
+    <ratable type="boolean">false</ratable>
+    <recipients type="array">
+      <recipient>
+        <type>User</type>
+        <username>StaceyLynch</username>
+        <terminated type="boolean">false</terminated>
+        <name>Stacey Lynch</name>
+        <avatars>
+          <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/78/iStock_000005807416XSmall_square16.jpg</square16>
+          <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/78/iStock_000005807416XSmall_square70.jpg</square70>
+          <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/78/iStock_000005807416XSmall_square30.jpg</square30>
+          <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/78/iStock_000005807416XSmall_square45.jpg</square45>
+          <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/78/iStock_000005807416XSmall_square140.jpg</square140>
+        </avatars>
+        <id type="integer">30</id>
+        <url>https://demo.socialcast.com/users/staceylynch</url>
+      </recipient>
+      <recipient>
+        <type>User</type>
+        <username>PaulGandy</username>
+        <terminated type="boolean">false</terminated>
+        <name>Paul Gandy</name>
+        <avatars>
+          <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square16.jpg</square16>
+          <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square70.jpg</square70>
+          <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square30.jpg</square30>
+          <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square45.jpg</square45>
+          <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/36/iStock_000003905548XSmall_square140.jpg</square140>
+        </avatars>
+        <id type="integer">23</id>
+        <url>https://demo.socialcast.com/users/paulgandy</url>
+      </recipient>
+    </recipients>
+    <group>
+    </group>
+    <external-resources type="array"/>
+    <updated-at>2011-04-25T15:01:20-07:00</updated-at>
+    <title></title>
+    <extensions type="array"/>
+    <groups type="array"/>
+    <ratings-average nil="true"></ratings-average>
+    <category-id nil="true"></category-id>
+    <external-url></external-url>
+    <body>Drafting the new email campaign proposal. @StaceyLynch what products would you like to focus on for this campaign? #marketing #promotion</body>
+    <hidden type="boolean">false</hidden>
+    <embed nil="true"></embed>
+    <watch nil="true"></watch>
+    <ratings-count nil="true"></ratings-count>
+    <comments type="array">
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:56:52-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array"/>
+        <text>Let's feature the Acme Widget 1, Acme Widget 10 and Acme Widget 12. Those are all key products that we need to continue to push into the market. When is this campaign slated to launch. I want to be sure the sales team is prepared. cc @PaulGandy</text>
+        <user>
+          <type>User</type>
+          <username>StaceyLynch</username>
+          <terminated type="boolean">false</terminated>
+          <name>Stacey Lynch</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/78/iStock_000005807416XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/78/iStock_000005807416XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/78/iStock_000005807416XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/78/iStock_000005807416XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/78/iStock_000005807416XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">30</id>
+          <url>https://demo.socialcast.com/users/staceylynch</url>
+        </user>
+        <likes type="array">
+          <like>
+            <created-at>2011-04-25T14:57:08-07:00</created-at>
+            <user>
+              <name>Mike Whittington</name>
+              <id type="integer">27</id>
+              <url>https://demo.socialcast.com/users/mikewhittington</url>
+            </user>
+            <unlikable type="boolean">false</unlikable>
+            <id type="integer">38</id>
+          </like>
+        </likes>
+        <permalink-url>https://demo.socialcast.com/messages/400#comment-55</permalink-url>
+        <id type="integer">55</id>
+        <likes-count type="integer">1</likes-count>
+        <url>https://demo.socialcast.com/api/messages/400/comments/55</url>
+      </comment>
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:17:12-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array"/>
+        <text>Thanks Stacey. We are planning on kicking this campaign off at the end of Q3. I will have an outline of the campaign for your team in a few weeks.</text>
+        <user>
+          <type>User</type>
+          <username>LindaAllen</username>
+          <terminated type="boolean">false</terminated>
+          <name>Linda Allen</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/43/iStock_000004412952XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">24</id>
+          <url>https://demo.socialcast.com/users/lindaallen</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/400#comment-56</permalink-url>
+        <id type="integer">56</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/400/comments/56</url>
+      </comment>
+    </comments>
+    <id type="integer">400</id>
+    <likes-count type="integer">1</likes-count>
+    <url>https://demo.socialcast.com/api/messages/400</url>
+  </message>
+  <message>
+    <player-params nil="true"></player-params>
+    <media-files type="array"/>
+    <message-type>status_message</message-type>
+    <thumbnail-url nil="true"></thumbnail-url>
+    <tags type="array">
+      <tag>
+        <name>GV</name>
+      </tag>
+      <tag>
+        <name>sales</name>
+      </tag>
+    </tags>
+    <created-at>2011-04-25T14:12:03-07:00</created-at>
+    <action></action>
+    <editable type="boolean">false</editable>
+    <rating nil="true"></rating>
+    <subscribed type="boolean">false</subscribed>
+    <likable type="boolean">true</likable>
+    <player-url nil="true"></player-url>
+    <source>
+      <formal-name>Web App</formal-name>
+      <name>web</name>
+      <id>web</id>
+    </source>
+    <flag nil="true"></flag>
+    <deletable type="boolean">false</deletable>
+    <last-interacted-at type="integer">1302733988</last-interacted-at>
+    <attachments type="array">
+      <attachment>
+        <public-filename>https://socialcast-demo.s3.amazonaws.com/tenants/5/attachments/88/On_Premise_Sales_Information.pdf?AWSAccessKeyId=1WEP0BG96AHQFNB6AXG2&amp;Expires=1305596095&amp;Signature=PTnZX0cZA3M0PJtZmZeYjuXQcQs%3D</public-filename>
+        <content-type>application/pdf</content-type>
+        <file-extension>pdf</file-extension>
+        <filename>On_Premise_Sales_Information.pdf</filename>
+        <id type="integer">88</id>
+        <url>https://demo.socialcast.com/attachments/88</url>
+      </attachment>
+    </attachments>
+    <comments-count type="integer">1</comments-count>
+    <user>
+      <type>User</type>
+      <username>BobDavis</username>
+      <terminated type="boolean">false</terminated>
+      <name>Bob Davis</name>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square140.jpg</square140>
+      </avatars>
+      <id type="integer">21</id>
+      <url>https://demo.socialcast.com/users/bobdavis</url>
+    </user>
+    <contains-url-only nil="true"></contains-url-only>
+    <icon>https://d1t8ns81mllsy2.cloudfront.net/images/icons/messages/status_message.png</icon>
+    <target-user nil="true"></target-user>
+    <likes type="array">
+      <like>
+        <created-at>2011-04-25T14:03:36-07:00</created-at>
+        <user>
+          <name>Mike Whittington</name>
+          <id type="integer">27</id>
+          <url>https://demo.socialcast.com/users/mikewhittington</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">31</id>
+      </like>
+      <like>
+        <created-at>2011-04-25T14:04:35-07:00</created-at>
+        <user>
+          <name>Paul Gandy</name>
+          <id type="integer">23</id>
+          <url>https://demo.socialcast.com/users/paulgandy</url>
+        </user>
+        <unlikable type="boolean">false</unlikable>
+        <id type="integer">32</id>
+      </like>
+    </likes>
+    <permalink-url>https://demo.socialcast.com/messages/387-presentation-to-general-vehicles-today</permalink-url>
+    <verb nil="true"></verb>
+    <in-reply-to nil="true"></in-reply-to>
+    <watchable type="boolean">false</watchable>
+    <ratable type="boolean">false</ratable>
+    <recipients type="array"/>
+    <group>
+    </group>
+    <external-resources type="array"/>
+    <updated-at>2011-04-25T15:01:20-07:00</updated-at>
+    <title>Presentation to General Vehicles today</title>
+    <extensions type="array"/>
+    <groups type="array"/>
+    <ratings-average nil="true"></ratings-average>
+    <category-id type="integer">13</category-id>
+    <external-url nil="true"></external-url>
+    <body>This afternoon, I'm talking to Aaron Washington at GV about our behind-the-firewall solution. Our data is attached. Does anyone have recommendations about solidifying our partnership?</body>
+    <hidden type="boolean">false</hidden>
+    <embed nil="true"></embed>
+    <watch nil="true"></watch>
+    <ratings-count nil="true"></ratings-count>
+    <comments type="array">
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:42:40-07:00</created-at>
+        <editable type="boolean">true</editable>
+        <likable type="boolean">false</likable>
+        <deletable type="boolean">true</deletable>
+        <attachments type="array">
+          <attachment>
+            <public-filename>https://socialcast-demo.s3.amazonaws.com/tenants/5/attachments/87/Socialcast_Data_Security_SaaS.pdf?AWSAccessKeyId=1WEP0BG96AHQFNB6AXG2&amp;Expires=1305596095&amp;Signature=5PGquSynIPTVRCr5xbZ9OfGKdxU%3D</public-filename>
+            <content-type>application/pdf</content-type>
+            <file-extension>pdf</file-extension>
+            <filename>Socialcast_Data_Security_SaaS.pdf</filename>
+            <id type="integer">87</id>
+            <url>https://demo.socialcast.com/attachments/87</url>
+          </attachment>
+        </attachments>
+        <text>I recommend showing them our SaaS security sheet too. Last year I spoke with Amanda Wang at GV and she was interested in understanding all of our security features. Good luck!</text>
+        <user>
+          <type>User</type>
+          <username>EmilyJames</username>
+          <terminated type="boolean">false</terminated>
+          <name>Emily James</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">25</id>
+          <url>https://demo.socialcast.com/users/emilyjames</url>
+        </user>
+        <likes type="array">
+          <like>
+            <created-at>2011-04-25T14:09:44-07:00</created-at>
+            <user>
+              <name>Paul Gandy</name>
+              <id type="integer">23</id>
+              <url>https://demo.socialcast.com/users/paulgandy</url>
+            </user>
+            <unlikable type="boolean">false</unlikable>
+            <id type="integer">35</id>
+          </like>
+        </likes>
+        <permalink-url>https://demo.socialcast.com/messages/387-presentation-to-general-vehicles-today#comment-43</permalink-url>
+        <id type="integer">43</id>
+        <likes-count type="integer">1</likes-count>
+        <url>https://demo.socialcast.com/api/messages/387/comments/43</url>
+      </comment>
+    </comments>
+    <id type="integer">387</id>
+    <likes-count type="integer">2</likes-count>
+    <url>https://demo.socialcast.com/api/messages/387-presentation-to-general-vehicles-today</url>
+  </message>
+  <message>
+    <player-params nil="true"></player-params>
+    <media-files type="array"/>
+    <message-type>new_group</message-type>
+    <thumbnail-url nil="true"></thumbnail-url>
+    <tags type="array"/>
+    <created-at>2011-04-25T14:55:40-07:00</created-at>
+    <action>created the group</action>
+    <editable type="boolean">false</editable>
+    <rating nil="true"></rating>
+    <subscribed type="boolean">false</subscribed>
+    <likable type="boolean">true</likable>
+    <player-url nil="true"></player-url>
+    <source nil="true"></source>
+    <flag nil="true"></flag>
+    <deletable type="boolean">false</deletable>
+    <last-interacted-at type="integer">1302728118</last-interacted-at>
+    <attachments type="array"/>
+    <comments-count type="integer">0</comments-count>
+    <user>
+      <type>User</type>
+      <username>BobDavis</username>
+      <terminated type="boolean">false</terminated>
+      <name>Bob Davis</name>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square140.jpg</square140>
+      </avatars>
+      <id type="integer">21</id>
+      <url>https://demo.socialcast.com/users/bobdavis</url>
+    </user>
+    <contains-url-only type="boolean">true</contains-url-only>
+    <icon>https://d1t8ns81mllsy2.cloudfront.net/images/icons/messages/new_group.png</icon>
+    <target-user nil="true"></target-user>
+    <likes type="array"/>
+    <permalink-url>https://demo.socialcast.com/messages/405-widget-11-product-team</permalink-url>
+    <verb nil="true"></verb>
+    <in-reply-to nil="true"></in-reply-to>
+    <watchable type="boolean">false</watchable>
+    <ratable type="boolean">false</ratable>
+    <recipients type="array"/>
+    <group>
+    </group>
+    <external-resources type="array"/>
+    <updated-at>2011-04-25T15:01:20-07:00</updated-at>
+    <title>Widget 11 Product Team</title>
+    <extensions type="array"/>
+    <groups type="array"/>
+    <ratings-average nil="true"></ratings-average>
+    <category-id nil="true"></category-id>
+    <external-url>https://demo.socialcast.local/groups/8</external-url>
+    <body>A group for the research and implementation of Widget 10.</body>
+    <hidden type="boolean">false</hidden>
+    <embed nil="true"></embed>
+    <watch nil="true"></watch>
+    <ratings-count nil="true"></ratings-count>
+    <comments type="array"/>
+    <id type="integer">405</id>
+    <likes-count type="integer">0</likes-count>
+    <url>https://demo.socialcast.com/api/messages/405-widget-11-product-team</url>
+  </message>
+  <message>
+    <player-params nil="true"></player-params>
+    <media-files type="array"/>
+    <message-type>status_message</message-type>
+    <thumbnail-url nil="true"></thumbnail-url>
+    <tags type="array"/>
+    <created-at>2011-04-25T14:52:11-07:00</created-at>
+    <action></action>
+    <editable type="boolean">false</editable>
+    <rating nil="true"></rating>
+    <subscribed type="boolean">false</subscribed>
+    <likable type="boolean">true</likable>
+    <player-url nil="true"></player-url>
+    <source>
+      <formal-name>Web App</formal-name>
+      <name>web</name>
+      <id>web</id>
+    </source>
+    <flag nil="true"></flag>
+    <deletable type="boolean">false</deletable>
+    <last-interacted-at type="integer">1302645754</last-interacted-at>
+    <attachments type="array"/>
+    <comments-count type="integer">2</comments-count>
+    <user>
+      <type>User</type>
+      <username>MikeWhittington</username>
+      <terminated type="boolean">false</terminated>
+      <name>Mike Whittington</name>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/64/iStock_000004262678XSmall_square140.jpg</square140>
+      </avatars>
+      <id type="integer">27</id>
+      <url>https://demo.socialcast.com/users/mikewhittington</url>
+    </user>
+    <contains-url-only type="boolean">true</contains-url-only>
+    <icon>https://d1t8ns81mllsy2.cloudfront.net/images/icons/messages/status_message.png</icon>
+    <target-user nil="true"></target-user>
+    <likes type="array"/>
+    <permalink-url>https://demo.socialcast.com/messages/398</permalink-url>
+    <verb nil="true"></verb>
+    <in-reply-to nil="true"></in-reply-to>
+    <watchable type="boolean">false</watchable>
+    <ratable type="boolean">false</ratable>
+    <recipients type="array">
+      <recipient>
+        <type>User</type>
+        <username>BobDavis</username>
+        <terminated type="boolean">false</terminated>
+        <name>Bob Davis</name>
+        <avatars>
+          <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square16.jpg</square16>
+          <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square70.jpg</square70>
+          <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square30.jpg</square30>
+          <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square45.jpg</square45>
+          <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square140.jpg</square140>
+        </avatars>
+        <id type="integer">21</id>
+        <url>https://demo.socialcast.com/users/bobdavis</url>
+      </recipient>
+    </recipients>
+    <group>
+    </group>
+    <external-resources type="array"/>
+    <updated-at>2011-04-25T15:01:20-07:00</updated-at>
+    <title></title>
+    <extensions type="array"/>
+    <groups type="array"/>
+    <ratings-average nil="true"></ratings-average>
+    <category-id nil="true"></category-id>
+    <external-url></external-url>
+    <body>@BobDavis the new SSL certificate has been added to the website. It is registered to Acme Corp. Inc. Let me know if you have any questions / comments.</body>
+    <hidden type="boolean">false</hidden>
+    <embed nil="true"></embed>
+    <watch nil="true"></watch>
+    <ratings-count nil="true"></ratings-count>
+    <comments type="array">
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:53:59-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array"/>
+        <text>Thanks Mike. Will let you know if I have any questions.</text>
+        <user>
+          <type>User</type>
+          <username>BobDavis</username>
+          <terminated type="boolean">false</terminated>
+          <name>Bob Davis</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">21</id>
+          <url>https://demo.socialcast.com/users/bobdavis</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/398#comment-48</permalink-url>
+        <id type="integer">48</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/398/comments/48</url>
+      </comment>
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:01:21-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array"/>
+        <text>What was the final cost on this SSL certificate?</text>
+        <user>
+          <username>MarshallSellers</username>
+          <terminated type="boolean">false</terminated>
+          <name>Marshall Sellers</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/29/iStock_000003885835XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/29/iStock_000003885835XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/29/iStock_000003885835XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/29/iStock_000003885835XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/29/iStock_000003885835XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">22</id>
+          <url>https://demo.socialcast.com/users/marshallsellers</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/398#comment-49</permalink-url>
+        <id type="integer">49</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/398/comments/49</url>
+      </comment>
+    </comments>
+    <id type="integer">398</id>
+    <likes-count type="integer">0</likes-count>
+    <url>https://demo.socialcast.com/api/messages/398</url>
+  </message>
+  <message>
+    <player-params nil="true"></player-params>
+    <media-files type="array"/>
+    <message-type>web_feed</message-type>
+    <thumbnail-url nil="true"></thumbnail-url>
+    <tags type="array"/>
+    <created-at>2011-04-25T14:54:01-07:00</created-at>
+    <action>posted a message on Twitter</action>
+    <editable type="boolean">false</editable>
+    <rating nil="true"></rating>
+    <subscribed type="boolean">false</subscribed>
+    <likable type="boolean">true</likable>
+    <player-url nil="true"></player-url>
+    <source nil="true"></source>
+    <flag nil="true"></flag>
+    <deletable type="boolean">false</deletable>
+    <last-interacted-at type="integer">1302643753</last-interacted-at>
+    <attachments type="array"/>
+    <comments-count type="integer">2</comments-count>
+    <user>
+      <type>User</type>
+      <username>JenniferLawson</username>
+      <terminated type="boolean">false</terminated>
+      <name>Jennifer Lawson</name>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square140.jpg</square140>
+      </avatars>
+      <id type="integer">26</id>
+      <url>https://demo.socialcast.com/users/jenniferlawson</url>
+    </user>
+    <contains-url-only nil="true"></contains-url-only>
+    <icon>https://d1t8ns81mllsy2.cloudfront.net/images/icons/external_services/twitter.png</icon>
+    <target-user nil="true"></target-user>
+    <likes type="array">
+      <like>
+        <created-at>2011-04-25T14:06:43-07:00</created-at>
+        <user>
+          <name>Emily James</name>
+          <id type="integer">25</id>
+          <url>https://demo.socialcast.com/users/emilyjames</url>
+        </user>
+        <unlikable type="boolean">true</unlikable>
+        <id type="integer">20</id>
+      </like>
+    </likes>
+    <permalink-url>https://demo.socialcast.com/messages/280-leaving-for-interopsoftware2010-see-you-in-vegas</permalink-url>
+    <verb>posted</verb>
+    <in-reply-to nil="true"></in-reply-to>
+    <watchable type="boolean">false</watchable>
+    <ratable type="boolean">false</ratable>
+    <recipients type="array">
+      <recipient>
+        <type>User</type>
+        <username>EmilyJames</username>
+        <terminated type="boolean">false</terminated>
+        <name>Emily James</name>
+        <avatars>
+          <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square16.jpg</square16>
+          <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square70.jpg</square70>
+          <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square30.jpg</square30>
+          <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square45.jpg</square45>
+          <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square140.jpg</square140>
+        </avatars>
+        <id type="integer">25</id>
+        <url>https://demo.socialcast.com/users/emilyjames</url>
+      </recipient>
+    </recipients>
+    <group>
+    </group>
+    <external-resources type="array"/>
+    <updated-at>2011-04-25T15:01:19-07:00</updated-at>
+    <title>leaving for Interop/Software2010. See you in Vegas!</title>
+    <extensions type="array"/>
+    <groups type="array"/>
+    <ratings-average nil="true"></ratings-average>
+    <category-id nil="true"></category-id>
+    <external-url nil="true"></external-url>
+    <body></body>
+    <hidden type="boolean">false</hidden>
+    <embed nil="true"></embed>
+    <watch nil="true"></watch>
+    <ratings-count nil="true"></ratings-count>
+    <comments type="array">
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:38:10-07:00</created-at>
+        <editable type="boolean">true</editable>
+        <likable type="boolean">false</likable>
+        <deletable type="boolean">true</deletable>
+        <attachments type="array"/>
+        <text>Can't wait for this show. Last year we closed 115 deals. Looking forward to another smashing success this year.</text>
+        <user>
+          <type>User</type>
+          <username>EmilyJames</username>
+          <terminated type="boolean">false</terminated>
+          <name>Emily James</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">25</id>
+          <url>https://demo.socialcast.com/users/emilyjames</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/280-leaving-for-interopsoftware2010-see-you-in-vegas#comment-45</permalink-url>
+        <id type="integer">45</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/280/comments/45</url>
+      </comment>
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:38:41-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array"/>
+        <text>Sounds good @EmilyJames. When are you checking into your hotel? We should try and grab a late dinner to discuss strategy for this show.</text>
+        <user>
+          <type>User</type>
+          <username>JenniferLawson</username>
+          <terminated type="boolean">false</terminated>
+          <name>Jennifer Lawson</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">26</id>
+          <url>https://demo.socialcast.com/users/jenniferlawson</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/280-leaving-for-interopsoftware2010-see-you-in-vegas#comment-46</permalink-url>
+        <id type="integer">46</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/280/comments/46</url>
+      </comment>
+    </comments>
+    <id type="integer">280</id>
+    <likes-count type="integer">1</likes-count>
+    <url>https://demo.socialcast.com/api/messages/280-leaving-for-interopsoftware2010-see-you-in-vegas</url>
+  </message>
+  <message>
+    <player-params nil="true"></player-params>
+    <media-files type="array"/>
+    <message-type>idea</message-type>
+    <thumbnail-url nil="true"></thumbnail-url>
+    <tags type="array">
+      <tag>
+        <name>sales</name>
+      </tag>
+    </tags>
+    <created-at>2011-04-25T15:00:28-07:00</created-at>
+    <action>shared an idea</action>
+    <editable type="boolean">false</editable>
+    <rating nil="true"></rating>
+    <subscribed type="boolean">false</subscribed>
+    <likable type="boolean">false</likable>
+    <player-url nil="true"></player-url>
+    <source nil="true"></source>
+    <flag nil="true"></flag>
+    <deletable type="boolean">false</deletable>
+    <last-interacted-at type="integer">1302642160</last-interacted-at>
+    <attachments type="array"/>
+    <comments-count type="integer">1</comments-count>
+    <user>
+      <type>User</type>
+      <username>JenniferLawson</username>
+      <terminated type="boolean">false</terminated>
+      <name>Jennifer Lawson</name>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square140.jpg</square140>
+      </avatars>
+      <id type="integer">26</id>
+      <url>https://demo.socialcast.com/users/jenniferlawson</url>
+    </user>
+    <contains-url-only nil="true"></contains-url-only>
+    <icon>https://d1t8ns81mllsy2.cloudfront.net/images/icons/messages/idea.png</icon>
+    <target-user nil="true"></target-user>
+    <likes type="array"/>
+    <permalink-url>https://demo.socialcast.com/messages/63-software-spend-for-2010-should-include-photoshop-e</permalink-url>
+    <verb nil="true"></verb>
+    <in-reply-to nil="true"></in-reply-to>
+    <watchable type="boolean">false</watchable>
+    <ratable type="boolean">true</ratable>
+    <recipients type="array"/>
+    <group>
+    </group>
+    <external-resources type="array"/>
+    <updated-at>2011-04-25T15:01:17-07:00</updated-at>
+    <title>Software spend for 2010 should include Photoshop Elements 6</title>
+    <extensions type="array"/>
+    <groups type="array"/>
+    <ratings-average type="integer">0</ratings-average>
+    <category-id type="integer">15</category-id>
+    <external-url nil="true"></external-url>
+    <body>Considering that a lot of our sales are done through our website, using Elements will help when editing various pictures, images, pdfs, etc.  You can try using a trial version of this tool at www.adobe.com.  Please let me know what you think.</body>
+    <hidden type="boolean">false</hidden>
+    <embed nil="true"></embed>
+    <watch nil="true"></watch>
+    <ratings-count type="integer">0</ratings-count>
+    <comments type="array">
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:47:11-07:00</created-at>
+        <editable type="boolean">true</editable>
+        <likable type="boolean">false</likable>
+        <deletable type="boolean">true</deletable>
+        <attachments type="array"/>
+        <text>I downloaded the tool, but am wondering if Fireworks would be a better fit for our team? Seems to be a little simpler to use.</text>
+        <user>
+          <type>User</type>
+          <username>EmilyJames</username>
+          <terminated type="boolean">false</terminated>
+          <name>Emily James</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">25</id>
+          <url>https://demo.socialcast.com/users/emilyjames</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/63-software-spend-for-2010-should-include-photoshop-e#comment-27</permalink-url>
+        <id type="integer">27</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/63/comments/27</url>
+      </comment>
+    </comments>
+    <id type="integer">63</id>
+    <likes-count type="integer">0</likes-count>
+    <url>https://demo.socialcast.com/api/messages/63-software-spend-for-2010-should-include-photoshop-e</url>
+  </message>
+  <message>
+    <player-params nil="true"></player-params>
+    <media-files type="array"/>
+    <message-type>question</message-type>
+    <thumbnail-url nil="true"></thumbnail-url>
+    <tags type="array">
+      <tag>
+        <name>software</name>
+      </tag>
+      <tag>
+        <name>helpdesk</name>
+      </tag>
+    </tags>
+    <created-at>2011-04-25T14:03:05-07:00</created-at>
+    <action>asked a question</action>
+    <editable type="boolean">false</editable>
+    <rating nil="true"></rating>
+    <subscribed type="boolean">false</subscribed>
+    <likable type="boolean">true</likable>
+    <player-url nil="true"></player-url>
+    <source nil="true"></source>
+    <flag nil="true"></flag>
+    <deletable type="boolean">false</deletable>
+    <last-interacted-at type="integer">1302640831</last-interacted-at>
+    <attachments type="array"/>
+    <comments-count type="integer">0</comments-count>
+    <user>
+      <type>User</type>
+      <username>JenniferLawson</username>
+      <terminated type="boolean">false</terminated>
+      <name>Jennifer Lawson</name>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square140.jpg</square140>
+      </avatars>
+      <id type="integer">26</id>
+      <url>https://demo.socialcast.com/users/jenniferlawson</url>
+    </user>
+    <contains-url-only nil="true"></contains-url-only>
+    <icon>https://d1t8ns81mllsy2.cloudfront.net/images/icons/messages/question.png</icon>
+    <target-user nil="true"></target-user>
+    <likes type="array"/>
+    <permalink-url>https://demo.socialcast.com/messages/44-ticketing-system</permalink-url>
+    <verb nil="true"></verb>
+    <in-reply-to nil="true"></in-reply-to>
+    <watchable type="boolean">false</watchable>
+    <ratable type="boolean">false</ratable>
+    <recipients type="array"/>
+    <group>
+    </group>
+    <external-resources type="array"/>
+    <updated-at>2011-04-25T15:01:16-07:00</updated-at>
+    <title>Ticketing system...</title>
+    <extensions type="array"/>
+    <groups type="array"/>
+    <ratings-average nil="true"></ratings-average>
+    <category-id type="integer">15</category-id>
+    <external-url nil="true"></external-url>
+    <body>We used to use Peregrine for our helpdesk/ticketing system, but we are reporting that that tool does not provide us what we need.  Has anyone used another solution that has more comprehensive reporting features?  Please share.</body>
+    <hidden type="boolean">false</hidden>
+    <embed nil="true"></embed>
+    <watch nil="true"></watch>
+    <ratings-count nil="true"></ratings-count>
+    <comments type="array"/>
+    <id type="integer">44</id>
+    <likes-count type="integer">0</likes-count>
+    <url>https://demo.socialcast.com/api/messages/44-ticketing-system</url>
+  </message>
+  <message>
+    <player-params nil="true"></player-params>
+    <media-files type="array"/>
+    <message-type>question</message-type>
+    <thumbnail-url nil="true"></thumbnail-url>
+    <tags type="array">
+      <tag>
+        <name>developers</name>
+      </tag>
+      <tag>
+        <name>jobs</name>
+      </tag>
+    </tags>
+    <created-at>2011-04-25T14:25:50-07:00</created-at>
+    <action>asked a question</action>
+    <editable type="boolean">false</editable>
+    <rating nil="true"></rating>
+    <subscribed type="boolean">false</subscribed>
+    <likable type="boolean">true</likable>
+    <player-url nil="true"></player-url>
+    <source nil="true"></source>
+    <flag nil="true"></flag>
+    <deletable type="boolean">false</deletable>
+    <last-interacted-at type="integer">1302640407</last-interacted-at>
+    <attachments type="array"/>
+    <comments-count type="integer">1</comments-count>
+    <user>
+      <type>User</type>
+      <username>BobDavis</username>
+      <terminated type="boolean">false</terminated>
+      <name>Bob Davis</name>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/22/iStock_000004087015XSmall_square140.jpg</square140>
+      </avatars>
+      <id type="integer">21</id>
+      <url>https://demo.socialcast.com/users/bobdavis</url>
+    </user>
+    <contains-url-only nil="true"></contains-url-only>
+    <icon>https://d1t8ns81mllsy2.cloudfront.net/images/icons/messages/question.png</icon>
+    <target-user nil="true"></target-user>
+    <likes type="array"/>
+    <permalink-url>https://demo.socialcast.com/messages/42-does-anyone-know-of-any-good-recruiting-services-f</permalink-url>
+    <verb nil="true"></verb>
+    <in-reply-to nil="true"></in-reply-to>
+    <watchable type="boolean">false</watchable>
+    <ratable type="boolean">false</ratable>
+    <recipients type="array"/>
+    <group>
+    </group>
+    <external-resources type="array"/>
+    <updated-at>2011-04-25T15:01:16-07:00</updated-at>
+    <title>Does anyone know of any good recruiting services for programmers?</title>
+    <extensions type="array"/>
+    <groups type="array"/>
+    <ratings-average nil="true"></ratings-average>
+    <category-id type="integer">15</category-id>
+    <external-url nil="true"></external-url>
+    <body>We are looking to fill a couple positions that have opened up in the last few months, and I have only tried monster.com and dice.com.  Can anyone suggest other sites that have proven to be useful?</body>
+    <hidden type="boolean">false</hidden>
+    <embed nil="true"></embed>
+    <watch nil="true"></watch>
+    <ratings-count nil="true"></ratings-count>
+    <comments type="array">
+      <comment>
+        <media-files type="array"/>
+        <thumbnail-url nil="true"></thumbnail-url>
+        <created-at>2011-04-25T14:34:57-07:00</created-at>
+        <editable type="boolean">false</editable>
+        <likable type="boolean">true</likable>
+        <deletable type="boolean">false</deletable>
+        <attachments type="array"/>
+        <text>Linkedin.com is another good one.</text>
+        <user>
+          <type>User</type>
+          <username>JenniferLawson</username>
+          <terminated type="boolean">false</terminated>
+          <name>Jennifer Lawson</name>
+          <avatars>
+            <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square16.jpg</square16>
+            <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square70.jpg</square70>
+            <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square30.jpg</square30>
+            <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square45.jpg</square45>
+            <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/57/iStock_000004227730XSmall_square140.jpg</square140>
+          </avatars>
+          <id type="integer">26</id>
+          <url>https://demo.socialcast.com/users/jenniferlawson</url>
+        </user>
+        <likes type="array"/>
+        <permalink-url>https://demo.socialcast.com/messages/42-does-anyone-know-of-any-good-recruiting-services-f#comment-38</permalink-url>
+        <id type="integer">38</id>
+        <likes-count type="integer">0</likes-count>
+        <url>https://demo.socialcast.com/api/messages/42/comments/38</url>
+      </comment>
+    </comments>
+    <id type="integer">42</id>
+    <likes-count type="integer">0</likes-count>
+    <url>https://demo.socialcast.com/api/messages/42-does-anyone-know-of-any-good-recruiting-services-f</url>
+  </message>
+  <message>
+    <player-params nil="true"></player-params>
+    <media-files type="array"/>
+    <message-type>web_feed</message-type>
+    <thumbnail-url nil="true"></thumbnail-url>
+    <tags type="array"/>
+    <created-at>2011-04-25T14:42:53-07:00</created-at>
+    <action>bookmarked a page on Delicious</action>
+    <editable type="boolean">false</editable>
+    <rating nil="true"></rating>
+    <subscribed type="boolean">false</subscribed>
+    <likable type="boolean">true</likable>
+    <player-url nil="true"></player-url>
+    <source nil="true"></source>
+    <flag nil="true"></flag>
+    <deletable type="boolean">false</deletable>
+    <last-interacted-at type="integer">1270060267</last-interacted-at>
+    <attachments type="array"/>
+    <comments-count type="integer">0</comments-count>
+    <user>
+      <type>User</type>
+      <username>ProductionBot145</username>
+      <terminated type="boolean">false</terminated>
+      <name>Production Bot #145</name>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/133/bot_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/133/bot_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/133/bot_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/133/bot_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/133/bot_square140.jpg</square140>
+      </avatars>
+      <id type="integer">19</id>
+      <url>https://demo.socialcast.com/users/productionbot145</url>
+    </user>
+    <contains-url-only nil="true"></contains-url-only>
+    <icon>https://d1t8ns81mllsy2.cloudfront.net/images/icons/external_services/delicious.png</icon>
+    <target-user nil="true"></target-user>
+    <likes type="array">
+      <like>
+        <created-at>2011-04-25T14:08:26-07:00</created-at>
+        <user>
+          <name>Emily James</name>
+          <id type="integer">25</id>
+          <url>https://demo.socialcast.com/users/emilyjames</url>
+        </user>
+        <unlikable type="boolean">true</unlikable>
+        <id type="integer">17</id>
+      </like>
+    </likes>
+    <permalink-url>https://demo.socialcast.com/messages/344</permalink-url>
+    <verb>bookmarked</verb>
+    <in-reply-to nil="true"></in-reply-to>
+    <watchable type="boolean">false</watchable>
+    <ratable type="boolean">false</ratable>
+    <recipients type="array"/>
+    <group>
+    </group>
+    <external-resources type="array"/>
+    <updated-at>2011-04-25T15:01:20-07:00</updated-at>
+    <title></title>
+    <extensions type="array"/>
+    <groups type="array"/>
+    <ratings-average nil="true"></ratings-average>
+    <category-id nil="true"></category-id>
+    <external-url nil="true"></external-url>
+    <body>Weekly Production Report:
+
+15420 units
+6 inspection rejects
+3 faults</body>
+    <hidden type="boolean">false</hidden>
+    <embed nil="true"></embed>
+    <watch nil="true"></watch>
+    <ratings-count nil="true"></ratings-count>
+    <comments type="array"/>
+    <id type="integer">344</id>
+    <likes-count type="integer">1</likes-count>
+    <url>https://demo.socialcast.com/api/messages/344</url>
+  </message>
+</messages>

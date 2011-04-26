@@ -1,10 +1,10 @@
 module Socialcastr
   class Comment < Base
     element :editable
-    element :attachments, :as => :attachment_list, :class => Socialcastr::AttachmentList
+    elements :attachment, :as => :attachments, :class => Socialcastr::Attachment
     element :likable
     element :deletable
-    element :likes, :as => :like_list, :class => Socialcastr::LikeList
+    elements :like, :as => :likes, :class => Socialcastr::Like
     element :permalink_url
     element :text
     element :user, :class => Socialcastr::User

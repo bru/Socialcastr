@@ -1,5 +1,5 @@
 module Socialcastr
-  class LikeList < Base
-    element :like, :as => :likes, :class => Socialcastr::Like
+  class LikeList < Collection
+    collection_of :like, :as => :likes, :class => Socialcastr::Like
   end
 end

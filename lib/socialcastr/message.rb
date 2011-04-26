@@ -17,8 +17,8 @@ module Socialcastr
     element :thumbnail_url
     element :player_params
     element :user, :class => Socialcastr::User
-    element :group, :class => Socialcastr::Group
-    element :groups, :as => :group_list, :class => Socialcastr::GroupList
+    #element :group, :class => Socialcastr::Group
+    elements :group, :as => :groups, :class => Socialcastr::Group
     element :source, :class => Socialcastr::Source
 
     element :editable
@@ -36,17 +36,17 @@ module Socialcastr
     # element :target_user
     element :ratable
     element :message_type
-    element :recipients, :as => :recipient_list, :class => Socialcastr::RecipientList
+    elements :recipient, :as => :recipients, :class => Socialcastr::Recipient
 
-    element :attachments, :as => :attachment_list, :class => Socialcastr::AttachmentList
-    element :tags, :as => :tag_list, :class => Socialcastr::TagList
-    element :likes, :as => :like_list, :class => Socialcastr::LikeList
-    element :external_resources, :as => :external_resource_list, :class => Socialcastr::ExternalResourceList
-    element :media_files, :as => :media_file_list, :class => Socialcastr::MediaFileList
+    elements :attachment, :as => :attachments, :class => Socialcastr::Attachment
+    elements :tag, :as => :tags, :class => Socialcastr::Tag
+    elements :like, :as => :likes, :class => Socialcastr::Like
+    elements :external_resource, :as => :external_resources, :class => Socialcastr::ExternalResource
+    elements :media_files, :as => :media_file, :class => Socialcastr::MediaFile
     element :likes_count
     element :hidden
 
-    element :comments, :as => :comment_list, :class => Socialcastr::CommentList
+    elements :comment, :as => :comments, :class => Socialcastr::Comment
 
   end
 end

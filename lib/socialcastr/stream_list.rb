@@ -1,5 +1,5 @@
 module Socialcastr
-  class StreamList < Base
-    elements :stream, :as => :streams, :class => Socialcastr::Stream
+  class StreamList < Collection
+    collection_of :stream, :as => :streams, :class => Socialcastr::Stream
   end
 end

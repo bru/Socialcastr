@@ -1,10 +1,10 @@
 module Socialcastr
   class ExternalResource < Base
     element :type
-    element :tags, :as => :tag_list, :class => Socialcastr::TagList
+    elements :tag, :as => :tags, :class => Socialcastr::Tag
     element :canonical_hashtag
     element :source, :class => Socialcastr::Source
-    element :media_files, :as => :media_file_list, :class => Socialcastr::MediaFileList 
+    elements :media_file, :as => :media_files, :class => Socialcastr::MediaFile
     element :url
     element :title
     element :description

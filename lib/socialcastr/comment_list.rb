@@ -1,5 +1,5 @@
 module Socialcastr
-  class CommentList < Base
-    element :comment, :as => :comments, :class => Socialcastr::Comment
+  class CommentList < Collection
+    collection_of :comment, :as => :comments, :class => Socialcastr::Comment
   end
 end

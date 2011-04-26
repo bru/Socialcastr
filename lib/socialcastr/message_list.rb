@@ -1,5 +1,5 @@
 module Socialcastr
-  class MessageList < Base
-    elements :message, :as => :messages, :class => Message
+  class MessageList < Collection
+    collection_of :message, :as => :messages, :class => Message
   end
 end

@@ -1,5 +1,5 @@
 module Socialcastr
-  class GroupMembershipList < Base
-    elements :group_membership, :as => :group_memberships, :class => Socialcastr::GroupMembership
+  class GroupMembershipList < Collection
+    collection_of :group_membership, :as => :group_memberships, :class => Socialcastr::GroupMembership
   end
 end
