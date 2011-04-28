@@ -1,0 +1,69 @@
+  <message>
+    <player-params nil="true"></player-params>
+    <media-files type="array"/>
+    <message-type>status_message</message-type>
+    <thumbnail-url nil="true"></thumbnail-url>
+    <tags type="array"/>
+    <created-at>2011-04-26T02:17:14-07:00</created-at>
+    <action></action>
+    <editable type="boolean">true</editable>
+    <rating nil="true"></rating>
+    <subscribed type="boolean">false</subscribed>
+    <likable type="boolean">false</likable>
+    <player-url nil="true"></player-url>
+    <source>
+      <formal-name>Socialcast API</formal-name>
+      <name>API</name>
+      <id>api</id>
+      <url>https://demo.socialcast.com/api</url>
+    </source>
+    <flag nil="true"></flag>
+    <deletable type="boolean">true</deletable>
+    <last-interacted-at type="integer">1303809434</last-interacted-at>
+    <attachments type="array"/>
+    <comments-count type="integer">0</comments-count>
+    <user>
+      <type>User</type>
+      <username>EmilyJames</username>
+      <terminated type="boolean">false</terminated>
+      <name>Emily James</name>
+      <avatars>
+        <square16>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square16.jpg</square16>
+        <square70>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square70.jpg</square70>
+        <square30>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square30.jpg</square30>
+        <square45>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square45.jpg</square45>
+        <square140>https://d3s661wf84k3q3.cloudfront.net/tenants/5/profile_photos/50/iStock_000002766836XSmall_square140.jpg</square140>
+      </avatars>
+      <id type="integer">25</id>
+      <url>https://demo.socialcast.com/users/emilyjames</url>
+    </user>
+    <contains-url-only nil="true"></contains-url-only>
+    <icon>https://d1t8ns81mllsy2.cloudfront.net/images/icons/messages/status_message.png</icon>
+    <target-user nil="true"></target-user>
+    <likes type="array"/>
+    <permalink-url>https://demo.socialcast.com/messages/425-trying-out-the-api</permalink-url>
+    <verb nil="true"></verb>
+    <in-reply-to nil="true"></in-reply-to>
+    <watchable type="boolean">false</watchable>
+    <ratable type="boolean">false</ratable>
+    <recipients type="array"/>
+    <group>
+    </group>
+    <external-resources type="array"/>
+    <updated-at>2011-04-26T02:17:14-07:00</updated-at>
+    <title>trying out the api</title>
+    <extensions type="array"/>
+    <groups type="array"/>
+    <ratings-average nil="true"></ratings-average>
+    <category-id nil="true"></category-id>
+    <external-url nil="true"></external-url>
+    <body>hello</body>
+    <hidden type="boolean">false</hidden>
+    <embed nil="true"></embed>
+    <watch nil="true"></watch>
+    <ratings-count nil="true"></ratings-count>
+    <comments type="array"/>
+    <id type="integer">425</id>
+    <likes-count type="integer">0</likes-count>
+    <url>https://demo.socialcast.com/api/messages/425-trying-out-the-api</url>
+  </message>

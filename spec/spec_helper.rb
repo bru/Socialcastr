@@ -8,9 +8,9 @@ require 'artifice'
 $: << File.join(File.dirname(__FILE__), '..', 'lib')
 require 'socialcastr'
 
-def generate_fake_endpoint(response)
+def generate_fake_endpoint(response, code=200)
   return proc { |env|
-    [200, {"Content-Type"  => "text/html",
+    [code, {"Content-Type"  => "text/html",
            "X-Test-Method" => env["REQUEST_METHOD"],
            "X-Test-Input"  => env["rack.input"].read,
            "X-Test-Scheme" => env["rack.url_scheme"],
@@ -23,6 +23,8 @@ end
 
 def fake_socialcast_api_for(type, &block)
   case type
+  when :message
+    responsefile = "message.xml"
   when :messages
     responsefile = "messages.xml"
   end

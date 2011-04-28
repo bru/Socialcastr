@@ -18,51 +18,6 @@ module Socialcastr
       return self
     end
     
-    def messages(stream=nil, query={})
-      method="messages"
-      method.insert(0, "streams/#{stream.id}/") if stream
-      xml = api_get(method, query)
-      return Socialcastr::MessageList.parse(xml).messages
-    end
-    
-    def search(query)
-      method="messages/search"
-      xml = api_get(method, query)
-      return Socialcastr::MessageList.parse(xml).messages
-    end
-    
-    def groups
-      method = "group_memberships"
-      xml = api_get(method)
-      return Socialcastr::GroupMembershipList.parse(xml).group_memberships
-    end
-    
-    def streams
-      method = "streams"
-      xml = api_get(method)
-      return Socialcastr::StreamList.parse(xml).streams
-    end
-    
-    def add_message(message)
-      xml = api_post("messages", message)
-      return Socialcastr::Message.parse(xml)
-    end
-    
-    def add_comment(message_id, comment)
-      xml = api_post("messages/#{message_id}/comments", comment)
-      return Socialcastr::Comment.parse(xml)
-    end
-    
-    def like_comment(message_id,comment_id)
-      xml = api_post("messages/#{message_id.to_s}/comments/#{comment_id.to_s}/likes")
-      return xml
-    end
-    
-    def unlike_comment(message_id,comment_id,like_id)
-      xml = api_delete("messages/#{message_id}/comments/#{comment_id}/likes/#{like_id}")
-      return xml
-    end
-    
     def https_request(method, path, args)
       https = setup_https
 
@@ -90,20 +45,55 @@ module Socialcastr
         response = session.request(req)
       end
 
-      response.nil? ? "" : response.body
+      return handle_response(response).body
     end
     
-    def api_get(path, args={})
+    def get(path, args={})
       https_request('get', path, args)
     end   
     
-    
-    def api_post(path, args={})
+    def put(path, args={})
+      https_request('put', path, args)
+    end
+
+    def post(path, args={})
       https_request('post', path, args)
     end
     
-    def api_delete(path, args={})
+    def delete(path, args={})
       https_request('delete', path, args)
+    end
+
+    # Handles response and error codes from the remote service.
+    def handle_response(response)
+      case response.code.to_i
+        when 301,302
+          raise(Redirection.new(response))
+        when 200...400
+          response
+        when 400
+          raise(BadRequest.new(response))
+        when 401
+          raise(UnauthorizedAccess.new(response))
+        when 403
+          raise(ForbiddenAccess.new(response))
+        when 404
+          raise(ResourceNotFound.new(response))
+        when 405
+          raise(MethodNotAllowed.new(response))
+        when 409
+          raise(ResourceConflict.new(response))
+        when 410
+          raise(ResourceGone.new(response))
+        when 422
+          raise(ResourceInvalid.new(response))
+        when 401...500
+          raise(ClientError.new(response))
+        when 500...600
+          raise(ServerError.new(response))
+        else
+          raise(ConnectionError.new(response, "Unknown response code: #{response.code}"))
+      end
     end
     
     def setup_https
@@ -120,7 +110,7 @@ module Socialcastr
           "#{k}=#{CGI::escape(v.to_s)}" 
         end
       end
-      "/api/#{path}.#{@format}" + (params.any? ? "?" + params.join('&') : "")
+      "/api/#{path.to_s}.#{@format}" + (params.any? ? "?" + params.join('&') : "")
     end
   end
 end

@@ -1,6 +1,7 @@
 module Socialcastr
   class Message < Base
 
+    id_element :id
     element :title
     element :body
     element :url
@@ -8,7 +9,6 @@ module Socialcastr
     element :action
     element :external_url
     element :icon
-    element :id
     element :likable
     element :created_at
     element :updated_at

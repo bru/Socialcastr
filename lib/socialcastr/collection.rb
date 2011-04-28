@@ -2,12 +2,6 @@ module Socialcastr
   class Collection < Base
     include Enumerable
 
-    attr_accessor :method
-
-    def initialize
-      @members_method = self.class.members_method
-    end
-
     def each &block
       members.each{|member| block.call(member)}
     end
@@ -17,7 +11,7 @@ module Socialcastr
     end
 
     def members
-      send @members_method
+      send self.class.members_method
     end
 
     def self.collection_of(name, options={})
