@@ -44,10 +44,14 @@ module Socialcastr
     attr_accessor *ATTRIBUTES
 
     def ready?
-      [@domain, @username, @password].each do |attribute|
-        return false if attribute.blank?
+      [@domain, @username, @password].map(&:nil?).none?
+    end
+
+    def reset
+      ATTRIBUTES.each do |attribute|
+        send(attribute.to_s + "=", nil)
       end
-      return true
+      return self
     end
   end 
 

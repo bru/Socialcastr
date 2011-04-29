@@ -8,6 +8,11 @@ require 'artifice'
 $: << File.join(File.dirname(__FILE__), '..', 'lib')
 require 'socialcastr'
 
+RSpec.configure do |config|
+  config.before :each do 
+    Socialcastr.configuration.reset
+  end
+end
 def generate_fake_endpoint(response, code=200)
   return proc { |env|
     [code, {"Content-Type"  => "text/html",
@@ -21,7 +26,16 @@ def generate_fake_endpoint(response, code=200)
   }
 end
 
+def configure_socialcastr
+    Socialcastr.configuration do |c|
+      c.username = "demo"
+      c.password = "password"
+      c.domain   = "demo.socialcast.com"
+    end
+end
+
 def fake_socialcast_api_for(type, &block)
+  configure_socialcastr
   case type
   when :message
     responsefile = "message.xml"
