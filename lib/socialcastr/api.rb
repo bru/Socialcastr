@@ -17,22 +17,40 @@ module Socialcastr
       @endpoint = "https://#{domain}/api/"
       return self
     end
+
+    def get(path, args={})
+      https_request(:get, path, args)
+    end   
     
+    def put(path, args={})
+      https_request(:put, path, args)
+    end
+
+    def post(path, args={})
+      https_request(:post, path, args)
+    end
+    
+    def delete(path, args={})
+      https_request(:delete, path, args)
+    end
+
     def https_request(method, path, args)
       https = setup_https
 
       case method
-        when 'get'
-        request_class = Net::HTTP::Get
-        query=args
-        when 'post'
-        request_class = Net::HTTP::Post
-        form_data = args
-        when 'put'
-        request_class = Net::HTTP::Put
-        form_data = args
-        when 'delete'
-        request_class = Net::HTTP::Delete
+        when :get
+          request_class = Net::HTTP::Get
+          query=args
+        when :post
+          request_class = Net::HTTP::Post
+          form_data = args
+        when :put
+          request_class = Net::HTTP::Put
+          form_data = args
+        when :delete
+          request_class = Net::HTTP::Delete
+        else
+          raise InvalidMethod
       end
       response = nil
       https.start do |session|
@@ -48,21 +66,6 @@ module Socialcastr
       return handle_response(response).body
     end
     
-    def get(path, args={})
-      https_request('get', path, args)
-    end   
-    
-    def put(path, args={})
-      https_request('put', path, args)
-    end
-
-    def post(path, args={})
-      https_request('post', path, args)
-    end
-    
-    def delete(path, args={})
-      https_request('delete', path, args)
-    end
 
     # Handles response and error codes from the remote service.
     def handle_response(response)
@@ -105,9 +108,10 @@ module Socialcastr
     end
 
     def build_query_string(path, query=nil)
+      params = []
       unless query.nil?
         params = query.collect do |k,v| 
-          "#{k}=#{CGI::escape(v.to_s)}" 
+          "#{k.to_s}=#{CGI::escape(v.to_s)}" 
         end
       end
       "/api/#{path.to_s}.#{@format}" + (params.any? ? "?" + params.join('&') : "")

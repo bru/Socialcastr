@@ -1,4 +1,6 @@
 module Socialcastr
+  class InvalidMethod < StandardError
+  end
   class ConnectionError < StandardError # :nodoc:
     attr_reader :response
 
@@ -56,6 +58,10 @@ module Socialcastr
 
   # 410 Gone
   class ResourceGone < ClientError; end # :nodoc:
+
+  # 422 Invalid
+  class ResourceInvalid < ClientError; end # :nodoc:
+
 
   # 5xx Server Error
   class ServerError < ConnectionError; end # :nodoc:
