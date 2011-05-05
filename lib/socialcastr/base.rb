@@ -4,8 +4,40 @@ module Socialcastr
   class Base 
     include SAXMachine 
 
+    def initialize(arguments={})
+      arguments.map do |k,v|
+        self.send((k.to_s + "=").to_sym, v)
+      end
+    end
+
     def id
-      (send self.class.id_attribute).to_i
+      begin
+        (send self.class.id_attribute).to_i
+      rescue
+        nil
+      end
+    end
+
+    def save
+      if new?
+        self.class.api.post(self.class.collection_path, to_params)
+      else
+        self.class.api.put(self.class.element_path(self.id), to_params)
+      end
+    end
+
+    def new?
+      id.nil?
+    end
+
+    def to_params
+      instance_variables.map do |variable| 
+        { param_name(variable) => instance_variable_get(variable)}
+      end
+    end
+
+    def param_name(variable_name)
+      "#{self.class.model_name.downcase}[#{variable_name.to_s.gsub /@/,''}]"
     end
 
     class << self
