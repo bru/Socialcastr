@@ -24,13 +24,13 @@ module Socialcastr
     end
 
     def create
-        self.class.api.post(self.class.collection_path, to_params).tap do |xml|
+        api.post(collection_path, to_params).tap do |xml|
           copy_attributes_from_object(self.class.parse(xml))
         end
     end
 
     def update
-        self.class.api.put(self.class.element_path(self.id), to_params).tap do |xml|
+        api.put(element_path, to_params).tap do |xml|
           copy_attributes_from_object(self.class.parse(xml))
         end
     end
@@ -43,6 +43,18 @@ module Socialcastr
 
     def new?
       id.nil?
+    end
+
+    def api
+      self.class.api
+    end
+
+    def element_path
+      self.class.element_path(self.id)
+    end
+
+    def collection_path
+      self.class.collection_path
     end
 
     def to_params

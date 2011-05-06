@@ -68,4 +68,89 @@ describe Socialcastr::Message do
       @messages.first.title.should == "trying out the api"
     end 
   end
+
+  context 'flagging a message' do
+    before :each do
+      fake_socialcast_api_for(:message) do 
+        @message = Socialcastr::Message.find(425)
+      end
+      @api = mock(:api)
+      response = "<flag><id>3333</id></flag>"
+      Socialcastr::Message.stub!(:api).and_return(@api)
+      @api.stub!(:post).and_return(response)
+    end
+
+    it "should assign an id to the Flag" do
+      @message.flag!
+      @message.flag.id.should == 3333
+    end
+
+    context "unflagging the message" do
+      before :each do
+        @message.flag!
+        @api.should_receive(:delete).with("/messages/425/flags/3333").and_return("")
+      end
+
+      it "should not have a flag afterwards" do
+        @message.unflag!
+        @message.flag.id.should be_nil
+      end
+    end
+  end
+
+  context 'liking a message' do
+    before :each do
+      fake_socialcast_api_for :message do 
+        @message = Socialcastr::Message.find(425)
+      end
+
+      @api = mock(:api)
+      response = "<like><id>2222</id><unlikable>true</unlikable></like>"
+      Socialcastr::Message.stub!(:api).and_return(@api)
+      @api.stub!(:post).and_return(response)
+    end
+
+    it 'should create a new like' do
+      old_count = @message.likes.count
+      @message.like!
+      @message.likes.count.should == old_count + 1
+    end
+
+    it 'should assign an id the the new like' do
+      @message.like!
+      @message.likes.last.id.should == 2222
+    end
+  end
+
+  context "unliking a message" do
+    before :each do 
+      fake_socialcast_api_for :message do 
+        @message = Socialcastr::Message.find(425)
+      end
+
+      @api = mock(:api)
+      response = "<like><id>2222</id><unlikable>true</unlikable></like>"
+      Socialcastr::Message.stub!(:api).and_return(@api)
+      @api.stub!(:post).and_return(response)
+      @api.stub!(:delete).and_return("")
+      @message.like!
+    end
+
+    it "should remove a like" do
+      old_count = @message.likes.count
+      @message.unlike!
+      @message.likes.count.should == old_count -1
+    end
+  end
+
+  context "searching for messages matching 'trying'" do
+    before :each do
+      fake_socialcast_api_for :message
+    end
+
+    it "should return a message" do
+      @messages = Socialcastr::Message.search(:q=>"trying")
+      @messages.size.should == 1
+    end
+  end
 end
