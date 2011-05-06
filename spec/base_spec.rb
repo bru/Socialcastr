@@ -82,18 +82,27 @@ describe Socialcastr::Base do
       end
     end
 
+    context "#copy_attributes_from_object" do
+      it "should copy the instance variables of on another object's to the current one" do
+        @another_post = Post.new(:author => "jane doe")
+        @post.copy_attributes_from_object(@another_post)
+        @post.author.should == "jane doe"
+      end
+    end
+
     context 'saving it with #save' do
       before :each do 
         @api = mock('api', :post => "")
         Socialcastr.stub!(:api).and_return(@api)
       end
       it 'should POST to the socialcast api' do
-        response = "<post></post>"
+        response = "<post><id>4</id><author>john doe</author></post>"
         @api.should_receive(:post).and_return(response)
         @post.save
+        @post.id.should == 4
       end
-    end
 
+    end
   end
 
   context 'find_single or find(id)' do
@@ -131,6 +140,7 @@ describe Socialcastr::Base do
       end
     end
   end
+
   context 'find_every or find(:all)' do
     before :each do
       fake_socialcast_api_for(:message) do

@@ -39,7 +39,8 @@ Feel free to help (see Contributing below)
 
 ## TODO
 
-* 
+* Base
+  * CRUD for nested objects (comments, likes, attachments)
 
 ## Contributing to the code (a.k.a. submitting a pull request)
 

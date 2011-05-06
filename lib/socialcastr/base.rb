@@ -20,10 +20,24 @@ module Socialcastr
     end
 
     def save
-      if new?
-        self.class.api.post(self.class.collection_path, to_params)
-      else
-        self.class.api.put(self.class.element_path(self.id), to_params)
+      new? ? create : update
+    end
+
+    def create
+        self.class.api.post(self.class.collection_path, to_params).tap do |xml|
+          copy_attributes_from_object(self.class.parse(xml))
+        end
+    end
+
+    def update
+        self.class.api.put(self.class.element_path(self.id), to_params).tap do |xml|
+          copy_attributes_from_object(self.class.parse(xml))
+        end
+    end
+    
+    def copy_attributes_from_object(object=nil)
+      object.instance_variables.each do |v|
+        instance_variable_set(v, object.instance_variable_get(v))
       end
     end
 

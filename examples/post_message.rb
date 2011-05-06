@@ -11,3 +11,5 @@ message = Socialcastr::Message.new( :title => "hello world", :body => "yet anoth
 puts "message created: #{message.to_params.inspect}"
 
 message.save
+
+puts "message now is #{ message.new? ? "still new" : "persisted"} with id #{message.id}"
