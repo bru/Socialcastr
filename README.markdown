@@ -4,7 +4,7 @@ SocialCast gem is a ruby interface to the SocialCast REST API
 
 ## INSTALLATION
 
-    gem install socialcast4r
+    gem install socialcastr
 
 ## Usage
 
