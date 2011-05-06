@@ -8,27 +8,33 @@ SocialCast gem is a ruby interface to the SocialCast REST API
 
 ## Usage
 
+    # configure the connection 
     Socialcastr.configuration do |socialcast|
       socialcast.username = "user@example.com"
       socialcast.password = "password"
       socialcast.domain   = "demo.socialcast.com"
     end
     
+    # obtain an instance of the API (useful to directly issue get, put, post, delete commands)
     api = Socialcastr.api
     
+    # find all messages (currently returns just one page - 20 elements)
     messages = Socialcastr::Message.find(:all)
-    
-    # old behaviour
-    #  message_params = { "message[title]" => "hallo world!", "message[body]" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  }
-    #  reply = api.add_message(message_params)
-    #  message = Socialcastr::Message.parse(reply)
-
-    # new behaviour
+   
+    # build a new message object 
     message = Socialcastr::Message.new(
                   :title => "hallo world!", 
                   "body" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
               )
+    
+    message.new? # => true
+
+    # persist the message to Socialcast
     message.save
+
+    # search for messages
+    messages = Socialcastr::Message.search(:q => "test")
+
 
 
 ## Status
