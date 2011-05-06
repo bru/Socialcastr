@@ -12,7 +12,8 @@ module Socialcastr
 
     def id
       begin
-        (send self.class.id_attribute).to_i
+        tmp_id = send self.class.id_attribute
+        tmp_id.to_i unless tmp_id.nil?
       rescue
         nil
       end
@@ -31,9 +32,11 @@ module Socialcastr
     end
 
     def to_params
-      instance_variables.map do |variable| 
-        { param_name(variable) => instance_variable_get(variable)}
+      params = {}
+      instance_variables.each do |variable| 
+        params[param_name(variable)] = instance_variable_get(variable)
       end
+      params
     end
 
     def param_name(variable_name)

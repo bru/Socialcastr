@@ -21,6 +21,7 @@ require 'socialcastr/external_resource'
 require 'socialcastr/message'
 
 require 'singleton'
+require 'yaml'
 
 module Socialcastr
 

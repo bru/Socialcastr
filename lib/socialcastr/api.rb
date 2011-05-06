@@ -114,7 +114,7 @@ module Socialcastr
           "#{k.to_s}=#{CGI::escape(v.to_s)}" 
         end
       end
-      "/api/#{path.to_s}.#{@format}" + (params.any? ? "?" + params.join('&') : "")
+      "/api#{path.to_s =~ /\// ? path.to_s : "/" + path.to_s }.#{@format}" + (params.any? ? "?" + params.join('&') : "")
     end
   end
 end

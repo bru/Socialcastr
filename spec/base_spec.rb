@@ -46,6 +46,7 @@ describe Socialcastr::Base do
   context 'initializing a new object with author="john doe"' do
     before :each do
       class Post < Socialcastr::Base
+        id_element :id
         element 'author'
       end
       @post = Post.new(:author => "john doe")
@@ -70,9 +71,8 @@ describe Socialcastr::Base do
     end
 
     context '#to_params' do
-      it 'should return an Array of Hashes ' do
-        @post.to_params.class.should == Array
-        @post.to_params.first.class.should == Hash
+      it 'should return a Hash ' do
+        @post.to_params.class.should == Hash
       end
     end
 

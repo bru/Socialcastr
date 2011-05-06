@@ -18,14 +18,16 @@ SocialCast gem is a ruby interface to the SocialCast REST API
     
     messages = Socialcastr::Message.find(:all)
     
-    
     # old behaviour
     #  message_params = { "message[title]" => "hallo world!", "message[body]" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  }
     #  reply = api.add_message(message_params)
     #  message = Socialcastr::Message.parse(reply)
 
-    # new behaviour (coming soon, implementation incomplete)
-    message = Socialcastr::Message.new(:title => "hallo world!", "body" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+    # new behaviour
+    message = Socialcastr::Message.new(
+                  :title => "hallo world!", 
+                  "body" => "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              )
     message.save
 
 
@@ -34,6 +36,10 @@ SocialCast gem is a ruby interface to the SocialCast REST API
 This is just the first draft of the wrapper. It can be improved in many, many ways.
 The API is not completely covered either: a lot of interesing stuff, like (un)liking and attachments have been left out. 
 Feel free to help (see Contributing below)
+
+## TODO
+
+* 
 
 ## Contributing to the code (a.k.a. submitting a pull request)
 
