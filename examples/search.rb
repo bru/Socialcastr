@@ -10,6 +10,10 @@ end
 
 puts "Searching for #{NEEDLE}..."
 messages = Socialcastr::Message.search(:q => NEEDLE)
-puts "found #{messages.size} results"
+puts "found #{messages.size} results:"
+
+messages.each do |message|
+  puts "#{message.user.name}:\n\t#{message.title}\n\t#{message.body}"
+end
 
 
