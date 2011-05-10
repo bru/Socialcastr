@@ -73,6 +73,12 @@ module Socialcastr
       end
     end
 
+    def comment!(arguments={})
+      comment = Socialcastr::Comment.new(arguments)
+      api.post(element_path + "/comments", comment.to_params)
+    end
+    
+
     def self.search(arguments={})
       parse_collection(api.get(collection_path + "/search", arguments))
     end

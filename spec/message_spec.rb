@@ -153,4 +153,21 @@ describe Socialcastr::Message do
       @messages.size.should == 1
     end
   end
+
+  context "commenting a message" do
+    before :each do
+      fake_socialcast_api_for :message do
+        @message = Socialcastr::Message.find(425)
+      end
+    end
+
+    it "should post to messages/425/comments.xml" do
+      @api = mock(:api)
+      response = "<comment></comment>"
+      Socialcastr::Message.stub!(:api).and_return(@api)
+      @api.should_receive(:post).with("/messages/425/comments", {:text => "hallo world"}).and_return(response)
+      @message.comment! :text => "hallo world"
+    end
+     
+  end
 end
