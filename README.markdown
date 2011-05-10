@@ -32,15 +32,19 @@ SocialCast gem is a ruby interface to the SocialCast REST API
     # persist the message to Socialcast
     message.save
 
+    # comment a message
+    message.comment! :text => "Hallo world"
+
     # search for messages
     messages = Socialcastr::Message.search(:q => "test")
+
 
 
 
 ## Status
 
 This is just the first draft of the wrapper. It can be improved in many, many ways.
-The API is not completely covered either: a lot of interesing stuff, like (un)liking and attachments have been left out. 
+The API is not completely covered either: some of interesing stuff, like message and comments attachments have been left out. 
 Feel free to help (see Contributing below)
 
 ## TODO
