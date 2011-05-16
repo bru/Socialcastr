@@ -165,7 +165,7 @@ describe Socialcastr::Message do
       @api = mock(:api)
       response = "<comment></comment>"
       Socialcastr::Message.stub!(:api).and_return(@api)
-      @api.should_receive(:post).with("/messages/425/comments", {:text => "hallo world"}).and_return(response)
+      @api.should_receive(:post).with("/messages/425/comments", {"comment[text]" => "hallo world"}).and_return(response)
       @message.comment! :text => "hallo world"
     end
      
