@@ -8,9 +8,9 @@ Socialcastr.configuration do |config|
   config.domain = "domain"
 end
 
-xml = File.read("/Users/bru/Desktop/socialcast.xml")
+xml = File.read("~/Download/socialcast.xml")
 start_time = Time.new
-messages = Socialcastr::Message.parse(xml)
+messages = Socialcastr::Message.parse_collection(xml)
 end_time = Time.new
 
 puts "Found #{messages.count} messages in #{end_time - start_time} seconds"
