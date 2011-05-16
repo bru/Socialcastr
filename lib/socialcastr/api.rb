@@ -103,6 +103,9 @@ module Socialcastr
       url   = URI.parse(@endpoint) 
       https = Net::HTTP.new(url.host, url.port)
       https.verify_mode = OpenSSL::SSL::VERIFY_NONE
+      if @debug
+        https.set_debug_output $stderr
+      end
       https.use_ssl = true
       return https
     end

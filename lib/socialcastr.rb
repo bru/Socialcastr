@@ -30,11 +30,19 @@ module Socialcastr
 
   class Configuration
     include Singleton
-    ATTRIBUTES = [:domain, :username, :password, :config_file]
+    ATTRIBUTES = [:domain, :username, :password, :format, :debug, :config_file]
     attr_accessor *ATTRIBUTES
 
     def ready?
-      [@domain, @username, @password].map(&:nil?).none?
+      (ATTRIBUTES - [:config_file]).map { |a| self.send a }.map(&:nil?).none?
+    end
+
+    def format
+      @format ||= 'xml'
+    end
+
+    def debug
+      @debug ||= false
     end
 
     def reset
@@ -53,6 +61,8 @@ module Socialcastr
         Configuration.instance.domain   = config['domain']
         Configuration.instance.username = config['username']
         Configuration.instance.password = config['password']
+        Configuration.instance.format   = config['format']
+        Configuration.instance.debug    = config['debug']
       end 
     end 
     Configuration.instance
@@ -61,7 +71,7 @@ module Socialcastr
   def self.api
     config = Configuration.instance
     raise MissingConfiguration unless config.username
-    API.new(config.username, config.password, config.domain)
+    API.new(config.username, config.password, config.domain, config.format, config.debug)
   end
   
 end
