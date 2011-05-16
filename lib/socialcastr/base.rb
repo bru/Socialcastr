@@ -87,13 +87,15 @@ module Socialcastr
       end
 
       def find_single(id, options)
-        path = element_path(id, options)
-        parse(api.get(path))
+        (prefix_options, query_options) = parse_options(options)
+        path = element_path(id, prefix_options)
+        parse(api.get(path, query_options))
       end
 
       def find_every(options)
-        path = collection_path(options)
-        parse_collection(api.get(path))
+        (prefix_options, query_options) = parse_options(options)
+        path = collection_path(prefix_options)
+        parse_collection(api.get(path, query_options))
       end
 
       def all(*arguments)
@@ -109,7 +111,7 @@ module Socialcastr
       end
 
       def element_path(id, prefix_options = {})
-        "#{prefix(prefix_options)}#{collection_name}/#{URI.escape id.to_s}"
+        "#{collection_path(prefix_options)}/#{URI.escape id.to_s}"
       end
 
       def collection_path(options = {})
@@ -118,6 +120,17 @@ module Socialcastr
 
       def prefix(options)
         options.map { |k,v| k.to_s.gsub("_id", 's') + "/" + v.to_s }.join("/") + "/"
+      end
+
+      def parse_options(options)
+        prefix_options = {}
+        options.each_pair do |k,v|
+          if k.to_s.match(/_id$/)
+            prefix_options[k] = v
+            options.delete(k)
+          end
+        end
+        return [prefix_options, options]
       end
 
       def model_name
