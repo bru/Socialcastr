@@ -11,7 +11,7 @@ module Socialcastr
     element :thumbnail_url
     element :url
     element :likes_count
-    element :created_at
+    element :"created-at", :as => :created_at
     element :id
 
     def unlikable_by?(api_id)

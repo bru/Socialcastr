@@ -10,8 +10,8 @@ module Socialcastr
     element :external_url
     element :icon
     element :likable
-    element :created_at
-    element :updated_at
+    element "created-at", :as => :created_at
+    element "updated-at", :as => :updated_at
     element :last_interacted_at
     element :player_url
     element :thumbnail_url
