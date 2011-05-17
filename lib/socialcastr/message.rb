@@ -5,17 +5,17 @@ module Socialcastr
     element :title
     element :body
     element :url
-    element :permalink_url
+    element "permalink-url", :as => :permalink_url
     element :action
-    element :external_url
+    element "external-url", :as => :external_url
     element :icon
     element :likable
     element "created-at", :as => :created_at
     element "updated-at", :as => :updated_at
-    element :last_interacted_at
-    element :player_url
-    element :thumbnail_url
-    element :player_params
+    element "last-interacted-at", :as => :last_interacted_at
+    element "player-url", :as => :player_url
+    element "thumbnail-url", :as => :thumbnail_url
+    element "player-params", :as => :player_params
     element :user, :class => Socialcastr::User
     #element :group, :class => Socialcastr::Group
     elements :group, :as => :groups, :class => Socialcastr::Group
@@ -23,27 +23,27 @@ module Socialcastr
 
     element :editable
     element :rating
-    element :category_id
+    element "category-id", :as => :category_id
     element :subscribed
     # element :ratings_average
     element :flag, :class => Socialcastr::Flag
     element :deletable
-    element :comments_count
+    element "comments-count", :as => :comments_count
     element :verb
-    element :in_reply_to
+    element "in-reply-to", :as => :in_reply_to
     element :watchable
-    element :contains_url_only
+    element "contains-url-only", :as => :contains_url_only
     # element :target_user
     element :ratable
-    element :message_type
+    element "message-type", :as => :message_type
     elements :recipient, :as => :recipients, :class => Socialcastr::Recipient
 
     elements :attachment, :as => :attachments, :class => Socialcastr::Attachment
     elements :tag, :as => :tags, :class => Socialcastr::Tag
     elements :like, :as => :likes, :class => Socialcastr::Like
-    elements :external_resource, :as => :external_resources, :class => Socialcastr::ExternalResource
-    elements :media_files, :as => :media_file, :class => Socialcastr::MediaFile
-    element :likes_count
+    elements "external-resource", :as => :external_resources, :class => Socialcastr::ExternalResource
+    elements "media-file", :as => :media_files, :class => Socialcastr::MediaFile
+    element "likes-count", :as => :likes_count
     element :hidden
 
     elements :comment, :as => :comments, :class => Socialcastr::Comment
