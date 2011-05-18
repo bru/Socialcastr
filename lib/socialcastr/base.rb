@@ -1,10 +1,8 @@
-require 'sax-machine'
-
+require 'socialcastr/sax/active_resource'
 module Socialcastr
   class Base 
-    include SAXMachine 
-
     def initialize(arguments={})
+      @doc = {}
       arguments.map do |k,v|
         self.send((k.to_s + "=").to_sym, v)
       end
@@ -70,6 +68,18 @@ module Socialcastr
     end
 
     class << self
+      def parse(xml="")
+        source= ActiveResourceXML.new
+        parser = Nokogiri::XML::SAX::Parser.new(source)
+        parser.parse(xml)
+        from_hash(source.doc)
+      end
+
+      def from_hash(h)
+        base = new()
+        base.doc = h
+      end
+
       def api
         @api ||= Socialcastr.api
       end

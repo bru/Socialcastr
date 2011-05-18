@@ -8,7 +8,7 @@ Socialcastr.configuration do |config|
   config.domain = "domain"
 end
 
-xml = File.read("~/Download/socialcast.xml")
+xml = File.read("/Users/bru/Downloads/socialcast.xml")
 start_time = Time.new
 messages = Socialcastr::Message.parse_collection(xml)
 end_time = Time.new
