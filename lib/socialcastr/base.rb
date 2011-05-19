@@ -9,15 +9,6 @@ module Socialcastr
       end
     end
 
-    def id
-      begin
-        tmp_id = send self.class.id_attribute
-        tmp_id.to_i unless tmp_id.nil?
-      rescue
-        nil
-      end
-    end
-
     def save
       new? ? create : update
     end
@@ -68,8 +59,16 @@ module Socialcastr
       "#{self.class.model_name.downcase}[#{variable_name.to_s.gsub /@/,''}]"
     end
 
+    def method_name(s)
+      s.to_s.gsub("_","-")
+    end
+
+    def id
+      return @doc["id"]
+    end
+
     def method_missing(method, *args, &block)
-      return @doc[method.to_s] unless @doc[method.to_s].nil?
+      return @doc[method_name(method)] unless @doc[method_name(method)].nil?
     end
 
     class << self
