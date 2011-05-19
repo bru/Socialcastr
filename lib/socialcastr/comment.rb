@@ -1,19 +1,5 @@
 module Socialcastr
   class Comment < Base
-    element :editable
-    elements :attachment, :as => :attachments, :class => Socialcastr::Attachment
-    element :likable
-    element :deletable
-    elements :like, :as => :likes, :class => Socialcastr::Like
-    element :permalink_url
-    element :text
-    element :user, :class => Socialcastr::User
-    element :thumbnail_url
-    element :url
-    element :likes_count
-    element :"created-at", :as => :created_at
-    element :id
-
     def unlikable_by?(api_id)
       self.likes.map{|l| l.unlikable_by?(api_id)}.any?
     end
