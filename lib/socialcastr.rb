@@ -73,5 +73,20 @@ module Socialcastr
     raise MissingConfiguration unless config.username
     API.new(config.username, config.password, config.domain, config.format, config.debug)
   end
+
+  def self.element_class(method)
+    class_name = method.to_s.gsub(/^[a-z]|-[a-z]/i) { |a| a.sub("-", '').upcase }
+    unless Socialcastr.const_defined?(class_name)
+      Socialcastr.const_set(class_name, Class.new(Socialcastr::Base))
+    end
+    return class_name
+  end
+  def self.collection_class(method)
+    class_name = method.to_s.gsub(/^[a-z]|-[a-z]/i) { |a| a.sub("-", '').upcase }
+    unless Socialcastr.const_defined?(class_name)
+      Socialcastr.const_set(class_name, Class.new(Socialcastr::Collection))
+    end
+    return class_name
+  end
   
 end

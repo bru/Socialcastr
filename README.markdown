@@ -45,6 +45,11 @@ SocialCast gem is a ruby interface to the SocialCast REST API
 
 This is just the first draft of the wrapper. It can be improved in many, many ways.
 The API is not completely covered either: some of interesing stuff, like message and comments attachments have been left out. 
+One current limitation is that the parser will refuse to consider
+elements that contain a dot, so I'm excluding those deliberately for the
+time being (see
+lib/socialcastr/sax/active_resource.rb#start_element).
+
 Feel free to help (see Contributing below)
 
 ## TODO

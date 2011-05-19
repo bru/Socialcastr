@@ -8,6 +8,18 @@ module Socialcastr
         @doc = nil
       end
 
+      def error(s)
+        puts "ERROR: #{s}"
+      end
+
+      def warning(s)
+        puts "WARN: #{s}"
+      end
+
+      def cdata_block(s)
+        characters(s)
+      end
+
       def parse_attrs(attrs=[])
         type = "hash"
         attrs.each do |attr|
@@ -22,6 +34,10 @@ module Socialcastr
       end
 
       def start_element name, attrs = []
+        if name =~ /\./
+          @nil = true
+          return nil
+        end
         type = parse_attrs(attrs)
         unless @nil
           @types.push type
@@ -37,7 +53,7 @@ module Socialcastr
       end
 
       def characters(s)
-        return if s =~ /^[\s\n\t]*$/
+        return if (s =~ /^[\s\n\t]*$/ || @nil)
         @types[-1] = "string"
         @values[-1] =  s
       end
@@ -48,19 +64,24 @@ module Socialcastr
         else
           value = @values.pop
           type = @types.pop
+          if type == "hash"
+            element = Socialcastr.const_get(Socialcastr.element_class(name)).new
+            element.instance_variable_set("@doc", value)
+          else
+            element = value
+          end
 
           if @values[-1] 
             if @types[-1] == "array"
-              @values[-1].push value
+              @values[-1].push element
             else
-              @values[-1][name] = value
+              @values[-1][name] = element
             end
           else
-            @doc = { name => value }
+            @doc = { name => element }
           end
         end
       end
-
     end
   end
 end

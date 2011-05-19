@@ -1,3 +1,4 @@
+require 'nokogiri'
 require 'socialcastr/sax/active_resource'
 module Socialcastr
   class Base 
@@ -67,9 +68,25 @@ module Socialcastr
       "#{self.class.model_name.downcase}[#{variable_name.to_s.gsub /@/,''}]"
     end
 
+    def method_missing(method, *args, &block)
+      if !@doc[method.to_s].nil?
+        value = @doc[method.to_s]
+        case value.class
+        when Array
+          element = Socialcastr.const_get(Socialcastr.collection_class(method)).new
+          element.instance_variable_set("@doc", value)
+          return element
+        else
+          return value
+        end
+      end
+    end
+
+ 
+
     class << self
       def parse(xml="")
-        source= ActiveResourceXML.new
+        source= SAX::ActiveResource.new
         parser = Nokogiri::XML::SAX::Parser.new(source)
         parser.parse(xml)
         from_hash(source.doc)
@@ -77,7 +94,8 @@ module Socialcastr
 
       def from_hash(h)
         base = new()
-        base.doc = h
+        base.instance_variable_set("@doc", h)
+        return base
       end
 
       def api
