@@ -69,33 +69,23 @@ module Socialcastr
     end
 
     def method_missing(method, *args, &block)
-      if !@doc[method.to_s].nil?
-        value = @doc[method.to_s]
-        case value.class
-        when Array
-          element = Socialcastr.const_get(Socialcastr.collection_class(method)).new
-          element.instance_variable_set("@doc", value)
-          return element
-        else
-          return value
-        end
-      end
+      return @doc[method.to_s] unless @doc[method.to_s].nil?
     end
-
- 
 
     class << self
       def parse(xml="")
-        source= SAX::ActiveResource.new
-        parser = Nokogiri::XML::SAX::Parser.new(source)
-        parser.parse(xml)
-        from_hash(source.doc)
+        source = SAX::ActiveResource.new
+        Nokogiri::XML::SAX::Parser.new(source).parse(xml)
+        case source.doc
+        when Hash
+          return from_hash(source.doc)
+        else
+          return source.doc 
+        end
       end
 
       def from_hash(h)
-        base = new()
-        base.instance_variable_set("@doc", h)
-        return base
+        new.tap { |base| base.instance_variable_set("@doc", h) }
       end
 
       def api
@@ -123,7 +113,7 @@ module Socialcastr
       def find_every(options)
         (prefix_options, query_options) = parse_options(options)
         path = collection_path(prefix_options)
-        parse_collection(api.get(path, query_options))
+        parse(api.get(path, query_options))
       end
 
       def all(*arguments)
@@ -167,31 +157,6 @@ module Socialcastr
 
       def collection_name
         model_name.downcase + "s"
-      end
-
-      def parse_collection(data)
-        collection_class.parse(data)
-      end
-
-      def id_attribute
-        model_name.downcase + "_id"
-      end
-
-      def collection_class
-        return @collection_class if @collection_class
-        class_name = model_name + "List"
-        model_class = self
-        c_element = model_name.downcase.to_sym
-        c_name = collection_name.to_sym
-        klass = Object.const_set(class_name,Class.new(Socialcastr::Collection))
-        klass.class_eval do
-          collection_of c_element, :as => c_name, :class => model_class
-        end
-        return @collection_class = klass
-      end
-
-      def id_element(name=:id)
-        element name, :as => id_attribute.to_sym
       end
     end
   end

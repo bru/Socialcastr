@@ -33,7 +33,7 @@ module Socialcastr
     
 
     def self.search(arguments={})
-      parse_collection(api.get(collection_path + "/search", arguments))
+      parse(api.get(collection_path + "/search", arguments))
     end
   end
 end

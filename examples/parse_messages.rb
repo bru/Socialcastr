@@ -13,4 +13,4 @@ start_time = Time.new
 messages = Socialcastr::Message.parse(xml)
 end_time = Time.new
 
-puts "Found #{messages.messages.count} messages in #{end_time - start_time} seconds"
+puts "Found #{messages.count} messages in #{end_time - start_time} seconds"

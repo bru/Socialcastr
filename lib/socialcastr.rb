@@ -2,7 +2,6 @@ $LOAD_PATH.unshift(File.expand_path(File.dirname(__FILE__))) unless $LOAD_PATH.i
 
 require 'socialcastr/exceptions'
 require 'socialcastr/base'
-require 'socialcastr/collection'
 require 'socialcastr/api'
 require 'socialcastr/like'
 require 'socialcastr/comment'
@@ -40,40 +39,34 @@ module Socialcastr
     end
   end 
 
-  def self.configuration
-    if block_given?
-      yield Configuration.instance
-      if Configuration.instance.config_file
-        config = YAML::load_file(Configuration.instance.config_file)
-        Configuration.instance.domain   = config['domain']
-        Configuration.instance.username = config['username']
-        Configuration.instance.password = config['password']
-        Configuration.instance.format   = config['format']
-        Configuration.instance.debug    = config['debug']
-      end 
-    end 
-    Configuration.instance
-  end 
+  class << self
+    def configuration
+      if block_given?
+        yield Configuration.instance
+        if Configuration.instance.config_file
+          config = YAML::load_file(Configuration.instance.config_file)
+          Configuration.instance.domain   = config['domain']
+          Configuration.instance.username = config['username']
+          Configuration.instance.password = config['password']
+          Configuration.instance.format   = config['format']
+          Configuration.instance.debug    = config['debug']
+        end
+      end
+      Configuration.instance
+    end
 
-  def self.api
-    config = Configuration.instance
-    raise MissingConfiguration unless config.username
-    API.new(config.username, config.password, config.domain, config.format, config.debug)
-  end
+    def api
+      config = Configuration.instance
+      raise MissingConfiguration unless config.username
+      API.new(config.username, config.password, config.domain, config.format, config.debug)
+    end
 
-  def self.element_class(method)
-    class_name = method.to_s.gsub(/^[a-z]|-[a-z]/i) { |a| a.sub("-", '').upcase }
-    unless Socialcastr.const_defined?(class_name)
+    def element_class_name(method)
+      method.to_s.gsub(/^[a-z]|-[a-z]/i) { |a| a.sub("-", '').upcase }
+    end
+
+    def const_missing(class_name)
       Socialcastr.const_set(class_name, Class.new(Socialcastr::Base))
     end
-    return class_name
   end
-  def self.collection_class(method)
-    class_name = method.to_s.gsub(/^[a-z]|-[a-z]/i) { |a| a.sub("-", '').upcase }
-    unless Socialcastr.const_defined?(class_name)
-      Socialcastr.const_set(class_name, Class.new(Socialcastr::Collection))
-    end
-    return class_name
-  end
-  
 end

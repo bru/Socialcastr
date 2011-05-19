@@ -8,14 +8,6 @@ module Socialcastr
         @doc = nil
       end
 
-      def error(s)
-        puts "ERROR: #{s}"
-      end
-
-      def warning(s)
-        puts "WARN: #{s}"
-      end
-
       def cdata_block(s)
         characters(s)
       end
@@ -65,7 +57,7 @@ module Socialcastr
           value = @values.pop
           type = @types.pop
           if type == "hash"
-            element = Socialcastr.const_get(Socialcastr.element_class(name)).new
+            element = Socialcastr.const_get(Socialcastr.element_class_name(name)).new
             element.instance_variable_set("@doc", value)
           else
             element = value
@@ -78,7 +70,7 @@ module Socialcastr
               @values[-1][name] = element
             end
           else
-            @doc = { name => element }
+            @doc = element
           end
         end
       end
