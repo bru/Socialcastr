@@ -10,7 +10,7 @@ end
 
 xml = File.read("/Users/bru/Downloads/socialcast.xml")
 start_time = Time.new
-messages = Socialcastr::Message.parse_collection(xml)
+messages = Socialcastr::Message.parse(xml)
 end_time = Time.new
 
-puts "Found #{messages.count} messages in #{end_time - start_time} seconds"
+puts "Found #{messages.messages.count} messages in #{end_time - start_time} seconds"
