@@ -3,7 +3,7 @@ require 'socialcastr/sax/active_resource'
 module Socialcastr
   class Base 
     def initialize(arguments={})
-      @doc = {}
+      @data = {}
       arguments.map do |k,v|
         self.send((k.to_s + "=").to_sym, v)
       end
@@ -64,27 +64,27 @@ module Socialcastr
     end
 
     def id
-      return @doc["id"]
+      return @data["id"]
     end
 
     def method_missing(method, *args, &block)
-      return @doc[method_name(method)] unless @doc[method_name(method)].nil?
+      return @data[method_name(method)] unless @data[method_name(method)].nil?
     end
 
     class << self
       def parse(xml="")
         source = SAX::ActiveResource.new
         Nokogiri::XML::SAX::Parser.new(source).parse(xml)
-        case source.doc
+        case source.data
         when Hash
-          return from_hash(source.doc)
+          return from_hash(source.data)
         else
-          return source.doc 
+          return source.data
         end
       end
 
       def from_hash(h)
-        new.tap { |base| base.instance_variable_set("@doc", h) }
+        new.tap { |base| base.instance_variable_set("@data", h) }
       end
 
       def api

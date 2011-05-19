@@ -1,11 +1,11 @@
 module Socialcastr
   module SAX
     class ActiveResource < Nokogiri::XML::SAX::Document
-      attr_accessor :doc
+      attr_accessor :data
       def initialize
         @types = []
         @values = []
-        @doc = nil
+        @data= nil
       end
 
       def cdata_block(s)
@@ -45,20 +45,24 @@ module Socialcastr
       end
 
       def characters(s)
-        return if (s =~ /^[\s\n\t]*$/ || @nil)
-        @types[-1] = "string"
-        @values[-1] =  s
+        return if @nil 
+        return if (s =~ /^[\s\n\t]*$/ && (@types[-1] != "string" || @values[-1].empty?))
+        @types[-1]  = "string"
+        @values[-1] = @values[-1].empty? ? s : @values[-1] + s 
       end
 
       def end_element name
+        @debug = false
         if @nil
           @nil = false
         else
           value = @values.pop
           type = @types.pop
+          return if value.empty?
+
           if type == "hash"
             element = Socialcastr.const_get(Socialcastr.element_class_name(name)).new
-            element.instance_variable_set("@doc", value)
+            element.instance_variable_set("@data", value)
           else
             element = value
           end
@@ -70,7 +74,7 @@ module Socialcastr
               @values[-1][name] = element
             end
           else
-            @doc = element
+            @data = element
           end
         end
       end
