@@ -1,27 +1,29 @@
 module Socialcastr
+
   class Message < Base
 
     def flag!
       return true if flagged?
-      flag.copy_attributes_from_object(Flag.parse(api.post(element_path + "/flags")))
+      self.flag = Socialcastr::Flag.parse(api.post(element_path + "/flags"))
     end
 
     def flagged?
-      !flag.id.nil?
+      self.flag && !self.flag.id.nil?
     end
 
     def unflag!
       return unless flagged?
-      api.delete(element_path + "/flags/#{flag.id}")
-      @flag = Flag.new
+      api.delete(element_path + "/flags/#{self.flag.id}")
+      self.flag = nil
     end
 
     def like!
+      self.likes ||= []
       likes << Like.parse(api.post(element_path + "/likes"))
     end
 
     def unlike!
-      likes.reject! do |l|
+      self.likes.reject! do |l|
         l.unlikable && api.delete(element_path + "/likes/#{l.id}")
       end
     end
@@ -32,8 +34,11 @@ module Socialcastr
     end
     
 
-    def self.search(arguments={})
-      parse(api.get(collection_path + "/search", arguments))
+    def self.search(query, arguments={})
+      puts "searching for #{query}"
+      xml = api.get(collection_path + "/search", { :q => query}.merge(arguments))
+      puts "Got a response xml of #{xml.length} bytes"
+      return parse(xml)
     end
   end
 end

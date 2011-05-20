@@ -27,9 +27,7 @@ describe Socialcastr::Base do
     
     context 'for a class that has an element \'author\'' do
       before :each do
-        class Post < Socialcastr::Base
-          element 'author'
-        end
+        class Post < Socialcastr::Base; end
         @post = Post.new
       end
 
@@ -45,10 +43,7 @@ describe Socialcastr::Base do
 
   context 'initializing a new object with author="john doe"' do
     before :each do
-      class Post < Socialcastr::Base
-        id_element :id
-        element 'author'
-      end
+      class Post < Socialcastr::Base; end
       @post = Post.new(:author => "john doe")
     end
 
@@ -78,7 +73,7 @@ describe Socialcastr::Base do
 
     context '#param_name' do
       it 'should return a string like model_name[variable_name]' do
-        @post.param_name("@author").should == "post[author]"
+        @post.param_name("author").should == "post[author]"
       end
     end
 
@@ -96,7 +91,7 @@ describe Socialcastr::Base do
         Socialcastr.stub!(:api).and_return(@api)
       end
       it 'should POST to the socialcast api' do
-        response = "<post><id>4</id><author>john doe</author></post>"
+        response = "<post><id type='integer'>4</id><author>john doe</author></post>"
         @api.should_receive(:post).and_return(response)
         @post.save
         @post.id.should == 4
@@ -143,19 +138,19 @@ describe Socialcastr::Base do
 
   context 'find_every or find(:all)' do
     before :each do
-      fake_socialcast_api_for(:message) do
+      fake_socialcast_api_for(:messages) do
         @messages = Socialcastr::Base.find(:all)
       end
     end
 
     it 'should return an enumerable' do
-      @messages.class.should == BaseList
+      @messages.class.should == Array
       lambda { @messages.first }.should_not raise_error
     end
   end
   context 'first or find(:first)' do
     before :each do
-      fake_socialcast_api_for(:message) do
+      fake_socialcast_api_for(:messages) do
         @message = Socialcastr::Message.first
       end
     end
@@ -200,19 +195,6 @@ describe Socialcastr::Base do
   context 'collection_name' do
     it 'should return a pluralized and downcase string' do
       Socialcastr::Base.collection_name.should == 'bases'
-    end
-  end
-
-  context 'collection_class' do
-    before do
-      class Post < Socialcastr::Base; end
-    end
-    it 'should return a class' do
-      Post.collection_class.class.should == Class
-    end
-
-    it 'should return a class that inherits from Socialcastr::Collection' do
-      Post.collection_class.superclass.should == Socialcastr::Collection
     end
   end
 

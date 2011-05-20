@@ -33,10 +33,6 @@ describe Socialcastr::Message do
       @message.groups.class.should == Array
     end
 
-    it "should belong to a well formed group" do
-      @message.groups.first.class.should == Socialcastr::Group
-    end
-
     it "should have a source" do
       @message.source.should_not be_nil
       @message.source.class.should == Socialcastr::Source
@@ -51,8 +47,8 @@ describe Socialcastr::Message do
       end
     end
 
-    it "should be an instance of MessageList" do
-      @messages.class.should == MessageList
+    it "should be an instance of Array" do
+      @messages.class.should == Array
     end
 
     it "should be a collection of 20 Socialcastr::Message objects" do
@@ -75,7 +71,7 @@ describe Socialcastr::Message do
         @message = Socialcastr::Message.find(425)
       end
       @api = mock(:api)
-      response = "<flag><id>3333</id></flag>"
+      response = "<flag><id type='integer'>3333</id></flag>"
       Socialcastr::Message.stub!(:api).and_return(@api)
       @api.stub!(:post).and_return(response)
     end
@@ -91,9 +87,14 @@ describe Socialcastr::Message do
         @api.should_receive(:delete).with("/messages/425/flags/3333").and_return("")
       end
 
+      it "should not be flagged afterwards" do
+        @message.unflag!
+        @message.flagged?.should be_false
+      end
+
       it "should not have a flag afterwards" do
         @message.unflag!
-        @message.flag.id.should be_nil
+        @message.flag.should be_nil
       end
     end
   end
@@ -105,7 +106,7 @@ describe Socialcastr::Message do
       end
 
       @api = mock(:api)
-      response = "<like><id>2222</id><unlikable>true</unlikable></like>"
+      response = "<like><id type='integer'>2222</id><unlikable>true</unlikable></like>"
       Socialcastr::Message.stub!(:api).and_return(@api)
       @api.stub!(:post).and_return(response)
     end
@@ -124,7 +125,7 @@ describe Socialcastr::Message do
 
   context "unliking a message" do
     before :each do 
-      fake_socialcast_api_for :message do 
+      fake_socialcast_api_for :message do
         @message = Socialcastr::Message.find(425)
       end
 
@@ -134,6 +135,7 @@ describe Socialcastr::Message do
       @api.stub!(:post).and_return(response)
       @api.stub!(:delete).and_return("")
       @message.like!
+      @message.likes.count.should == 1
     end
 
     it "should remove a like" do
@@ -145,12 +147,13 @@ describe Socialcastr::Message do
 
   context "searching for messages matching 'trying'" do
     before :each do
-      fake_socialcast_api_for :message
+      fake_socialcast_api_for :messages
     end
 
     it "should return a message" do
-      @messages = Socialcastr::Message.search(:q=>"trying")
-      @messages.size.should == 1
+      @messages = Socialcastr::Message.search("trying")
+      puts "@messages is a #{@message.class}"
+      @messages.size.should == 20
     end
   end
 

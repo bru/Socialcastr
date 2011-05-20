@@ -5,7 +5,7 @@ module Socialcastr
     def initialize(arguments={})
       @data = {}
       arguments.map do |k,v|
-        @data[k] = v
+        @data[k.to_s] = v
       end
     end
 
@@ -26,9 +26,7 @@ module Socialcastr
     end
     
     def copy_attributes_from_object(object=nil)
-      object.instance_variables.each do |v|
-        instance_variable_set(v, object.instance_variable_get(v))
-      end
+      @data = object.instance_variable_get("@data")
     end
 
     def new?
@@ -68,7 +66,11 @@ module Socialcastr
     end
 
     def method_missing(method, *args, &block)
-      return @data[method_name(method)] unless @data[method_name(method)].nil?
+      if method.to_s =~ /=$/
+        @data[method_name(method.to_s.sub(/=$/,''))] = *args
+      else
+        return @data[method_name(method)] unless @data[method_name(method)].nil?
+      end
     end
 
     class << self
