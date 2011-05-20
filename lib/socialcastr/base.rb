@@ -5,7 +5,7 @@ module Socialcastr
     def initialize(arguments={})
       @data = {}
       arguments.map do |k,v|
-        self.send((k.to_s + "=").to_sym, v)
+        @data[k] = v
       end
     end
 
@@ -49,14 +49,14 @@ module Socialcastr
 
     def to_params
       params = {}
-      instance_variables.each do |variable| 
-        params[param_name(variable)] = instance_variable_get(variable)
+      @data.each_pair do |k,v| 
+        params[param_name(k)] = v
       end
       params
     end
 
     def param_name(variable_name)
-      "#{self.class.model_name.downcase}[#{variable_name.to_s.gsub /@/,''}]"
+      "#{self.class.model_name.downcase}[#{variable_name}]"
     end
 
     def method_name(s)
@@ -84,7 +84,7 @@ module Socialcastr
       end
 
       def from_hash(h)
-        new.tap { |base| base.instance_variable_set("@data", h) }
+        new.tap { |object| object.instance_variable_set("@data", h) }
       end
 
       def api

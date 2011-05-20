@@ -61,7 +61,7 @@ module Socialcastr
       API.new(config.username, config.password, config.domain, config.format, config.debug)
     end
 
-    def element_class_name(method)
+    def to_class_name(method)
       method.to_s.gsub(/^[a-z]|-[a-z]/i) { |a| a.sub("-", '').upcase }
     end
 
