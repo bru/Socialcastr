@@ -6,6 +6,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency('rspec', '~> 2.5')
   s.add_development_dependency('yard')
   s.add_development_dependency('artifice')
+  s.add_runtime_dependency('nokogiri', '1.4.4')
   s.authors = ["Riccardo Cambiassi"]
   s.description = %q{A Ruby wrapper for the Socialcast REST API}
   s.post_install_message =<<eos
