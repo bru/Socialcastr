@@ -11,7 +11,7 @@ class String
   end
 
   def all_spaces?
-    self =~ /^[\s\n\t]*$/
+    self.gsub(/^[\s\n\t]*$/m, '').empty?
   end
 end
 
@@ -101,12 +101,8 @@ module Socialcastr
 
           if container_type
             if container_type == ARRAY
-              # @values[-1] ||= []
-              # @values[-1].push element
               @values[-1] ? @values[-1].push(element) : @values[-1] = [element]
             else # Hash
-              # @values[-1] ||= {}
-              # @values[-1][name] = element
               @values[-1] ? @values[-1][name]=element : @values[-1] = { name => element }
             end
           else # Root Node
