@@ -109,7 +109,7 @@ module Socialcastr
         (value, type) = pop_element
         case type
         when HASH
-          element = Socialcastr.const_get(Socialcastr.to_class_name(name)).from_hash(value || {})
+          element = Socialcastr.const_get(Socialcastr.to_class_name(name), false).from_hash(value || {})
         when INTEGER
           element = value.to_i
         when BOOLEAN
