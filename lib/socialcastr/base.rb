@@ -94,8 +94,9 @@ module Socialcastr
       end
 
       def find(*arguments)
-        scope = arguments.slice!(0)
-        options = arguments.slice!(0) || {}
+        args = arguments.dup
+        scope = args.slice!(0)
+        options = args.slice!(0) || {}
         case scope
           when :all   then find_every(options)
           when :first then find_every(options).first
