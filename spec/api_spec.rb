@@ -142,7 +142,7 @@ describe Socialcastr::API do
       @https.class.should == Net::HTTP
     end
     it "should use ssl" do
-      @https.use_ssl.should be_true
+      @https.use_ssl?.should be_true
     end
     it "should not verify SSL" do
       @https.verify_mode.should == OpenSSL::SSL::VERIFY_NONE

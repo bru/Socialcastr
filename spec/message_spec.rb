@@ -152,7 +152,6 @@ describe Socialcastr::Message do
 
     it "should return a message" do
       @messages = Socialcastr::Message.search("trying")
-      puts "@messages is a #{@message.class}"
       @messages.size.should == 20
     end
   end

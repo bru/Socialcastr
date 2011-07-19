@@ -117,7 +117,7 @@ describe Socialcastr::Base do
 
     context 'after modifying one attribute' do
       before :each do
-        @message.title = 'new title'
+        @message.title = "new title"
       end
 
       it 'the attribute should be changed' do
@@ -162,7 +162,7 @@ describe Socialcastr::Base do
 
   context 'last or find(:last)' do
     before :each do
-      fake_socialcast_api_for(:message) do
+      fake_socialcast_api_for(:messages) do
         @message = Socialcastr::Message.last
       end
     end

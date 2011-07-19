@@ -67,7 +67,7 @@ module Socialcastr
 
     def method_missing(method, *args, &block)
       if method.to_s =~ /=$/
-        @data[method_name(method.to_s.sub(/=$/,''))] = *args
+        @data[method_name(method.to_s.sub(/=$/,''))] = args.first
       else
         return @data[method_name(method)] unless @data[method_name(method)].nil?
       end

@@ -35,9 +35,7 @@ module Socialcastr
     
 
     def self.search(query, arguments={})
-      puts "searching for #{query}"
       xml = api.get(collection_path + "/search", { :q => query}.merge(arguments))
-      puts "Got a response xml of #{xml.length} bytes"
       return parse(xml)
     end
   end
