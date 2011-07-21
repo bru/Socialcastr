@@ -1,6 +1,6 @@
 module Socialcastr
-  class InvalidMethod < StandardError
-  end
+  class InvalidMethod < StandardError; end
+  class InvalidAttribute < StandardError; end
   class ConnectionError < StandardError # :nodoc:
     attr_reader :response
 

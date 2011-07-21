@@ -37,12 +37,12 @@ module Socialcastr
       self.class.api
     end
 
-    def element_path
-      self.class.element_path(self.id)
+    def element_path(prefix_options={})
+      self.class.element_path(self.id, prefix_options)
     end
 
-    def collection_path
-      self.class.collection_path
+    def collection_path(options={})
+      self.class.collection_path(options)
     end
 
     def to_params
@@ -69,8 +69,23 @@ module Socialcastr
       if method.to_s =~ /=$/
         @data[method_name(method.to_s.sub(/=$/,''))] = args.first
       else
-        return @data[method_name(method)] unless @data[method_name(method)].nil?
+        obj = @data[method_name(method)] 
+        unless new?
+          if obj.class.ancestors.include? Socialcastr::Base
+            obj.add_container_id(self)
+          end
+          if obj.class == Array
+            obj.each do |o|
+              o.add_container_id(self)
+            end
+          end
+        end
+        return obj
       end
+    end
+
+    def add_container_id(container)
+      self.send("#{container.class.model_name.downcase}_id=", container.id)
     end
 
     class << self
