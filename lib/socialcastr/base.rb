@@ -100,6 +100,14 @@ module Socialcastr
         end
       end
 
+      def parse_and_prefix(xml, prefix_options)
+        obj = parse(xml)
+        prefix_options.each_pair do |k,v|
+          obj.send("#{k}=", v)
+        end
+        return obj
+      end
+
       def from_hash(h)
         new.tap { |object| object.instance_variable_set("@data", h) }
       end
@@ -124,13 +132,13 @@ module Socialcastr
       def find_single(id, options)
         (prefix_options, query_options) = parse_options(options)
         path = element_path(id, prefix_options)
-        parse(api.get(path, query_options))
+        parse_and_prefix(api.get(path, query_options), prefix_options)
       end
 
       def find_every(options)
         (prefix_options, query_options) = parse_options(options)
         path = collection_path(prefix_options)
-        parse(api.get(path, query_options))
+        parse_and_prefix(api.get(path, query_options), prefix_options)
       end
 
       def all(*arguments)

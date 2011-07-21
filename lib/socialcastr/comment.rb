@@ -3,12 +3,14 @@ module Socialcastr
     def like!
       self.likes ||= []
       likes << Like.parse(api.post(element_path(:message_id => self.message_id) + "/likes"))
+      return self
     end
 
     def unlike!
       self.likes.reject! do |l|
         l.unlikable_by?(self.user_id) && api.delete(element_path(:message_id => self.mesage_id) + "/likes/#{l.id}")
       end
+      return self
     end
 
     def unlikable_by?(api_id)
