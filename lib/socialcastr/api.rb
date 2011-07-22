@@ -18,6 +18,10 @@ module Socialcastr
       return self
     end
 
+    def profile
+      @profile ||= Socialcastr::Community.parse(post("authentication", {:email => @username, :password => @password })).first.profile
+    end
+
     def get(path, args={})
       https_request(:get, path, args)
     end   
