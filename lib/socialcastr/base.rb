@@ -24,6 +24,12 @@ module Socialcastr
           copy_attributes_from_object(self.class.parse(xml))
         end
     end
+
+    def refresh
+        api.get(element_path).tap do |xml|
+          copy_attributes_from_object(self.class.parse(xml))
+        end
+    end
     
     def copy_attributes_from_object(object=nil)
       @data = object.instance_variable_get("@data")
@@ -124,7 +130,6 @@ module Socialcastr
           when :all   then find_every(options)
           when :first then find_every(options).first
           when :last  then find_every(options).to_a.last
-          #when :one   then find_one(options)
           else             find_single(scope, options)
         end
       end
