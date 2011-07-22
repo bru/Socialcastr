@@ -17,7 +17,7 @@ module Socialcastr
     end
     
     def likable_by?(api_id)
-      self.user_id  != api_id
+      self.user.id  != api_id
     end
     
     def like_id
