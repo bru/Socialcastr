@@ -1,15 +1,14 @@
 module Socialcastr
   class Comment < Base
     def like!
-      self.likes ||= []
-      likes << Like.parse(api.post(element_path(:message_id => self.message_id) + "/likes"))
+      api.post(element_path(:message_id => message_id) + "/likes")
+      refresh
       return self
     end
 
     def unlike!
-      self.likes.reject! do |l|
-        l.unlikable_by?(self.user_id) && api.delete(element_path(:message_id => self.mesage_id) + "/likes/#{l.id}")
-      end
+      api.delete(element_path(:message_id => message_id) + "/likes/#{like_id}")
+      refresh
       return self
     end
 
@@ -21,8 +20,8 @@ module Socialcastr
       self.user_id  != api_id
     end
     
-    def like_id(api_id)
-      self.likes.select { |like| like.unlikable_by?(api_id) }.first.id
+    def like_id
+      self.likes.select { |like| like.unlikable_by?(api.profile.id) }.first.id
     end
   end
 end
