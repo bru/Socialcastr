@@ -1,13 +1,13 @@
 module Socialcastr
   class Comment < Base
     def like!
-      api.post(element_path(:message_id => message_id) + "/likes")
+      Socialcastr::Like.new({}, to_prefix_options).save
       refresh
       return self
     end
 
     def unlike!
-      api.delete(element_path(:message_id => message_id) + "/likes/#{like_id}")
+      like.destroy
       refresh
       return self
     end
@@ -20,8 +20,8 @@ module Socialcastr
       self.user.id  != api_id
     end
     
-    def like_id
-      self.likes.select { |like| like.unlikable_by?(api.profile.id) }.first.id
+    def like
+      self.likes.select { |like| like.unlikable_by?(api.profile.id) }.first
     end
   end
 end

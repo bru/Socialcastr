@@ -4,7 +4,8 @@ module Socialcastr
 
     def flag!
       return true if flagged?
-      self.flag = Socialcastr::Flag.parse(api.post(element_path + "/flags"))
+      Socialcastr::Flag.new({}, :message_id => id).save
+      refresh
     end
 
     def flagged?
@@ -13,24 +14,24 @@ module Socialcastr
 
     def unflag!
       return unless flagged?
-      api.delete(element_path + "/flags/#{self.flag.id}")
-      self.flag = nil
+      self.flag.destroy
+      refresh  
     end
 
     def like!
-      self.likes ||= []
-      likes << Like.parse(api.post(element_path + "/likes"))
+      Socialcastr::Like.new({}, :message_id => id).save
+      refresh
     end
 
     def unlike!
       self.likes.reject! do |l|
-        l.unlikable && api.delete(element_path + "/likes/#{l.id}")
+        l.unlikable && l.destroy
       end
     end
 
     def comment!(arguments={})
-      comment = Socialcastr::Comment.new(arguments)
-      api.post(element_path + "/comments", comment.to_params)
+      Socialcastr::Comment.new(arguments, :message_id => id).save
+      refresh
     end
     
 

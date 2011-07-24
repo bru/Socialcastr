@@ -2,11 +2,13 @@ require 'nokogiri'
 require 'socialcastr/sax/active_resource'
 module Socialcastr
   class Base 
-    def initialize(arguments={})
+    attr_accessor :prefix_options
+    def initialize(arguments={}, prefix_options={})
       @data = {}
-      arguments.map do |k,v|
+      arguments.each_pair do |k,v|
         @data[k.to_s] = v
       end
+      @prefix_options = prefix_options
     end
 
     def save
@@ -14,25 +16,32 @@ module Socialcastr
     end
 
     def create
-        api.post(collection_path, to_params).tap do |xml|
-          copy_attributes_from_object(self.class.parse(xml))
-        end
+      api.post(collection_path, to_params).tap do |xml|
+        copy_attributes_from_object(self.class.parse(xml))
+      end
     end
 
     def update
-        api.put(element_path, to_params).tap do |xml|
-          copy_attributes_from_object(self.class.parse(xml))
-        end
+      api.put(element_path, to_params).tap do |xml|
+        copy_attributes_from_object(self.class.parse(xml))
+      end
     end
 
     def refresh
-        api.get(element_path).tap do |xml|
-          copy_attributes_from_object(self.class.parse(xml))
-        end
+      api.get(element_path).tap do |xml|
+        copy_attributes_from_object(self.class.parse(xml))
+      end
+      return self
+    end
+
+    def destroy
+      api.delete(element_path)
+      return self
     end
     
     def copy_attributes_from_object(object=nil)
       @data = object.instance_variable_get("@data")
+      return self
     end
 
     def new?
@@ -43,12 +52,12 @@ module Socialcastr
       self.class.api
     end
 
-    def element_path(prefix_options={})
-      self.class.element_path(self.id, prefix_options)
+    def element_path
+      self.class.element_path(self.id, @prefix_options)
     end
 
-    def collection_path(options={})
-      self.class.collection_path(options)
+    def collection_path
+      self.class.collection_path(@prefix_options)
     end
 
     def to_params
@@ -57,6 +66,10 @@ module Socialcastr
         params[param_name(k)] = v
       end
       params
+    end
+
+    def to_prefix_options
+      @prefix_options.merge "#{self.class.model_name.downcase}_id" => id
     end
 
     def param_name(variable_name)
@@ -77,41 +90,29 @@ module Socialcastr
       else
         obj = @data[method_name(method)] 
         unless new?
-          if obj.class.ancestors.include? Socialcastr::Base
-            obj.add_container_id(self)
-          end
-          if obj.class == Array
-            obj.each do |o|
-              o.add_container_id(self)
-            end
-          end
+          self.class.set_prefix_options(obj, to_prefix_options)
         end
         return obj
       end
-    end
-
-    def add_container_id(container)
-      self.send("#{container.class.model_name.downcase}_id=", container.id)
     end
 
     class << self
-      def parse(xml="")
-        source = SAX::ActiveResource.new
-        Nokogiri::XML::SAX::Parser.new(source).parse(xml)
-        case source.data
-        when Hash
-          return from_hash(source.data)
-        else
-          return source.data
-        end
+      def parse(xml="", prefix_options={})
+        resource = SAX::ActiveResource.new
+        Nokogiri::XML::SAX::Parser.new(resource).parse(xml)
+        return set_prefix_options(resource.data, prefix_options)
       end
 
-      def parse_and_prefix(xml, prefix_options)
-        obj = parse(xml)
-        prefix_options.each_pair do |k,v|
-          obj.send("#{k}=", v)
+      def set_prefix_options(obj, prefix_options={})
+        if obj.class.ancestors.include? Socialcastr::Base
+          obj.prefix_options = prefix_options
+          return obj
         end
-        return obj
+        if obj.class == Array
+          obj.each do |o|
+            set_prefix_options(o, prefix_options)
+          end
+        end
       end
 
       def from_hash(h)
@@ -137,13 +138,13 @@ module Socialcastr
       def find_single(id, options)
         (prefix_options, query_options) = parse_options(options)
         path = element_path(id, prefix_options)
-        parse_and_prefix(api.get(path, query_options), prefix_options)
+        parse(api.get(path, query_options), prefix_options)
       end
 
       def find_every(options)
         (prefix_options, query_options) = parse_options(options)
         path = collection_path(prefix_options)
-        parse_and_prefix(api.get(path, query_options), prefix_options)
+        parse(api.get(path, query_options), prefix_options)
       end
 
       def all(*arguments)

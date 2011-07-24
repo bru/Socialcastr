@@ -67,24 +67,20 @@ describe Socialcastr::Message do
 
   context 'flagging a message' do
     before :each do
-      fake_socialcast_api_for(:message) do 
-        @message = Socialcastr::Message.find(425)
-      end
-      @api = mock(:api)
-      response = "<flag><id type='integer'>3333</id></flag>"
-      Socialcastr::Message.stub!(:api).and_return(@api)
-      @api.stub!(:post).and_return(response)
+      fake_socialcast_api_for(:message)
+      @message = Socialcastr::Message.find(425)
+      @flag = mock('flag', :save => true, :id => 1)
     end
 
     it "should assign an id to the Flag" do
+      Socialcastr::Flag.should_receive(:new).and_return(@flag)
       @message.flag!
-      @message.flag.id.should == 3333
     end
 
     context "unflagging the message" do
       before :each do
-        @message.flag!
-        @api.should_receive(:delete).with("/messages/425/flags/3333").and_return("")
+        @message.flag = @flag
+        @flag.should_receive(:destroy)
       end
 
       it "should not be flagged afterwards" do
@@ -101,41 +97,25 @@ describe Socialcastr::Message do
 
   context 'liking a message' do
     before :each do
-      fake_socialcast_api_for :message do 
-        @message = Socialcastr::Message.find(425)
-      end
+      fake_socialcast_api_for :message
+      @message = Socialcastr::Message.find(425)
 
-      @api = mock(:api)
-      response = "<like><id type='integer'>2222</id><unlikable>true</unlikable></like>"
-      Socialcastr::Message.stub!(:api).and_return(@api)
-      @api.stub!(:post).and_return(response)
+      @like = mock('like', :save => true)
     end
 
     it 'should create a new like' do
-      old_count = @message.likes.count
+      Socialcastr::Like.should_receive(:new).and_return(@like)
       @message.like!
-      @message.likes.count.should == old_count + 1
-    end
-
-    it 'should assign an id the the new like' do
-      @message.like!
-      @message.likes.last.id.should == 2222
     end
   end
 
   context "unliking a message" do
     before :each do 
-      fake_socialcast_api_for :message do
-        @message = Socialcastr::Message.find(425)
-      end
+      fake_socialcast_api_for :message
+      @message = Socialcastr::Message.find(425)
 
-      @api = mock(:api)
-      response = "<like><id>2222</id><unlikable>true</unlikable></like>"
-      Socialcastr::Message.stub!(:api).and_return(@api)
-      @api.stub!(:post).and_return(response)
-      @api.stub!(:delete).and_return("")
-      @message.like!
-      @message.likes.count.should == 1
+      @like = mock('like', :unlikable => true, :save => true, :destroy => true)
+      @message.stub!(:likes).and_return([@like])
     end
 
     it "should remove a like" do
@@ -158,16 +138,15 @@ describe Socialcastr::Message do
 
   context "commenting a message" do
     before :each do
-      fake_socialcast_api_for :message do
-        @message = Socialcastr::Message.find(425)
-      end
+      fake_socialcast_api_for :message
+      @message = Socialcastr::Message.find(425)
     end
 
     it "should post to messages/425/comments.xml" do
       @api = mock(:api)
       response = "<comment></comment>"
-      Socialcastr::Message.stub!(:api).and_return(@api)
-      @api.should_receive(:post).with("/messages/425/comments", {"comment[text]" => "hallo world"}).and_return(response)
+      Socialcastr::Comment.stub!(:api).and_return(@api)
+      @api.should_receive(:post).with("messages/425/comments", {"comment[text]" => "hallo world"}).and_return(response)
       @message.comment! :text => "hallo world"
     end
      
