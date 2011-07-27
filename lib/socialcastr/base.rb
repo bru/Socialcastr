@@ -49,7 +49,7 @@ module Socialcastr
     end
 
     def api
-      self.class.api
+      @api ||= self.class.api
     end
 
     def element_path
@@ -120,7 +120,7 @@ module Socialcastr
       end
 
       def api
-        @api ||= Socialcastr.api
+        Socialcastr.api
       end
 
       def find(*arguments)

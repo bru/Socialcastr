@@ -35,6 +35,7 @@ module Socialcastr
       ATTRIBUTES.each do |attribute|
         send(attribute.to_s + "=", nil)
       end
+      @api = nil
       return self
     end
   end 
@@ -57,8 +58,8 @@ module Socialcastr
 
     def api
       config = Configuration.instance
-      raise MissingConfiguration unless config.username
-      API.new(config.username, config.password, config.domain, config.format, config.debug)
+      raise MissingConfiguration unless config.ready?
+      @api ||= API.new(config.username, config.password, config.domain, config.format, config.debug)
     end
 
     def to_class_name(method)
