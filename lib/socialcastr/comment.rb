@@ -22,6 +22,7 @@ module Socialcastr
     end
     
     def like_for(api_id)
+      return nil if (self.likes.nil? || self.likes.empty?)
       self.likes.select { |like| like.unlikable_by?(api_id) }.first
     end
   end
