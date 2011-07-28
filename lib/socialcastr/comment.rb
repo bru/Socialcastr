@@ -17,11 +17,12 @@ module Socialcastr
     end
     
     def likable_by?(api_id)
-      self.user.id  != api_id
+      return false if self.user.id == api_id
+      like_for(api_id).nil?
     end
     
-    def like
-      self.likes.select { |like| like.unlikable_by?(api.profile.id) }.first
+    def like_for(api_id)
+      self.likes.select { |like| like.unlikable_by?(api_id) }.first
     end
   end
 end

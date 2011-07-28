@@ -23,6 +23,15 @@ module Socialcastr
       refresh
     end
 
+    def likable_by?(api_id)
+      return false if self.user.id == api_id
+      like_for(api_id).nil?
+    end
+
+    def like_for(api_id)
+      self.likes.select { |like| like.unlikable_by?(api_id) }.first
+    end
+
     def unlike!
       self.likes.reject! do |l|
         l.unlikable && l.destroy
