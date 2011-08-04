@@ -14,12 +14,15 @@ module Socialcastr
       @username = username
       @password = password
       @format   = format
+      @domain   = domain
       @endpoint = "https://#{domain}/api/"
       return self
     end
 
     def profile
-      @profile ||= Socialcastr::Community.parse(post("authentication", {:email => @username, :password => @password })).first.profile
+      @profile ||= Socialcastr::Community.parse(post("authentication", {:email => @username, :password => @password })).
+                      select { |community| community.domain == @domain }.
+                      first.profile
     end
 
     def get(path, args={})
