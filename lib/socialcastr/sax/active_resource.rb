@@ -9,7 +9,7 @@ class String
 end
 
 class Array
-  def to_hash
+  def to_attribute_hash
     self.reduce({}) { |h,kv| h[kv[0]] = kv[1]; h }
   end
 end
@@ -102,7 +102,7 @@ module Socialcastr
       end
 
       def parse_attrs_and_get_type(attribute_array=[])
-        attributes = attribute_array.to_hash
+        attributes = attribute_array.to_attribute_hash
         return nil_element! if attributes["nil"]
         attributes["type"] ? attributes["type"] : HASH
       end
