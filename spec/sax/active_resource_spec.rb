@@ -8,15 +8,15 @@ describe Socialcastr::SAX::ActiveResource do
     end
 
     context "an empty document with a root 'message' element" do
-      it "should return a Message object" do
+      it "should return a nil object" do
         xml = "<message></message>"
         @parser.parse(xml)
-        @active_resource.data.class.should == Socialcastr::Message
+        @active_resource.data.should be_nil
       end
     end
     context "a document with a nil element" do
       it "should make the nil element accessible" do
-        xml = "<message><rating nil=\"true\"></rating></message>"
+        xml = "<message><id>1</id><rating nil=\"true\"></rating></message>"
         @parser.parse(xml)
         @active_resource.data.rating.should be_nil
       end

@@ -89,6 +89,7 @@ module Socialcastr
         @data[method_name(method.to_s.sub(/=$/,''))] = args.first
       else
         obj = @data[method_name(method)] 
+        return nil unless obj
         unless new?
           self.class.set_prefix_options(obj, to_prefix_options)
         end

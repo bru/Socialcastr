@@ -53,7 +53,8 @@ module Socialcastr
         (value, type) = pop_element
         case type
         when HASH
-          element = element_class(name).from_hash(value || {})
+          return unless value
+          element = element_class(name).from_hash(value)
         when INTEGER
           element = value.to_i
         when BOOLEAN
