@@ -36,9 +36,9 @@ module Socialcastr
       end
 
       def start_element name, attrs = []
-        return nil_element! if name.contains_dot? # [FIXME] we can't evaluate strings inside elements like <html.title>
+        return nil_element! if unsupported?(name)
         type = parse_attrs_and_get_type(attrs)
-        return if nil_element?
+        return nil_element! if type.nil?
         push_element(type)
       end
 
@@ -53,7 +53,7 @@ module Socialcastr
         (value, type) = pop_element
         case type
         when HASH
-          return unless value
+          return nil unless value
           element = element_class(name).from_hash(value)
         when INTEGER
           element = value.to_i
@@ -74,12 +74,12 @@ module Socialcastr
 
       private
 
+      def unsupported?(name)
+        name.contains_dot?
+      end
+
       def element_class(name)
-        if RUBY_VERSION < '1.9' 
-          Socialcastr.const_get(Socialcastr.to_class_name(name))
-        else 
-          Socialcastr.const_get(Socialcastr.to_class_name(name), false)
-        end
+        Socialcastr.get_element_class(Socialcastr.to_class_name(name))
       end
 
       def container_type
@@ -104,7 +104,7 @@ module Socialcastr
 
       def parse_attrs_and_get_type(attribute_array=[])
         attributes = attribute_array.to_attribute_hash
-        return nil_element! if attributes["nil"]
+        return nil if attributes["nil"]
         attributes["type"] ? attributes["type"] : HASH
       end
 

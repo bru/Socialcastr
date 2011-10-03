@@ -70,7 +70,20 @@ module Socialcastr
       method.to_s.gsub(/^[a-z]|-[a-z]/i) { |a| a.sub("-", '').upcase }
     end
 
+    def get_element_class(class_name)
+      define_element_class(class_name) unless Socialcastr.const_defined?(class_name)
+      if RUBY_VERSION < '1.9'
+        Socialcastr.const_get(class_name)
+      else 
+        Socialcastr.const_get(class_name, false)
+      end
+    end
+
     def const_missing(class_name)
+      define_element_class(class_name)
+    end
+
+    def define_element_class(class_name)
       Socialcastr.const_set(class_name, Class.new(Socialcastr::Base))
     end
   end
