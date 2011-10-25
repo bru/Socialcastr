@@ -41,6 +41,8 @@ def fake_socialcast_api_for(type, &block)
     responsefile = "message.xml"
   when :messages
     responsefile = "messages.xml"
+  when :user
+    responsefile = "user.xml"
   end
   response = File.read(File.join(File.dirname(__FILE__), 'fixtures', responsefile))
   endpoint = generate_fake_endpoint(response)

@@ -6,6 +6,7 @@ require 'socialcastr/api'
 require 'socialcastr/like'
 require 'socialcastr/comment'
 require 'socialcastr/message'
+require 'socialcastr/user'
 
 require 'singleton'
 require 'yaml'

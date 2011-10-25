@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<user>
+  <type>User</type>
+  <status-message>
+    <editable type="boolean">true</editable>
+    <ratings-count nil="true"></ratings-count>
+    <player-url nil="true"></player-url>
+    <media-files type="array"/>
+    <comments type="array"/>
+    <message-type>status_message</message-type>
+    <in-reply-to nil="true"></in-reply-to>
+    <deletable type="boolean">true</deletable>
+    <likes type="array"/>
+    <permalink-url>https://demo.socialcast.com/messages/234-getting-coffee</permalink-url>
+    <last-interacted-at type="integer">1219406580</last-interacted-at>
+    <icon>https://ne.wac.edgecastcdn.net/801245/demo-assets1.socialcast.com/images/icons/messages/status_message.png</icon>
+    <embed nil="true"></embed>
+    <source nil="true"></source>
+    <likable type="boolean">false</likable>
+    <player-params nil="true"></player-params>
+    <tags type="array"/>
+    <url>https://demo.socialcast.com/api/messages/234-getting-coffee</url>
+    <user>
+      <type>User</type>
+      <terminated type="boolean">false</terminated>
+      <username>EmilyJames</username>
+      <url>https://demo.socialcast.com/users/emilyjames</url>
+      <role>member</role>
+      <inactive type="boolean">false</inactive>
+      <name>Emily James</name>
+      <id type="integer">25</id>
+      <avatars>
+        <square70>https://gp1.wac.edgecastcdn.net/801245/socialcast-demo.s3.amazonaws.com/tenants/5/profile_photos/50/iStock_000002766836XSmall_square70.jpg</square70>
+        <square140>https://gp1.wac.edgecastcdn.net/801245/socialcast-demo.s3.amazonaws.com/tenants/5/profile_photos/50/iStock_000002766836XSmall_square140.jpg</square140>
+        <square45>https://gp1.wac.edgecastcdn.net/801245/socialcast-demo.s3.amazonaws.com/tenants/5/profile_photos/50/iStock_000002766836XSmall_square45.jpg</square45>
+        <square16>https://gp1.wac.edgecastcdn.net/801245/socialcast-demo.s3.amazonaws.com/tenants/5/profile_photos/50/iStock_000002766836XSmall_square16.jpg</square16>
+        <square30>https://gp1.wac.edgecastcdn.net/801245/socialcast-demo.s3.amazonaws.com/tenants/5/profile_photos/50/iStock_000002766836XSmall_square30.jpg</square30>
+      </avatars>
+    </user>
+    <subscribed type="boolean">false</subscribed>
+    <rating nil="true"></rating>
+    <category-id nil="true"></category-id>
+    <external-resources type="array"/>
+    <comments-count type="integer">0</comments-count>
+    <updated-at>2011-10-24T14:37:34-07:00</updated-at>
+    <title>getting coffee...</title>
+    <new-group-id nil="true"></new-group-id>
+    <watch nil="true"></watch>
+    <external-url nil="true"></external-url>
+    <body></body>
+    <hidden type="boolean">false</hidden>
+    <ratings-average nil="true"></ratings-average>
+    <recipients type="array"/>
+    <group>
+    </group>
+    <contains-url-only nil="true"></contains-url-only>
+    <extensions type="array"/>
+    <groups type="array"/>
+    <target-user nil="true"></target-user>
+    <attachments type="array"/>
+    <likes-count type="integer">0</likes-count>
+    <verb nil="true"></verb>
+    <poll nil="true"></poll>
+    <flag nil="true"></flag>
+    <thumbnail-url nil="true"></thumbnail-url>
+    <created-at>2011-10-24T14:12:35-07:00</created-at>
+    <id type="integer">234</id>
+    <watchable type="boolean">false</watchable>
+    <ratable type="boolean">false</ratable>
+    <action></action>
+  </status-message>
+  <terminated type="boolean">false</terminated>
+  <followers-count type="integer">14</followers-count>
+  <username>EmilyJames</username>
+  <kudos-points type="integer">0</kudos-points>
+  <url>https://demo.socialcast.com/users/emilyjames</url>
+  <kudos-sent-count type="integer">0</kudos-sent-count>
+  <title>Marketing Assistant</title>
+  <role>member</role>
+  <manager>
+    <type>User</type>
+    <terminated type="boolean">false</terminated>
+    <username>StaceyLynch</username>
+    <url>https://demo.socialcast.com/users/staceylynch</url>
+    <role>member</role>
+    <title>Director of Sales</title>
+    <inactive type="boolean">false</inactive>
+    <name>Stacey Lynch</name>
+    <id type="integer">30</id>
+    <avatars>
+      <square140>https://ne.wac.edgecastcdn.net/801245/socialcast-demo.s3.amazonaws.com/tenants/5/profile_photos/78/iStock_000005807416XSmall_square140.jpg</square140>
+      <square70>https://ne.wac.edgecastcdn.net/801245/socialcast-demo.s3.amazonaws.com/tenants/5/profile_photos/78/iStock_000005807416XSmall_square70.jpg</square70>
+      <square45>https://ne.wac.edgecastcdn.net/801245/socialcast-demo.s3.amazonaws.com/tenants/5/profile_photos/78/iStock_000005807416XSmall_square45.jpg</square45>
+      <square16>https://ne.wac.edgecastcdn.net/801245/socialcast-demo.s3.amazonaws.com/tenants/5/profile_photos/78/iStock_000005807416XSmall_square16.jpg</square16>
+      <square30>https://ne.wac.edgecastcdn.net/801245/socialcast-demo.s3.amazonaws.com/tenants/5/profile_photos/78/iStock_000005807416XSmall_square30.jpg</square30>
+    </avatars>
+  </manager>
+  <inactive type="boolean">false</inactive>
+  <contact-info>
+    <aim>emilytime</aim>
+    <yahoo>emilytimes12</yahoo>
+    <msn>emily@msn.com</msn>
+    <jabber>emily@socialcast.jabber.com</jabber>
+    <email>emily@socialcast.com</email>
+    <google-talk>emily@demo.socialcast.com</google-talk>
+    <cell-phone>949 555 6686</cell-phone>
+    <skype>emily_james</skype>
+    <location>Tustin, CA</location>
+    <office-phone>949 555 6685</office-phone>
+  </contact-info>
+  <name>Emily James</name>
+  <custom-fields type="array">
+    <custom-field>
+      <value>I currently assist the VP of Marketing in making sure that all marketing related activites are rolled out properly in the Americas market.</value>
+      <label>Job Description</label>
+      <id type="symbol">resume</id>
+    </custom-field>
+    <custom-field>
+      <value>Event planning, attending conferences, social media, international marketing , working out, reading, soccer, skiing, Europe, redecorating</value>
+      <label>Passions</label>
+      <id type="symbol">passions</id>
+    </custom-field>
+    <custom-field>
+      <value>Headquarters</value>
+      <label>Business Unit</label>
+      <id type="symbol">business_unit</id>
+    </custom-field>
+    <custom-field>
+      <value>Marketing</value>
+      <label>Department</label>
+      <id type="symbol">department</id>
+    </custom-field>
+    <custom-field>
+      <value>Marketing Assistant</value>
+      <label>Title</label>
+      <id type="symbol">title</id>
+    </custom-field>
+  </custom-fields>
+  <id type="integer">25</id>
+  <followable type="boolean">false</followable>
+  <avatars>
+    <square140>https://gp1.wac.edgecastcdn.net/801245/socialcast-demo.s3.amazonaws.com/tenants/5/profile_photos/50/iStock_000002766836XSmall_square140.jpg</square140>
+    <square70>https://gp1.wac.edgecastcdn.net/801245/socialcast-demo.s3.amazonaws.com/tenants/5/profile_photos/50/iStock_000002766836XSmall_square70.jpg</square70>
+    <square45>https://gp1.wac.edgecastcdn.net/801245/socialcast-demo.s3.amazonaws.com/tenants/5/profile_photos/50/iStock_000002766836XSmall_square45.jpg</square45>
+    <square16>https://gp1.wac.edgecastcdn.net/801245/socialcast-demo.s3.amazonaws.com/tenants/5/profile_photos/50/iStock_000002766836XSmall_square16.jpg</square16>
+    <square30>https://gp1.wac.edgecastcdn.net/801245/socialcast-demo.s3.amazonaws.com/tenants/5/profile_photos/50/iStock_000002766836XSmall_square30.jpg</square30>
+  </avatars>
+  <contact-id nil="true"></contact-id>
+  <following-count type="integer">13</following-count>
+</user>
+
