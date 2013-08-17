@@ -9,10 +9,12 @@ module Socialcastr
   class API
     attr_accessor :debug
     
-    def initialize(username, password, domain, format="xml",debug=false)
+    def initialize(username, password, domain,oauthtoken,oauthenabled, format="xml",debug=false)
       @debug    = debug
       @username = username
       @password = password
+      @oauthenabled= oauthenabled
+      @oauthtoken = oauthtoken
       @format   = format
       @domain   = domain
       @endpoint = "https://#{domain}/api/"
@@ -62,8 +64,12 @@ module Socialcastr
       response = nil
       https.start do |session|
         query_string = build_query_string(path, query)
-        req = request_class.new(query_string)
-        req.basic_auth @username, @password
+        if(@oauthenabled)
+            req = request_class.new(query_string, {'Authorization' => "Bearer #{@oauthtoken}" })
+        else
+            req = request_class.new(query_string)
+            req.basic_auth @username, @password
+        end
         if form_data
           req.set_form_data(args, ';')
         end
@@ -111,7 +117,7 @@ module Socialcastr
       https = Net::HTTP.new(url.host, url.port)
       https.verify_mode = OpenSSL::SSL::VERIFY_NONE
       if @debug
-        https.set_debug_output $stderr
+        https.set_debug_output $stdout
       end
       https.use_ssl = true
       return https

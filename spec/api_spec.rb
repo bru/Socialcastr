@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Socialcastr::API do
   before :each do
-    @api = Socialcastr::API.new("demo", "password", "demo.socialcast.com")
+    @api = Socialcastr::API.new("demo", "password", "demo.socialcast.com", "oauthtoken", false)
   end
 
   context "trying to use an invalid HTTP method" do

@@ -17,11 +17,15 @@ module Socialcastr
 
   class Configuration
     include Singleton
-    ATTRIBUTES = [:domain, :username, :password, :format, :debug, :config_file]
+    ATTRIBUTES = [:domain, :username, :password, :oauthtoken, :oauthenabled, :format, :debug, :config_file]
     attr_accessor *ATTRIBUTES
 
     def ready?
-      (ATTRIBUTES - [:config_file]).map { |a| self.send a }.map(&:nil?).none?
+        if @oauthenabled
+            (ATTRIBUTES - [:config_file, :oauthenabled, :username, :password]).all? {|word| (self.send word) != nil }
+        else
+            (ATTRIBUTES - [:config_file, :oauthenabled, :oauthtoken]).all? {|word| (self.send word) != nil }
+        end
     end
 
     def format
@@ -49,6 +53,8 @@ module Socialcastr
           Configuration.instance.domain   = config['domain']
           Configuration.instance.username = config['username']
           Configuration.instance.password = config['password']
+          Configuration.instance.oauthtoken = config['oauthtoken']
+          Configuration.instance.oauthenabled = config['oauthenabled']
           Configuration.instance.format   = config['format']
           Configuration.instance.debug    = config['debug']
         end
@@ -59,7 +65,7 @@ module Socialcastr
     def api
       config = Configuration.instance
       raise MissingConfiguration unless config.ready?
-      @api ||= API.new(config.username, config.password, config.domain, config.format, config.debug)
+      @api ||= API.new(config.username, config.password, config.domain, config.oauthtoken, config.oauthenabled, config.format, config.debug)
     end
 
     def reset
