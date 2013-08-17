@@ -49,7 +49,7 @@ module Socialcastr
           Configuration.instance.domain   = config['domain']
           Configuration.instance.username = config['username']
           Configuration.instance.password = config['password']
-          Configuration.instance.oauthToken = config['oauthtoken']
+          Configuration.instance.oauthtoken = config['oauthtoken']
           Configuration.instance.oauthenabled = config['oauthenabled']
           Configuration.instance.format   = config['format']
           Configuration.instance.debug    = config['debug']
@@ -61,7 +61,7 @@ module Socialcastr
     def api
       config = Configuration.instance
       raise MissingConfiguration unless config.ready?
-      @api ||= API.new(config.username, config.password, config.domain, config.format, config.debug)
+      @api ||= API.new(config.username, config.password, config.domain, config.oauthtoken, config.oauthenabled, config.format, config.debug)
     end
 
     def reset
