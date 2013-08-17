@@ -21,7 +21,7 @@ module Socialcastr
     attr_accessor *ATTRIBUTES
 
     def ready?
-      (ATTRIBUTES - [:config_file]).map { |a| self.send a }.map(&:nil?).none?
+      (ATTRIBUTES - [:config_file, :username, :password]).map { |a| self.send a }.map(&:nil?).none?
     end
 
     def format
