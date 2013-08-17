@@ -21,7 +21,11 @@ module Socialcastr
     attr_accessor *ATTRIBUTES
 
     def ready?
-      (ATTRIBUTES - [:config_file, :username, :password]).map { |a| self.send a }.map(&:nil?).none?
+        if @oauthenabled
+            (ATTRIBUTES - [:config_file, :oauthenabled, :username, :password]).all? {|word| (self.send word) != nil }
+        else
+            (ATTRIBUTES - [:config_file, :oauthenabled, :oauthtoken]).all? {|word| (self.send word) != nil }
+        end
     end
 
     def format
