@@ -17,7 +17,7 @@ module Socialcastr
 
   class Configuration
     include Singleton
-    ATTRIBUTES = [:domain, :username, :password, :format, :debug, :config_file]
+    ATTRIBUTES = [:domain, :username, :password, :oauthtoken, :oauthenabled, :format, :debug, :config_file]
     attr_accessor *ATTRIBUTES
 
     def ready?
@@ -49,6 +49,8 @@ module Socialcastr
           Configuration.instance.domain   = config['domain']
           Configuration.instance.username = config['username']
           Configuration.instance.password = config['password']
+          Configuration.instance.oauthToken = config['oauthtoken']
+          Configuration.instance.oauthenabled = config['oauthenabled']
           Configuration.instance.format   = config['format']
           Configuration.instance.debug    = config['debug']
         end
