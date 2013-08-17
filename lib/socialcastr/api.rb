@@ -64,7 +64,7 @@ module Socialcastr
       response = nil
       https.start do |session|
         query_string = build_query_string(path, query)
-        if(oauthenabled)
+        if(@oauthenabled)
             req = request_class.new(query_string, {'Authorization' => "Bearer #{@oauthtoken}" })
         else
             req = request_class.new(query_string)
